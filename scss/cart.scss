@@ -1,0 +1,781 @@
+.cart {
+  @media (min-width: 768px) {
+    margin-top: 55px;
+  }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    border: 1px solid black;
+    box-sizing: border-box;
+    padding: 20px;
+    & .name {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #a9a9a9;
+      font-family: "FuturaNewBook-Reg";
+    }
+    & p {
+      font-size: 16px;
+      text-transform: uppercase;
+      color: black;
+      font-family: "FuturaNewBook-Reg";
+      margin-bottom: 0px;
+    }
+    & .img {
+      display: flex;
+      justify-content: center;
+    }
+    & .title {
+      margin-top: 30px;
+      & .articul {
+        font-size: 16px;
+        text-transform: uppercase;
+        color: #a9a9a9;
+        font-family: "FuturaNewBook-Obl";
+      }
+    }
+    & .quantity {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      & p {
+        margin-left: 20px;
+      }
+    }
+    & .price {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      & p {
+        margin-left: 20px;
+      }
+    }
+    & .delete {
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      & button {
+        margin-left: 20px;
+        background-color: transparent;
+        border: none;
+      }
+    }
+    @media (min-width: 768px) {
+      flex-direction: row;
+      border: none;
+      justify-content: space-between;
+      margin-top: 20px;
+      padding: 0px;
+      & .quantity {
+        flex-direction: column;
+        margin-top: 0px;
+        justify-content: flex-start;
+        & p {
+          margin-left: 0px;
+          margin-top: 15px;
+        }
+      }
+      & .price {
+        flex-direction: column;
+        margin-top: 0px;
+        justify-content: flex-start;
+        & p {
+          margin-left: 0px;
+          margin-top: 15px;
+        }
+      }
+      & .delete {
+        flex-direction: column;
+        margin-top: 0px;
+        justify-content: flex-start;
+        & button {
+          margin-left: 0px;
+          margin-top: 15px;
+        }
+      }
+      & .title {
+        margin-top: 0px;
+        width: 200px;
+        justify-content: space-between;
+        display: flex;
+        flex-direction: column;
+      }
+    }
+    @media (min-width: 992px) {
+      & .title {
+        width: 300px;
+      }
+      & .quantity {
+        & p {
+          margin-top: 27px;
+        }
+      }
+      & .price {
+        & p {
+          margin-top: 27px;
+        }
+      }
+      & .delete {
+        & button {
+          margin-top: 27px;
+        }
+      }
+    }
+    @media (min-width: 1200px) {
+      width: 800px;
+      margin: 0 auto;
+      margin-top: 20px;
+    }
+  }
+  &__coupon {
+    & p {
+      font-size: 18px;
+      text-transform: uppercase;
+      color: black;
+      font-family: "FuturaNewMedium-Reg";
+    }
+    & label {
+      border: 1px dashed #a5a5b1;
+      position: relative;
+      display: block;
+      margin-top: 30px;
+      & span {
+        position: absolute;
+      }
+      & .coupon {
+        left: 10px;
+        & i {
+          color: #a5a5b1;
+        }
+      }
+      & input {
+        &::placeholder {
+          font-family: "FuturaNewLight-Obl";
+          font-size: 16px;
+          color: #a5a5b1;
+        }
+      }
+      & .arrow {
+        right: 10px;
+        & i {
+          color: #a5a5b1;
+        }
+      }
+      & input {
+        border: none;
+        margin-left: 50px;
+      }
+    }
+    @media (min-width: 576px) {
+      display: flex;
+      justify-content: space-between;
+      & p {
+        transform: translateY(30px);
+      }
+    }
+    @media (min-width: 768px) {
+      position: relative;
+      margin-top: 30px;
+      & label {
+        margin-top: 20px;
+      }
+      & p {
+        transform: translateY(18px);
+      }
+      &:after {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+      &:before {
+        content: "";
+        width: 100%;
+        height: 1px;
+        background-color: black;
+        position: absolute;
+        bottom: -10px;
+        left: 0;
+      }
+    }
+    @media (min-width: 1200px) {
+      width: 800px;
+      margin: 30px auto;
+    }
+  }
+  &__fake-btn {
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    font-family: "FuturaNewBook-Reg";
+    text-transform: uppercase;
+    border: none;
+    width: 100%;
+    @media (min-width: 576px) {
+      margin-top: 30px;
+    }
+    @media (min-width: 768px) {
+      margin-top: 50px;
+      height: 50px;
+    }
+    @media (min-width: 1200px) {
+      width: 800px;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+  }
+  &__contact {
+    margin-top: 25px;
+    position: relative;
+    @media (min-width: 1200px) {
+      width: 800px;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+    &:after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #929292;
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+    }
+    & h3 {
+      font-family: "FuturaNewMedium-Reg";
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #a8a8a8;
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
+    }
+    & .auth {
+      display: none;
+      & a {
+        font-family: "FuturaNewBook-Reg";
+        color: white;
+        font-size: 16px;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        height: 40px;
+        text-transform: uppercase;
+        margin-top: 20px;
+      }
+      & p {
+        font-size: 16px;
+        font-family: "FuturaNewBook-Reg";
+        color: #7f7f7f;
+        width: 200px;
+        margin-top: 10px;
+      }
+      @media (min-width: 768px) {
+        & a {
+          width: 260px;
+          height: 50px;
+          font-size: 18px;
+        }
+      }
+    }
+    & .form {
+      display: none;
+      & p {
+        font-size: 18px;
+        text-transform: uppercase;
+        font-family: "FuturaNewBook-Reg";
+        margin-bottom: 0px;
+      }
+      & form {
+        & label {
+          display: flex;
+          flex-direction: column;
+          & span {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #a9a9a9;
+            font-family: "FuturaNewBook-Reg";
+          }
+          & input {
+            height: 40px;
+            padding-left: 10px;
+          }
+        }
+      }
+      @media (min-width: 576px) {
+        & form {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          & label {
+            & input {
+              width: 250px;
+            }
+          }
+          & p {
+            position: absolute;
+            top: 0;
+          }
+        }
+      }
+      @media (min-width: 768px) {
+        & form {
+          & label {
+            & input {
+              width: 330px;
+            }
+          }
+        }
+      }
+      @media (min-width: 992px) {
+        & form {
+          & label {
+            & input {
+              width: 450px;
+            }
+          }
+        }
+      }
+      @media (min-width: 1200px) {
+        & form {
+          & label {
+            margin-top: 10px;
+            & input {
+              width: 390px;
+            }
+          }
+        }
+      }
+    }
+    &.active {
+      &:after {
+        bottom: -50px;
+        @media (min-width: 576px) {
+          bottom: -40px;
+        }
+      }
+      & h3 {
+        color: #2d2d2d;
+      }
+      & .auth {
+        display: block;
+      }
+      & .form {
+        display: block;
+      }
+    }
+  }
+  &__delivery {
+    margin-top: 30px;
+    position: relative;
+    @media (min-width: 1200px) {
+      width: 800px;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+    &.active {
+      margin-top: 80px;
+      & h3 {
+        color: black;
+      }
+      &:after {
+        bottom: -50px;
+        @media (min-width: 576px) {
+          bottom: -40px;
+        }
+      }
+    }
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #929292;
+      position: absolute;
+      left: 0;
+      bottom: -20px;
+    }
+    & h3 {
+      font-family: "FuturaNewMedium-Reg";
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #a8a8a8;
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
+    }
+    & .form {
+      display: none;
+      & .country {
+        & label {
+          display: flex;
+          flex-direction: column;
+          & span {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #a9a9a9;
+            font-family: "FuturaNewBook-Reg";
+          }
+          & input {
+            height: 40px;
+            padding-left: 10px;
+          }
+        }
+        @media (min-width: 576px) {
+          display: flex;
+          justify-content: space-between;
+          & label {
+            & input {
+              width: 250px;
+            }
+          }
+        }
+        @media (min-width: 768px) {
+          & label {
+            & input {
+              width: 330px;
+            }
+          }
+        }
+        @media (min-width: 992px) {
+          & label {
+            & input {
+              width: 450px;
+            }
+          }
+        }
+        @media (min-width: 1200px) {
+          & label {
+            & input {
+              width: 390px;
+            }
+          }
+        }
+      }
+      & .checkbox {
+        &__block {
+          & label {
+            display: block;
+            position: relative;
+            cursor: pointer;
+            font-size: 22px;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            & input {
+              position: absolute;
+              opacity: 0;
+              cursor: pointer;
+              height: 0;
+              width: 0;
+              &:checked ~ .checkmark {
+                &:after {
+                  display: block;
+                }
+              }
+            }
+            & .checkmark {
+              position: absolute;
+              top: 0;
+              left: 0;
+              height: 25px;
+              width: 25px;
+              background-color: white;
+              border-radius: 50%;
+              border: 1px solid black;
+              &:after {
+                content: "";
+                position: absolute;
+                display: none;
+                top: 8px;
+                left: 7.5px;
+                width: 8px;
+                height: 8px;
+                border-radius: 50%;
+                background: black;
+              }
+            }
+          }
+          & .info {
+            margin-left: 40px;
+            margin-top: 30px;
+            & p {
+              margin-bottom: 0px;
+              text-transform: uppercase;
+              font-family: "FuturaNewBook-Reg";
+              font-size: 16px;
+              color: #2d2d2d;
+            }
+            & .price {
+              font-family: "FuturaNewMedium-Reg";
+              font-size: 16px;
+              display: block;
+            }
+            & .text {
+              display: block;
+              font-size: 16px;
+              font-family: "FuturaNewBook-Reg";
+              color: #2d2d2d;
+            }
+          }
+        }
+        @media (min-width: 768px) {
+          display: flex;
+          margin-top: 30px;
+          &__block {
+            & label {
+              top: 6px;
+            }
+            & .info {
+              margin-top: 0px;
+            }
+          }
+        }
+      }
+      & .main {
+        margin-top: 30px;
+        & label {
+          display: flex;
+          flex-direction: column;
+          & span {
+            font-size: 16px;
+            text-transform: uppercase;
+            color: #a9a9a9;
+            font-family: "FuturaNewBook-Reg";
+          }
+          & input {
+            height: 40px;
+            padding-left: 10px;
+          }
+          & textarea {
+            padding-left: 10px;
+            padding-top: 10px;
+          }
+        }
+        @media (min-width: 576px) {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          & .street {
+            width: 100%;
+          }
+          & .index,
+          .house,
+          .corpus,
+          .apartment {
+            width: 250px;
+          }
+          & .comments {
+            width: 100%;
+          }
+        }
+        @media (min-width: 768px) {
+          & .street {
+            width: 330px;
+          }
+          & .index {
+            width: 330px;
+          }
+          & .house {
+            width: 330px;
+          }
+          & .corpus {
+            width: 330px;
+          }
+          & .apartment {
+            width: 330px;
+          }
+          & .comments {
+            width: 100%;
+          }
+        }
+        @media (min-width: 992px) {
+          & .index {
+            width: 120px;
+          }
+          & .house {
+            width: 120px;
+          }
+          & .corpus {
+            width: 120px;
+          }
+          & .apartment {
+            width: 120px;
+          }
+        }
+        @media (min-width: 1200px) {
+          & .street {
+            width: 230px;
+          }
+          & .index {
+            width: 130px;
+          }
+          & .house {
+            width: 130px;
+          }
+          & .corpus {
+            width: 130px;
+          }
+          & .apartment {
+            width: 130px;
+          }
+        }
+      }
+    }
+  }
+  &__payment {
+    margin-top: 30px;
+    @media (min-width: 1200px) {
+      width: 800px;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+    &.active {
+      margin-top: 80px;
+      & h3 {
+        color: black;
+      }
+      & .checkbox {
+        display: block;
+        @media (min-width: 576px) {
+          display: flex;
+        }
+      }
+    }
+    & h3 {
+      font-family: "FuturaNewMedium-Reg";
+      font-size: 16px;
+      text-transform: uppercase;
+      color: #a8a8a8;
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
+    }
+    & .checkbox {
+      display: none;
+      &.active {
+        display: flex;
+        flex-direction: column;
+      }
+      &__block {
+        margin-top: 30px;
+        & label {
+          display: block;
+          position: relative;
+          cursor: pointer;
+          font-size: 22px;
+          -webkit-user-select: none;
+          -moz-user-select: none;
+          -ms-user-select: none;
+          user-select: none;
+          & input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            &:checked ~ .checkmark {
+              &:after {
+                display: block;
+              }
+            }
+          }
+          & .checkmark {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 25px;
+            width: 25px;
+            background-color: white;
+            border-radius: 50%;
+            border: 1px solid black;
+            &:after {
+              content: "";
+              position: absolute;
+              display: none;
+              top: 8px;
+              left: 7.5px;
+              width: 8px;
+              height: 8px;
+              border-radius: 50%;
+              background: black;
+            }
+          }
+        }
+        & .info {
+          margin-left: 40px;
+          & p {
+            margin-bottom: 0px;
+            text-transform: uppercase;
+            font-family: "FuturaNewBook-Reg";
+            font-size: 16px;
+            color: #2d2d2d;
+          }
+        }
+      }
+      @media (min-width: 576px) {
+        &__block {
+          margin-right: 30px;
+          & label {
+            top: 6px;
+          }
+        }
+      }
+      @media (min-width: 768px) {
+        &__block {
+          margin-right: 50px;
+          & .info {
+            display: flex;
+            & .img {
+              transform: translateY(-5px);
+              margin-left: 10px;
+            }
+          }
+        }
+      }
+      @media (min-width: 992px) {
+        &__block {
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+  &__submit {
+    margin-top: 30px;
+    display: none;
+    @media (min-width: 1200px) {
+      width: 800px;
+      margin: 0 auto;
+      margin-top: 40px;
+    }
+    & button {
+      width: 100%;
+      height: 40px;
+      background-color: black;
+      color: white;
+      text-transform: uppercase;
+      font-size: 18px;
+      font-family: "FuturaNewBook-Reg";
+      border: none;
+    }
+    &.active {
+      display: block;
+    }
+    @media (min-width: 768px) {
+      margin-top: 50px;
+      & button {
+        height: 50px;
+      }
+    }
+  }
+}

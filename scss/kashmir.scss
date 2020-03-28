@@ -1,0 +1,187 @@
+.kashmir {
+  background: url(../img/kashmir/background-kashmir.png) center center / cover
+    no-repeat;
+  &__item-mob {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & p {
+      text-align: center;
+      margin-top: 14px;
+      font-size: 18px;
+      font-family: "FuturaNewBook-Obl";
+      color: #292929;
+    }
+    & h3 {
+      color: #292929;
+      font-size: 18px;
+      text-transform: uppercase;
+      font-family: "GazetatitulItalic";
+      margin-top: 60px;
+    }
+    &-quotes {
+      margin-top: 12px;
+    }
+    & button {
+      border: none;
+      background-color: transparent;
+      margin-bottom: 50px;
+      & a {
+        font-family: "FuturaNewMedium-Reg";
+        font-size: 14px;
+        color: #292929;
+        & .img {
+          width: 15px;
+          height: 15px;
+          transform: translateY(-1px);
+          margin-left: 10px;
+          display: inline-block;
+          & img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    &__item-mob {
+      & h3 {
+        font-size: 22px;
+        margin-top: 100px;
+      }
+      &-quotes {
+        margin-top: 30px;
+      }
+      & p {
+        font-size: 20px;
+      }
+      & button {
+        margin-top: 30px;
+        & a {
+          font-size: 20px;
+          & .img {
+            transform: translateY(0px);
+            width: 20px;
+          }
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    background: none;
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 200px;
+      background-color: #e6ebf2;
+      left: -75%;
+      top: 160px;
+    }
+    &__item-mob {
+      display: none;
+    }
+  }
+  @media (min-width: 1200px) {
+    &:before {
+      height: 350px;
+      left: -65%;
+    }
+  }
+}
+
+.kashmir__item-desc {
+  display: none;
+  @media (min-width: 992px) {
+    display: flex;
+    &-img {
+      & img {
+        width: 400px;
+      }
+    }
+    & h3 {
+      font-size: 25px;
+      color: #2d2d2d;
+      font-family: "GazetatitulItalic";
+      text-transform: uppercase;
+      text-align: center;
+    }
+    & p {
+      font-size: 25px;
+      color: #2d2d2d;
+      font-family: "FuturaNewBook-Obl";
+      margin-top: 25px;
+    }
+    & button {
+      padding: 20px 20px 20px 20px;
+      background-color: white;
+      border: none;
+      transition: all 0.3s ease;
+      margin-top: 20px;
+      & a {
+        font-family: "FuturaNewBook-Reg";
+        font-size: 18px;
+        color: #2d2d2d;
+        & .navigation {
+          width: 25px;
+          display: inline-block;
+          height: 15px;
+          transform: translateY(3px);
+          margin-left: 10px;
+          & img {
+            width: 100%;
+            height: 100%;
+          }
+          & .white {
+            display: none;
+          }
+          & .black {
+            display: block;
+          }
+        }
+      }
+      &:hover {
+        background-color: black;
+        transition: all 0.3s ease;
+        & a {
+          color: white;
+          & .navigation {
+            & .white {
+              display: block;
+            }
+            & .black {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+    &-text {
+      margin-left: 100px;
+      margin-top: 100px;
+    }
+    &-img {
+      margin-top: 150px;
+    }
+    &-quotes {
+      margin-top: 50px;
+    }
+  }
+  @media (min-width: 1200px) {
+    &-img {
+      margin-top: 100px;
+      & img {
+        width: auto;
+      }
+    }
+    &-text {
+      margin-top: 150px;
+    }
+    & button {
+      margin-top: 50px;
+    }
+  }
+}

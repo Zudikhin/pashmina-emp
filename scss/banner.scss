@@ -1,0 +1,857 @@
+.banner {
+  background: url("../img/banner/banner.png") no-repeat scroll center center /
+    cover;
+  @media (min-width: 1200px) {
+    padding-bottom: 50px;
+  }
+}
+
+.banner__block {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  & h2 {
+    font-family: "FuturaNewDemi-Reg";
+    font-size: 30px;
+    color: #424242;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  & .quality {
+    width: 250px;
+    height: 50px;
+    background-color: #424242;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    position: relative;
+    &:after {
+      content: "";
+      width: 50px;
+      height: 2px;
+      background-color: #b39e89;
+      position: absolute;
+      bottom: -15px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    & p {
+      color: #b29e89;
+      font-size: 16px;
+      font-family: "FuturaNewDemi-Reg";
+      margin-bottom: 0px;
+      text-transform: uppercase;
+    }
+  }
+  & span {
+    font-family: "FuturaNewLight-Reg";
+    font-size: 24px;
+    text-align: center;
+    color: #404852;
+    display: block;
+  }
+  & .text {
+    text-align: center;
+    font-family: "FuturaNewLight-Reg";
+    color: #4c3d33;
+    margin-top: 30px;
+    font-size: 20px;
+  }
+  @media (min-width: 576px) {
+    margin-top: 150px;
+    & span {
+      margin-top: 22px;
+    }
+    & .text {
+      margin-top: 50px;
+    }
+  }
+  @media (min-width: 768px) {
+    & h2 {
+      font-size: 40px;
+    }
+    & span {
+      font-size: 30px;
+    }
+    & .text {
+      font-size: 25px;
+    }
+    & .quality {
+      width: 350px;
+      height: 80px;
+      & p {
+        font-size: 25px;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    margin-top: 250px;
+    & h2 {
+      font-size: 52px;
+    }
+    & span {
+      font-size: 42px;
+    }
+    & .quality {
+      width: 400px;
+      height: 100px;
+      margin-top: 100px;
+      &:after {
+        width: 100px;
+        height: 8px;
+        bottom: -70px;
+      }
+      & p {
+        font-size: 26px;
+      }
+    }
+    & .text {
+      font-size: 30px;
+      margin-top: 240px;
+      line-height: 30px;
+    }
+  }
+  @media (min-width: 1200px) {
+    & .quality {
+      width: 520px;
+      height: 120px;
+    }
+  }
+}
+
+.about {
+  margin-top: 50px;
+  &__img {
+    width: 100%;
+    & img {
+      width: 100%;
+    }
+  }
+  &__text {
+    position: relative;
+    &:after {
+      content: "";
+      width: 100%;
+      height: 2px;
+      background-color: #2d2d2d;
+      position: absolute;
+      top: 22px;
+      left: 0px;
+    }
+    & h3 {
+      font-size: 18px;
+      text-transform: uppercase;
+      font-family: "FuturaNewMedium-Reg";
+      color: #2d2d2d;
+      text-align: center;
+    }
+    & p {
+      font-size: 16px;
+      font-family: "FuturaNewBook-Reg";
+      color: #2d2d2d;
+      text-align: center;
+      margin-top: 30px;
+    }
+  }
+  @media (min-width: 768px) {
+    margin-top: 100px;
+    &__text {
+      &:after {
+        top: 32px;
+      }
+      & h3 {
+        font-size: 26px;
+      }
+      & p {
+        font-size: 20px;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    &__text {
+      &:after {
+        width: 110%;
+      }
+      & h3 {
+        text-align: left;
+      }
+      & p {
+        text-align: left;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    margin-top: 150px;
+    &__img {
+      width: 120%;
+    }
+  }
+}
+
+.advantage {
+  margin-top: 50px;
+  &__block-fake {
+    display: none;
+  }
+  &__block {
+    -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
+    padding: 30px 15px 60px 15px;
+    box-sizing: border-box;
+    margin-top: 30px;
+  }
+  &__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "FuturaNewMedium-Reg";
+    color: #2d2d2d;
+    text-align: center;
+  }
+  &__item {
+    position: relative;
+    margin-top: 30px;
+    &:after {
+      content: "";
+      width: 90%;
+      height: 1px;
+      background-color: black;
+      position: absolute;
+      top: 20px;
+      left: 0;
+    }
+    & h3 {
+      font-size: 16px;
+      color: #4c3d33;
+      font-family: "FuturaNewBook-Reg";
+      text-transform: uppercase;
+    }
+    & p {
+      font-size: 14px;
+      color: #4c3d33;
+      font-family: "FuturaNewBook-Obl";
+      text-transform: uppercase;
+    }
+  }
+  @media (min-width: 768px) {
+    margin-top: 100px;
+    &__title {
+      font-size: 20px;
+    }
+    &__item {
+      &:after {
+        width: 100%;
+        top: 30px;
+      }
+      & h3 {
+        font-size: 18px;
+      }
+      & p {
+        font-size: 14px;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    &__block {
+      margin-top: 100px;
+      padding: 50px 50px 80px 50px;
+    }
+    &__title {
+      font-size: 26px;
+    }
+    &__item {
+      & p {
+        font-size: 16px;
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    &__block {
+      padding: 80px 60px 100px 60px;
+      margin-top: 120px;
+      position: relative;
+      z-index: 9;
+      background-color: white;
+      transform: translate(-50px, -50px);
+      -webkit-box-shadow: -4px 2px 13px 0px rgba(0, 0, 0, 0.75);
+      -moz-box-shadow: -4px 2px 13px 0px rgba(0, 0, 0, 0.75);
+      box-shadow: -4px 2px 13px 0px rgba(0, 0, 0, 0.75);
+    }
+    &__item {
+      & h3 {
+        font-size: 20px;
+      }
+    }
+    &__block-fake {
+      display: block;
+      position: absolute;
+      bottom: -50px;
+      right: -50px;
+      width: 1080px;
+      height: 1200px;
+      background-color: #e6ebf2;
+      z-index: -1;
+      border: 2px solid #838688;
+    }
+  }
+}
+
+.availability {
+  margin-top: 50px;
+  &__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "FuturaNewMedium-Reg";
+    color: #2d2d2d;
+    text-align: center;
+  }
+  &__block {
+    margin-top: 30px;
+    & .img {
+      display: flex;
+      justify-content: center;
+    }
+    & h3 {
+      font-size: 18px;
+      color: #4c3d33;
+      font-family: "FuturaNewBook-Reg";
+      text-transform: uppercase;
+      text-align: center;
+    }
+    & p {
+      font-size: 16px;
+      color: #4c3d33;
+      font-family: "FuturaNewBook-Reg";
+      text-align: center;
+    }
+    & a {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      margin: 0 auto;
+      color: #2d2d2d;
+      font-size: 16px;
+      font-family: "FuturaNewBook-Reg";
+      border: 1px solid #2d2d2d;
+      width: 200px;
+      height: 40px;
+    }
+  }
+  @media (min-width: 768px) {
+    margin-top: 100px;
+    &__title {
+      font-size: 26px;
+    }
+    &__block {
+      & h3 {
+        font-size: 20px;
+      }
+      & p {
+        font-size: 18px;
+      }
+      & a {
+        width: 200px;
+        height: 50px;
+        font-size: 18px;
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    margin-top: 180px;
+    &__block {
+      position: relative;
+      & h3 {
+        font-size: 24px;
+      }
+      & p {
+        font-size: 20px;
+      }
+      &:after {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-color: rgba(230, 235, 242, 0.5);
+        position: absolute;
+        left: 0;
+        top: 0;
+        opacity: 0;
+        transition: all 0.3s ease;
+      }
+      &:hover {
+        padding-bottom: 100px;
+        & h3 {
+          display: none;
+        }
+        & p {
+          display: none;
+        }
+        & a {
+          position: absolute;
+          bottom: 50px;
+          left: 50%;
+          transform: translateX(-50%);
+          z-index: 9;
+        }
+        &:after {
+          opacity: 1;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+}
+.sale {
+  &__block {
+    margin-top: 50px;
+    & .text {
+      font-family: "FuturaNewBook-Reg";
+      font-size: 16px;
+      color: black;
+    }
+    & h3 {
+      font-size: 18px;
+      text-transform: uppercase;
+      font-family: "FuturaNewBook-Reg";
+      color: #2d2d2d;
+      text-align: center;
+    }
+    & ul {
+      margin-top: 30px;
+      & span {
+        font-size: 16px;
+        text-transform: uppercase;
+        font-family: "FuturaNewBook-Reg";
+        color: #2d2d2d;
+      }
+      & li {
+        color: black;
+        position: relative;
+        padding-left: 10px;
+        font-size: 16px;
+        font-family: "FuturaNewLight-Obl";
+        &:before {
+          content: "";
+          width: 4px;
+          height: 4px;
+          background-color: black;
+          position: absolute;
+          left: 0;
+          top: 13px;
+        }
+      }
+      & p {
+        font-family: "FuturaNewLight-Obl";
+        font-size: 16px;
+        color: black;
+      }
+    }
+    & .link {
+      display: flex;
+      flex-direction: column;
+      & a {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-family: "FuturaNewBook-Reg";
+        color: black;
+        margin-top: 10px;
+        & .img {
+          width: 20px;
+          height: 20px;
+          & img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        & span {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  @media (min-width: 576px) {
+    &__block {
+      & .link {
+        flex-direction: row;
+        justify-content: space-between;
+        margin-top: 30px;
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    &__block {
+      margin-top: 100px;
+      & .text {
+        font-size: 18px;
+      }
+      & h3 {
+        font-size: 26px;
+      }
+      & .link {
+        justify-content: space-around;
+      }
+      & ul {
+        margin-top: 50px;
+        & span {
+          font-size: 18px;
+        }
+        & p {
+          font-size: 18px;
+        }
+        & li {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  @media (min-width: 992px) {
+    background: url("../img/banner/background.jpg") no-repeat scroll center
+      center / cover;
+    margin-top: 50px;
+    padding-bottom: 50px;
+    &__block {
+      margin-left: 100px;
+      & .text {
+        font-size: 18px;
+      }
+      & ul {
+        & span {
+          font-size: 20px;
+        }
+        & p {
+          font-size: 18px;
+        }
+        & li {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    position: relative;
+    margin-top: 100px;
+    .container {
+      max-width: 1240px;
+    }
+    &__block {
+      margin-left: 150px;
+      & .text {
+        margin-top: 40px;
+      }
+    }
+    & .link {
+      & a {
+        font-size: 18px;
+        & .img {
+          width: 30px;
+          height: 30px;
+          & img {
+            width: 100%;
+            height: 100%;
+          }
+        }
+        & span {
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+}
+
+.sertificate {
+  margin-top: 50px;
+  &__btn {
+    position: absolute;
+    top: 0;
+    border: none;
+    background-color: transparent;
+    transform: translateY(-30px);
+  }
+  &__prev {
+    left: 10px;
+    & .img {
+      width: 15px;
+      height: 15px;
+      transform: translateY(-1px);
+      & img {
+        transform: rotate(180deg);
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__next {
+    right: 10px;
+    & .img {
+      width: 15px;
+      height: 15px;
+      transform: translateY(-1px);
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+  &__title {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-family: "FuturaNewMedium-Reg";
+    color: #2d2d2d;
+    text-align: center;
+  }
+  &__item {
+    margin-top: 30px;
+    & .img {
+      margin: auto;
+      width: 300px;
+      height: 400px;
+      & img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    & a {
+      width: 280px;
+      margin: 0 auto;
+      margin-top: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      color: #2d2d2d;
+      font-size: 16px;
+      font-family: "FuturaNewBook-Reg";
+      border: 1px solid black;
+    }
+  }
+  @media (min-width: 576px) {
+    &__item {
+      & .img {
+        width: auto;
+        height: auto;
+        & img {
+          display: block;
+          margin: 0 auto;
+          width: auto;
+          height: auto;
+        }
+      }
+    }
+  }
+  @media (min-width: 768px) {
+    margin-top: 100px;
+    &__prev {
+      & .img {
+        width: 20px;
+        transform: translateY(-3px);
+      }
+    }
+    &__next {
+      & .img {
+        width: 20px;
+        transform: translateY(-3px);
+      }
+    }
+    &__title {
+      font-size: 26px;
+    }
+    &__item {
+      margin-top: 50px;
+    }
+  }
+  @media (min-width: 992px) {
+    &__prev {
+      & .img {
+        width: 25px;
+      }
+    }
+    &__next {
+      & .img {
+        width: 25px;
+      }
+    }
+    &__item {
+      position: relative;
+      & .img {
+        width: 300px;
+        & img {
+          width: 100%;
+          transition: all 0.3s ease;
+        }
+      }
+      & a {
+        position: absolute;
+        opacity: 0;
+        top: 50%;
+        left: 53%;
+        transform: translate(-50%, -50%);
+        transition: all 0.3s ease;
+      }
+      &.active {
+        & .img {
+          opacity: 0.2;
+          transition: all 0.3s ease;
+        }
+        & a {
+          opacity: 1;
+          transition: all 0.3s ease;
+        }
+      }
+    }
+  }
+  @media (min-width: 1200px) {
+    &__item {
+      & .img {
+        width: auto;
+        & img {
+          width: auto;
+        }
+      }
+    }
+  }
+}
+
+.feedback {
+  background: url("../img/banner/form.jpg") no-repeat scroll left center / cover;
+  margin-top: 50px;
+  @media (min-width: 768px) {
+    margin-top: 100px;
+  }
+  @media (min-width: 992px) {
+    margin-bottom: 120px;
+  }
+  &__form {
+    width: 300px;
+    margin: 50px auto;
+    background-color: white;
+    -webkit-box-shadow: 0px -6px 52px -13px rgba(0, 0, 0, 0.26);
+    -moz-box-shadow: 0px -6px 52px -13px rgba(0, 0, 0, 0.26);
+    box-shadow: 0px -6px 52px -13px rgba(0, 0, 0, 0.26);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 10px;
+    @media (min-width: 768px) {
+      margin: 100px auto;
+      width: 400px;
+    }
+    @media (min-width: 992px) {
+      margin-left: 0px;
+      margin-top: 160px;
+      margin-bottom: 60px;
+    }
+    @media (min-width: 1200px) {
+      margin-top: 270px;
+      padding-bottom: 50px;
+    }
+    & h3 {
+      font-size: 18px;
+      text-transform: uppercase;
+      font-family: "FuturaNewBook-Reg";
+      color: #2d2d2d;
+      text-align: center;
+      margin-top: 30px;
+      @media (min-width: 768px) {
+        font-size: 24px;
+      }
+    }
+    & .input {
+      width: 280px;
+      height: 40px;
+      padding-left: 10px;
+      border: 1px solid #dcdcdb;
+      margin-top: 10px;
+      &::placeholder {
+        color: black;
+        font-size: 16px;
+        font-family: "FuturaNewLight-Obl";
+      }
+      @media (min-width: 768px) {
+        width: 360px;
+        height: 50px;
+      }
+    }
+    & button {
+      width: 280px;
+      height: 40px;
+      background-color: black;
+      color: white;
+      font-family: "FuturaNewBook-Reg";
+      font-size: 16px;
+      border: 1px solid black;
+      margin-top: 10px;
+      @media (min-width: 768px) {
+        width: 360px;
+        height: 50px;
+      }
+    }
+    &__footer {
+      width: 280px;
+      @media (min-width: 768px) {
+        width: 360px;
+      }
+      & p {
+        margin-left: 20px;
+        font-size: 14px;
+        color: black;
+        font-family: "FuturaNewBook-Reg";
+        & a {
+          color: black;
+          text-decoration: underline;
+        }
+      }
+      & label {
+        display: block;
+        position: relative;
+        cursor: pointer;
+        font-size: 22px;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+        & input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+          &:checked ~ span {
+            &:after {
+              display: block;
+            }
+          }
+        }
+        & span {
+          position: absolute;
+          top: 12px;
+          left: 0;
+          height: 12px;
+          width: 12px;
+          background-color: transparent;
+          border: 1px solid black;
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            left: 2px;
+            top: 1px;
+            width: 6px;
+            height: 6px;
+            border: solid black;
+            border-width: 0 2px 2px 0;
+            -webkit-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+            transform: rotate(45deg);
+          }
+        }
+      }
+    }
+  }
+}
