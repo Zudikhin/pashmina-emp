@@ -25,6 +25,16 @@
     & .img {
       display: flex;
       justify-content: center;
+      width: 175px;
+      height: 175px;
+      margin: 0 auto;
+      @media (min-width: 768px) {
+        margin: unset;
+      }
+      & img {
+        width: 100%;
+        height: 100%;
+      }
     }
     & .title {
       margin-top: 30px;
@@ -253,13 +263,12 @@
       font-family: "FuturaNewMedium-Reg";
       font-size: 16px;
       text-transform: uppercase;
-      color: #a8a8a8;
+      color: #2d2d2d;
       @media (min-width: 768px) {
         font-size: 20px;
       }
     }
     & .auth {
-      display: none;
       & a {
         font-family: "FuturaNewBook-Reg";
         color: white;
@@ -289,7 +298,7 @@
       }
     }
     & .form {
-      display: none;
+      display: block;
       & p {
         font-size: 18px;
         text-transform: uppercase;
@@ -357,23 +366,6 @@
         }
       }
     }
-    &.active {
-      &:after {
-        bottom: -50px;
-        @media (min-width: 576px) {
-          bottom: -40px;
-        }
-      }
-      & h3 {
-        color: #2d2d2d;
-      }
-      & .auth {
-        display: block;
-      }
-      & .form {
-        display: block;
-      }
-    }
   }
   &__delivery {
     margin-top: 30px;
@@ -382,18 +374,6 @@
       width: 800px;
       margin: 0 auto;
       margin-top: 40px;
-    }
-    &.active {
-      margin-top: 80px;
-      & h3 {
-        color: black;
-      }
-      &:after {
-        bottom: -50px;
-        @media (min-width: 576px) {
-          bottom: -40px;
-        }
-      }
     }
     &::after {
       content: "";
@@ -408,13 +388,12 @@
       font-family: "FuturaNewMedium-Reg";
       font-size: 16px;
       text-transform: uppercase;
-      color: #a8a8a8;
+      color: #2d2d2d;
       @media (min-width: 768px) {
         font-size: 20px;
       }
     }
     & .form {
-      display: none;
       & .country {
         & label {
           display: flex;
@@ -640,33 +619,18 @@
       margin: 0 auto;
       margin-top: 40px;
     }
-    &.active {
-      margin-top: 80px;
-      & h3 {
-        color: black;
-      }
-      & .checkbox {
-        display: block;
-        @media (min-width: 576px) {
-          display: flex;
-        }
-      }
-    }
     & h3 {
       font-family: "FuturaNewMedium-Reg";
       font-size: 16px;
       text-transform: uppercase;
-      color: #a8a8a8;
+      color: #2d2d2d;
       @media (min-width: 768px) {
         font-size: 20px;
       }
     }
     & .checkbox {
-      display: none;
-      &.active {
-        display: flex;
-        flex-direction: column;
-      }
+      display: flex;
+      flex-direction: column;
       &__block {
         margin-top: 30px;
         & label {
@@ -714,6 +678,7 @@
         }
         & .info {
           margin-left: 40px;
+          transform: translateY(-7px);
           & p {
             margin-bottom: 0px;
             text-transform: uppercase;
@@ -724,10 +689,14 @@
         }
       }
       @media (min-width: 576px) {
+        flex-direction: row;
         &__block {
           margin-right: 30px;
           & label {
             top: 6px;
+          }
+          & .info {
+            transform: translateY(0px);
           }
         }
       }
@@ -752,7 +721,7 @@
   }
   &__submit {
     margin-top: 30px;
-    display: none;
+    display: block;
     @media (min-width: 1200px) {
       width: 800px;
       margin: 0 auto;
@@ -767,9 +736,6 @@
       font-size: 18px;
       font-family: "FuturaNewBook-Reg";
       border: none;
-    }
-    &.active {
-      display: block;
     }
     @media (min-width: 768px) {
       margin-top: 50px;

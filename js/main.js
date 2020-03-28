@@ -99,13 +99,4 @@ $(document).ready(function() {
   $(".sertificate__item").hover(function() {
     $(this).toggleClass("active");
   });
-
-  $(".cart__fake-btn").click(function() {
-    $(this).css("display", "none");
-    $(".cart__contact").addClass("active");
-    $(".cart__delivery").addClass("active");
-    $("#delivery").css("display", "block");
-    $(".cart__payment").addClass("active");
-    $(".cart__submit").addClass("active");
-  });
 });
