@@ -470,7 +470,7 @@ div:focus {
   font-family: "GazetatitulItalic";
   src: url("../fonts/GazetatitulItalic.eot");
   src: url("../fonts/GazetatitulItalic.eot?#iefix") format("embedded-opentype"), url("../fonts/GazetatitulItalic.woff2") format("woff2"), url("../fonts/GazetatitulItalic.woff") format("woff"), url("../fonts/GazetatitulItalic.ttf") format("truetype"), url("../fonts/GazetatitulItalic.svg#GazetatitulItalic") format("svg");
-  font-style: italic;
+  font-style: normal;
   font-weight: normal;
 }
 
