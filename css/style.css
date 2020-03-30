@@ -950,7 +950,20 @@ div:focus {
 
 @media (min-width: 992px) {
   .main__content {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 100%;
   }
   .main__content p {
     font-size: 20px;
@@ -959,6 +972,7 @@ div:focus {
     text-transform: uppercase;
     margin-left: 5%;
     line-height: 30px;
+    margin-top: 200px;
   }
   .main__content h2 {
     font-size: 38px;
@@ -966,6 +980,7 @@ div:focus {
     font-family: "GazetatitulItalic";
     text-transform: uppercase;
     margin-left: 20px;
+    margin-top: 50px;
   }
   .main__content button {
     width: 280px;
@@ -974,6 +989,7 @@ div:focus {
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
     background-color: transparent;
+    margin-top: 50px;
   }
   .main__content button a {
     color: #2d2d2d;
