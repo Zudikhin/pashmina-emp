@@ -1,0 +1,120 @@
+.section__title-contacts {
+  text-align: left;
+  @media (min-width: 1200px) {
+    margin-top: 50px;
+  }
+}
+.contact {
+  position: relative;
+  &:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: -50px;
+    width: 40%;
+    background-color: #e6ebf2;
+    height: 450px;
+    z-index: -1;
+    display: none;
+    @media (min-width: 992px) {
+      display: block;
+    }
+  }
+  &__main {
+    @media (min-width: 992px) {
+      display: flex;
+    }
+  }
+  &__content {
+    & .item {
+      display: flex;
+      flex-direction: column;
+      margin-top: 30px;
+      @media (min-width: 768px) {
+        margin-top: 20px;
+      }
+      &-addres {
+        & p {
+          margin-bottom: 0px;
+        }
+      }
+      &-clock {
+        & p {
+          margin-bottom: 0px;
+        }
+      }
+      & ul {
+        & li {
+          font-size: 18px;
+          color: black;
+          font-family: "FuturaNewBook-Obl";
+          & a {
+            color: black;
+          }
+          @media (min-width: 768px) {
+            font-size: 20px;
+          }
+        }
+      }
+      & h3 {
+        font-family: "FuturaNewMedium-Reg";
+        font-size: 18px;
+        color: black;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+        @media (min-width: 768px) {
+          font-size: 20px;
+          margin-bottom: 10px;
+        }
+      }
+      & span {
+        font-size: 18px;
+        font-family: "FuturaNewBook-Obl";
+        color: black;
+        & a {
+          font-size: 18px;
+          font-family: "FuturaNewBook-Obl";
+          color: black;
+          &:hover {
+            color: black;
+          }
+        }
+        @media (min-width: 768px) {
+          font-size: 20px;
+          & a {
+            font-size: 20px;
+          }
+        }
+      }
+      & p {
+        font-size: 16px;
+        font-family: "FuturaNewBook-Obl";
+        color: black;
+        @media (min-width: 768px) {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+  &__img {
+    margin-top: 30px;
+    width: 100%;
+    @media (min-width: 1200px) {
+      margin-left: 50px;
+    }
+    & img {
+      width: 100%;
+      @media (min-width: 1200px) {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.map {
+  margin-top: 50px;
+  display: none;
+  @media (min-width: 992px) {
+    display: block;
+  }
+}

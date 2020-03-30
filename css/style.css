@@ -5865,6 +5865,171 @@ div:focus {
   }
 }
 
+.section__title-contacts {
+  text-align: left;
+}
+
+@media (min-width: 1200px) {
+  .section__title-contacts {
+    margin-top: 50px;
+  }
+}
+
+.contact {
+  position: relative;
+}
+
+.contact:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: -50px;
+  width: 40%;
+  background-color: #e6ebf2;
+  height: 450px;
+  z-index: -1;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .contact:after {
+    display: block;
+  }
+}
+
+@media (min-width: 992px) {
+  .contact__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.contact__content .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .contact__content .item {
+    margin-top: 20px;
+  }
+}
+
+.contact__content .item-addres p {
+  margin-bottom: 0px;
+}
+
+.contact__content .item-clock p {
+  margin-bottom: 0px;
+}
+
+.contact__content .item ul li {
+  font-size: 18px;
+  color: black;
+  font-family: "FuturaNewBook-Obl";
+}
+
+.contact__content .item ul li a {
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .contact__content .item ul li {
+    font-size: 20px;
+  }
+}
+
+.contact__content .item h3 {
+  font-family: "FuturaNewMedium-Reg";
+  font-size: 18px;
+  color: black;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+@media (min-width: 768px) {
+  .contact__content .item h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+}
+
+.contact__content .item span {
+  font-size: 18px;
+  font-family: "FuturaNewBook-Obl";
+  color: black;
+}
+
+.contact__content .item span a {
+  font-size: 18px;
+  font-family: "FuturaNewBook-Obl";
+  color: black;
+}
+
+.contact__content .item span a:hover {
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .contact__content .item span {
+    font-size: 20px;
+  }
+  .contact__content .item span a {
+    font-size: 20px;
+  }
+}
+
+.contact__content .item p {
+  font-size: 16px;
+  font-family: "FuturaNewBook-Obl";
+  color: black;
+}
+
+@media (min-width: 768px) {
+  .contact__content .item p {
+    font-size: 18px;
+  }
+}
+
+.contact__img {
+  margin-top: 30px;
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .contact__img {
+    margin-left: 50px;
+  }
+}
+
+.contact__img img {
+  width: 100%;
+}
+
+@media (min-width: 1200px) {
+  .contact__img img {
+    height: 100%;
+  }
+}
+
+.map {
+  margin-top: 50px;
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .map {
+    display: block;
+  }
+}
+
 .footer {
   margin-top: 60px;
 }
