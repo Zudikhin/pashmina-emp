@@ -33,6 +33,7 @@
   @media (min-width: 992px) {
     &__item {
       min-height: auto;
+      height: 100vh;
     }
   }
   &__content {
@@ -44,7 +45,6 @@
         font-family: "FuturaNewBook-Reg";
         color: #2d2d2d;
         text-transform: uppercase;
-        margin-top: 450px;
         margin-left: 5%;
         line-height: 30px;
       }
@@ -53,7 +53,6 @@
         color: #2d2d2d;
         font-family: "GazetatitulItalic";
         text-transform: uppercase;
-        margin-top: 80px;
         margin-left: 20px;
       }
       & button {
@@ -62,9 +61,6 @@
         border: 1px solid #2d2d2d;
         transition: all 0.3s ease;
         background-color: transparent;
-        margin-top: 100px;
-        margin-left: 50px;
-        margin-bottom: 150px;
         & a {
           color: #2d2d2d;
           font-family: "FuturaNewBook-Reg";
@@ -80,21 +76,16 @@
       }
     }
     @media (min-width: 1200px) {
-      padding-bottom: 50px;
       & p {
         font-size: 24px;
-        margin-top: 500px;
         margin-left: 14%;
       }
       & h2 {
         font-size: 50px;
         margin-left: 5%;
-        margin-top: 60px;
       }
       & button {
         margin-left: 14%;
-        margin-bottom: 200px;
-        margin-top: 70px;
       }
     }
   }

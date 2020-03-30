@@ -45,7 +45,7 @@ $(document).ready(function() {
     if ($(this).attr("data-bg")) {
       $(this).css({
         background: "url(" + $(this).data("bg") + ")",
-        "background-position": "center center",
+        "background-position": "50% 10%",
         "background-repeat": "no-repeat",
         "background-size": "cover"
       });

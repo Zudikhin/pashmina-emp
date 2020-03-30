@@ -1,0 +1,297 @@
+.blog-page__first {
+  position: relative;
+  margin-top: 30px;
+  @media (min-width: 992px) {
+    margin-top: 50px;
+  }
+  &:after {
+    content: "";
+    width: 46%;
+    height: 400px;
+    background-color: #e6ebf2;
+    position: absolute;
+    left: 0;
+    top: 10%;
+    z-index: -1;
+    display: none;
+    @media (min-width: 992px) {
+      display: block;
+      width: 50%;
+    }
+    @media (min-width: 1200px) {
+      width: 55%;
+      height: 350px;
+      top: 14%;
+    }
+  }
+  & .content {
+    @media (min-width: 992px) {
+      display: flex;
+    }
+    & .img {
+      margin: 0 auto;
+      width: 100%;
+      & img {
+        width: 100%;
+      }
+      @media (min-width: 768px) {
+        width: 400px;
+      }
+      @media (min-width: 1200px) {
+        width: 350px;
+        margin-left: 150px;
+      }
+    }
+    & .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+      position: relative;
+      &:after {
+        content: "";
+        width: 110%;
+        position: absolute;
+        top: 26%;
+        left: -30%;
+        height: 1px;
+        background-color: black;
+        display: none;
+        @media (min-width: 992px) {
+          display: block;
+          top: 34%;
+          width: 130%;
+        }
+        @media (min-width: 1200px) {
+          top: 31%;
+          width: 150%;
+          left: -50%;
+        }
+      }
+      @media (min-width: 992px) {
+        align-items: flex-start;
+        margin-left: 100px;
+        margin-top: 0px;
+      }
+      & img {
+        margin-top: 12px;
+        @media (min-width: 1200px) {
+          margin-top: 30px;
+        }
+      }
+      & h3 {
+        text-align: center;
+        color: #2d2d2d;
+        font-size: 18px;
+        font-family: "GazetatitulItalic";
+        text-transform: uppercase;
+        @media (min-width: 768px) {
+          font-size: 20px;
+        }
+        @media (min-width: 992px) {
+          text-align: left;
+        }
+      }
+      & p {
+        text-align: center;
+        color: #2d2d2d;
+        text-align: center;
+        font-family: "FuturaNewBook-Obl";
+        font-size: 18px;
+        margin-top: 15px;
+        @media (min-width: 768px) {
+          font-size: 20px;
+        }
+        @media (min-width: 992px) {
+          text-align: left;
+        }
+      }
+    }
+  }
+  & .answer {
+    & p {
+      text-align: center;
+      font-size: 18px;
+      color: #2d2d2d;
+      font-family: "FuturaNewBook-Obl";
+      @media (min-width: 768px) {
+        font-size: 18px;
+      }
+      @media (min-width: 992px) {
+        font-size: 18px;
+        text-align: left;
+        margin-top: 50px;
+      }
+    }
+  }
+}
+
+.blog-pashmina {
+  margin-top: 30px;
+  @media (min-width: 992px) {
+    margin-top: 0px;
+  }
+  & .content {
+    @media (min-width: 992px) {
+      display: flex;
+    }
+  }
+  & .text {
+    @media (min-width: 768px) {
+      margin-top: 50px;
+    }
+    @media (min-width: 992px) {
+      width: 50%;
+    }
+    @media (min-width: 1200px) {
+      width: 60%;
+    }
+    & h3 {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: black;
+      font-family: "FuturaNewBook-Obl";
+      text-align: center;
+      margin-bottom: 30px;
+      @media (min-width: 992px) {
+        text-align: left;
+        margin-left: 50px;
+      }
+    }
+    & p {
+      font-size: 18px;
+      color: black;
+      font-family: "FuturaNewBook-Obl";
+      text-align: center;
+      @media (min-width: 992px) {
+        text-align: left;
+      }
+    }
+  }
+  & .img {
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    @media (min-width: 768px) {
+      width: 400px;
+    }
+    & img {
+      width: 100%;
+      @media (min-width: 1200px) {
+        height: 100%;
+      }
+    }
+  }
+}
+
+.blog-differnce {
+  margin-top: 50px;
+  @media (min-width: 1200px) {
+    margin-top: 75px;
+  }
+  & .content {
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 992px) {
+      flex-direction: row;
+    }
+  }
+  & .img {
+    order: 2;
+    width: 100%;
+    margin-top: 30px;
+    @media (min-width: 992px) {
+      order: 1;
+      margin-top: 0px;
+    }
+    & img {
+      width: 100%;
+      @media (min-width: 992px) {
+        height: 100%;
+      }
+      @media (min-width: 1200px) {
+        height: 120%;
+      }
+    }
+  }
+  & .text {
+    order: 1;
+    @media (min-width: 992px) {
+      order: 2;
+      width: 80%;
+      margin-left: 50px;
+    }
+    & h3 {
+      font-size: 20px;
+      text-transform: uppercase;
+      color: black;
+      font-family: "FuturaNewBook-Obl";
+      text-align: center;
+      margin-bottom: 30px;
+      @media (min-width: 992px) {
+        text-align: center;
+      }
+    }
+    & p {
+      font-size: 18px;
+      color: black;
+      font-family: "FuturaNewBook-Obl";
+      text-align: center;
+      @media (min-width: 992px) {
+        text-align: left;
+      }
+    }
+  }
+}
+
+.blog-info {
+  background-color: #e6ebf2;
+  margin-top: 50px;
+  padding: 20px 0px 10px 0px;
+  & .content {
+    & p {
+      font-size: 18px;
+      color: black;
+      font-family: "FuturaNewBook-Obl";
+    }
+  }
+  @media (min-width: 992px) {
+    margin-top: 70px;
+    padding: 38px 0px 20px 0px;
+  }
+  @media (min-width: 1200px) {
+    margin-top: 150px;
+  }
+}
+
+.blog__return {
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34px;
+  width: 150px;
+  border: 1px solid black;
+  margin: 0 auto;
+  font-family: "FuturaNewBook-Reg";
+  margin-top: 50px;
+  font-size: 16px;
+  &:hover {
+    color: black;
+  }
+  @media (min-width: 768px) {
+    width: 284px;
+    height: 60px;
+    font-size: 18px;
+  }
+  @media (min-width: 992px) {
+    margin-top: 100px;
+    transition: all 0.3s ease;
+    &:hover {
+      background-color: black;
+      color: white;
+      transition: all 0.3s ease;
+    }
+  }
+}
