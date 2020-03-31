@@ -1852,6 +1852,8 @@ div:focus {
   position: relative;
   padding: 10px 0px;
   margin-top: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 @media (min-width: 768px) {
@@ -6054,6 +6056,319 @@ div:focus {
   .map {
     display: block;
   }
+}
+
+.product h3 {
+  font-size: 18px;
+  font-family: "GazetatitulItalic";
+  color: black;
+  text-transform: uppercase;
+}
+
+.product__name h3 {
+  text-align: center;
+}
+
+.product__name span {
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  font-family: "FuturaNewBook-Obl";
+  margin: 0 auto;
+  display: block;
+}
+
+.product__name p {
+  font-size: 20px;
+  text-align: center;
+  font-family: "FuturaNewLight-Obl";
+  color: black;
+}
+
+.product__images .img {
+  width: 100%;
+}
+
+.product__images .img img {
+  width: 100%;
+}
+
+.product__images .slider__main {
+  position: relative;
+}
+
+.product__images .slider__main .slider {
+  margin-top: 30px;
+}
+
+.product__images .slider__main .slider__item {
+  margin: 0 auto;
+  width: 200px;
+  height: 230px;
+}
+
+.product__images .slider__main .slider__item img {
+  width: 100%;
+  height: 100%;
+}
+
+.product__images .slider__main .slider__item-video {
+  border: 1px solid #e6e6e6;
+  height: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product__images .slider__main .slider__item-video a {
+  width: 60px;
+  display: block;
+}
+
+.product__images .slider__main .slider__item-video span {
+  font-family: "FuturaNewBook-Reg";
+  color: black;
+  font-size: 18px;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.slider__btns {
+  position: absolute;
+  width: 100%;
+  top: 40%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.slider__btns button {
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  position: absolute;
+  z-index: 9999;
+  display: block;
+}
+
+.slider__btns button img {
+  width: 100%;
+}
+
+.slider__btns .product__prev {
+  left: 0;
+}
+
+.slider__btns .product__next {
+  right: 0;
+}
+
+.characteristics-desk {
+  display: none;
+}
+
+.characteristics-desk .main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.product__description {
+  margin-top: 30px;
+}
+
+.product__description .text p {
+  font-family: "FuturaNewBook-Obl";
+  font-size: 18px;
+  color: black;
+  text-align: center;
+}
+
+.product__description .characteristics-mob {
+  margin-top: 30px;
+}
+
+.product__description .characteristics-mob ul li {
+  font-family: "FuturaNewLight-Obl";
+  font-size: 18px;
+  color: black;
+}
+
+.product__description .characteristics-mob .btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product__description .characteristics-mob .btns a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-size: 16px;
+  border: 1px solid black;
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  font-family: "FuturaNewBook-Reg";
+  text-transform: uppercase;
+}
+
+.product__description .characteristics-mob .btns a:hover {
+  color: black;
+}
+
+.product__description .drop {
+  margin-top: 30px;
+}
+
+.product__description .drop .item {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.product__description .drop .item h3 {
+  padding-left: 10px;
+  cursor: pointer;
+  display: inline-block;
+}
+
+.product__description .drop .item h3 span {
+  margin-right: 10px;
+  font-size: 22px;
+  display: inline-block;
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.product__description .drop .item p {
+  font-size: 18px;
+  font-family: "FuturaNewLight-Obl";
+  color: black;
+  display: none;
+}
+
+.product__description .drop .item p a {
+  color: black;
+}
+
+.product__description .drop .item.active {
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.product__description .drop .item.active h3 span {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.product__description .drop .item.active p {
+  display: block;
+}
+
+.recommend__product {
+  padding-bottom: 30px;
+  background-image: -webkit-gradient(linear, left top, right top, from(#e6ebf2), to(white));
+  background-image: linear-gradient(to right, #e6ebf2, white);
+}
+
+.recommend__product .recommend__title h3 {
+  font-size: 18px;
+  font-family: "GazetatitulItalic";
+  color: black;
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.recommend__product .recommend__main {
+  position: relative;
+}
+
+.recommend__product .recommend__main .recommend__btns {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.recommend__product .recommend__main .recommend__btns button {
+  position: absolute;
+  width: 35px;
+  height: 15px;
+  top: -30px;
+  border: none;
+  background-color: transparent;
+}
+
+.recommend__product .recommend__main .recommend__btns button img {
+  width: 100%;
+  height: 100%;
+}
+
+.recommend__product .recommend__main .recommend__btns .recommend-prev {
+  left: 0;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.recommend__product .recommend__main .recommend__btns .recommend-next {
+  right: 0;
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
+}
+
+.recommend__product .recommend__main .recommend__slider {
+  margin-top: 50px;
+}
+
+.recommend__product .recommend__main .recommend__slider .item .img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.recommend__product .recommend__main .recommend__slider .item p {
+  text-align: center;
+  font-size: 14px;
+  color: black;
+  font-family: "FuturaNewBook-Obl";
+  margin-bottom: 0px;
+  margin-top: 15px;
+}
+
+.recommend__product .recommend__main .recommend__slider .item span {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  font-size: 18px;
+  font-family: "FuturaNewBook-Obl";
+  color: black;
+  margin-top: 10px;
 }
 
 .footer {
