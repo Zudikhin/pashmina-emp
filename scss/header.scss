@@ -144,6 +144,9 @@
 
 .header__desc {
   display: none;
+  & .container-fluid {
+    width: 90%;
+  }
   @media (min-width: 992px) {
     display: block;
     position: absolute;

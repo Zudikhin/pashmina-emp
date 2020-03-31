@@ -13,11 +13,12 @@
     top: -50px;
     width: 40%;
     background-color: #e6ebf2;
-    height: 450px;
+    height: 400px;
     z-index: -1;
     display: none;
     @media (min-width: 992px) {
       display: block;
+      top: -50px;
     }
   }
   &__main {
@@ -31,7 +32,7 @@
       flex-direction: column;
       margin-top: 30px;
       @media (min-width: 768px) {
-        margin-top: 20px;
+        margin-top: 10px;
       }
       &-addres {
         & p {
@@ -52,7 +53,7 @@
             color: black;
           }
           @media (min-width: 768px) {
-            font-size: 20px;
+            font-size: 18px;
           }
         }
       }
@@ -63,7 +64,7 @@
         text-transform: uppercase;
         margin-bottom: 20px;
         @media (min-width: 768px) {
-          font-size: 20px;
+          font-size: 18px;
           margin-bottom: 10px;
         }
       }
@@ -80,9 +81,9 @@
           }
         }
         @media (min-width: 768px) {
-          font-size: 20px;
+          font-size: 18px;
           & a {
-            font-size: 20px;
+            font-size: 18px;
           }
         }
       }
@@ -91,7 +92,7 @@
         font-family: "FuturaNewBook-Obl";
         color: black;
         @media (min-width: 768px) {
-          font-size: 18px;
+          font-size: 16px;
         }
       }
     }
@@ -101,6 +102,7 @@
     width: 100%;
     @media (min-width: 1200px) {
       margin-left: 50px;
+      margin-top: 0px;
     }
     & img {
       width: 100%;

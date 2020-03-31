@@ -276,12 +276,14 @@
     position: relative;
     @media (min-width: 992px) {
       margin-top: 88px;
-      &:hover {
-        & a {
-          display: flex;
-        }
-        & .img {
-          opacity: 0.2;
+      &-last {
+        &:hover {
+          & a {
+            display: flex;
+          }
+          & .img {
+            opacity: 0.2;
+          }
         }
       }
     }

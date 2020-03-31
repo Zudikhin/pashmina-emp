@@ -370,7 +370,7 @@ div:focus {
 
 @media (min-width: 992px) {
   .section__title {
-    font-size: 36px;
+    font-size: 34px;
     margin-top: 100px;
   }
   .section__title-blog {
@@ -435,6 +435,10 @@ div:focus {
   .hr__return {
     margin-top: 100px !important;
   }
+}
+
+.breadcrumb-custom .container-fluid {
+  width: 90%;
 }
 
 @font-face {
@@ -687,6 +691,10 @@ div:focus {
   display: none;
 }
 
+.header__desc .container-fluid {
+  width: 90%;
+}
+
 @media (min-width: 992px) {
   .header__desc {
     display: block;
@@ -914,15 +922,15 @@ div:focus {
     display: -ms-flexbox !important;
     display: flex !important;
     position: absolute;
-    bottom: 50px;
-    left: 5%;
+    bottom: 30px;
+    left: 7%;
   }
   .slick-dots li {
     border: 1px solid black;
     border-radius: 50%;
-    width: 19px;
-    height: 19px;
-    margin-left: 5px;
+    width: 16px;
+    height: 16px;
+    margin-left: 4px;
     cursor: pointer;
   }
   .slick-dots li.slick-active {
@@ -966,13 +974,13 @@ div:focus {
     height: 100%;
   }
   .main__content p {
-    font-size: 20px;
+    font-size: 18px;
     font-family: "FuturaNewBook-Reg";
     color: #2d2d2d;
     text-transform: uppercase;
     margin-left: 5%;
     line-height: 30px;
-    margin-top: 200px;
+    margin-top: 150px;
   }
   .main__content h2 {
     font-size: 38px;
@@ -983,8 +991,8 @@ div:focus {
     margin-top: 50px;
   }
   .main__content button {
-    width: 280px;
-    height: 60px;
+    width: 220px;
+    height: 50px;
     border: 1px solid #2d2d2d;
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
@@ -1008,15 +1016,15 @@ div:focus {
 
 @media (min-width: 1200px) {
   .main__content p {
-    font-size: 24px;
-    margin-left: 14%;
+    font-size: 18px;
+    margin-left: 18%;
   }
   .main__content h2 {
-    font-size: 50px;
-    margin-left: 5%;
+    font-size: 42px;
+    margin-left: 7%;
   }
   .main__content button {
-    margin-left: 14%;
+    margin-left: 18%;
   }
 }
 
@@ -1855,7 +1863,7 @@ div:focus {
 
 @media (min-width: 992px) {
   .shop__breadcrumb {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 
@@ -2783,12 +2791,12 @@ div:focus {
   .warrantly__sertificate .item {
     margin-top: 88px;
   }
-  .warrantly__sertificate .item:hover a {
+  .warrantly__sertificate .item-last:hover a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .warrantly__sertificate .item:hover .img {
+  .warrantly__sertificate .item-last:hover .img {
     opacity: 0.2;
   }
 }
@@ -5902,7 +5910,7 @@ div:focus {
   top: -50px;
   width: 40%;
   background-color: #e6ebf2;
-  height: 450px;
+  height: 400px;
   z-index: -1;
   display: none;
 }
@@ -5910,6 +5918,7 @@ div:focus {
 @media (min-width: 992px) {
   .contact:after {
     display: block;
+    top: -50px;
   }
 }
 
@@ -5934,7 +5943,7 @@ div:focus {
 
 @media (min-width: 768px) {
   .contact__content .item {
-    margin-top: 20px;
+    margin-top: 10px;
   }
 }
 
@@ -5958,7 +5967,7 @@ div:focus {
 
 @media (min-width: 768px) {
   .contact__content .item ul li {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -5972,7 +5981,7 @@ div:focus {
 
 @media (min-width: 768px) {
   .contact__content .item h3 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 10px;
   }
 }
@@ -5995,10 +6004,10 @@ div:focus {
 
 @media (min-width: 768px) {
   .contact__content .item span {
-    font-size: 20px;
+    font-size: 18px;
   }
   .contact__content .item span a {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -6010,7 +6019,7 @@ div:focus {
 
 @media (min-width: 768px) {
   .contact__content .item p {
-    font-size: 18px;
+    font-size: 16px;
   }
 }
 
@@ -6022,6 +6031,7 @@ div:focus {
 @media (min-width: 1200px) {
   .contact__img {
     margin-left: 50px;
+    margin-top: 0px;
   }
 }
 

@@ -37,7 +37,7 @@ div:focus {
     font-size: 30px;
   }
   @media (min-width: 992px) {
-    font-size: 36px;
+    font-size: 34px;
     margin-top: 100px;
     &-blog {
       margin-top: 50px;
@@ -87,5 +87,11 @@ div:focus {
   }
   @media (min-width: 1200px) {
     margin-top: 100px !important;
+  }
+}
+
+.breadcrumb-custom {
+  .container-fluid {
+    width: 90%;
   }
 }

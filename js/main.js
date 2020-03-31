@@ -55,7 +55,7 @@ $(document).ready(function() {
   $(".main__slider").slick({
     infinite: true,
     speed: 350,
-    autoplay: true,
+    autoplay: false,
     autoplaySpeed: 2000,
     dots: true,
     customPaging: function(slider, i) {
