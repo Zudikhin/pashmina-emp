@@ -17,6 +17,12 @@ $(document).ready(function() {
       {
         breakpoint: 7200,
         settings: {
+          slidesToShow: 4
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
           slidesToShow: 3
         }
       },
@@ -44,6 +50,12 @@ $(document).ready(function() {
         breakpoint: 7200,
         settings: {
           slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 2
         }
       },
       {
