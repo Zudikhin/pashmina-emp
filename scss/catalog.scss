@@ -156,16 +156,16 @@
     margin-top: 65px;
     &-img {
       width: auto;
-      height: auto;
+      height: 500px;
+      & img {
+        height: 100%;
+        width: auto;
+      }
       & .mob {
         display: none;
       }
       & .desk {
         display: block;
-      }
-      & img {
-        width: auto;
-        height: auto;
       }
     }
     &-text {
@@ -313,6 +313,15 @@
   margin-top: 50px;
   @media (min-width: 992px) {
     margin-top: 200px;
+  }
+  @media (min-width: 1200px) {
+    & .catalog__item-img {
+      height: 550px;
+      width: 900px;
+      & img {
+        width: 100%;
+      }
+    }
   }
   & .catalog__item-text {
     & h3 {

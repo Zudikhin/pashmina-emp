@@ -87,8 +87,9 @@
   }
   @media (min-width: 1200px) {
     &:before {
-      height: 350px;
+      height: 300px;
       left: -65%;
+      top: 210px;
     }
   }
 }
@@ -110,10 +111,11 @@
       text-align: center;
     }
     & p {
-      font-size: 25px;
+      font-size: 22px;
       color: #2d2d2d;
       font-family: "FuturaNewBook-Obl";
       margin-top: 25px;
+      line-height: 30px;
     }
     & button {
       padding: 20px 20px 20px 20px;
@@ -167,21 +169,23 @@
       margin-top: 150px;
     }
     &-quotes {
-      margin-top: 50px;
+      margin-top: 30px;
     }
   }
   @media (min-width: 1200px) {
     &-img {
-      margin-top: 100px;
+      margin-top: 130px;
+      height: 400px;
       & img {
         width: auto;
+        height: 100%;
       }
     }
     &-text {
-      margin-top: 150px;
+      margin-top: 190px;
     }
     & button {
-      margin-top: 50px;
+      margin-top: 30px;
     }
   }
 }

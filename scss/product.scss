@@ -143,9 +143,11 @@
               height: 170px;
               box-sizing: border-box;
             }
-            & a {
+            & button {
               width: 60px;
               display: block;
+              border: none;
+              background-color: transparent;
             }
             & span {
               font-family: "FuturaNewBook-Reg";
@@ -415,6 +417,11 @@
     & .recommend__slider {
       margin-top: 50px;
       & .item {
+        & a {
+          &:focus {
+            outline: none;
+          }
+        }
         & .img {
           display: flex;
           justify-content: center;
@@ -439,4 +446,45 @@
       }
     }
   }
+}
+
+.modal-dialog {
+  max-width: 80%;
+  margin: 30px auto;
+  @media (min-width: 576px) {
+    max-width: 86%;
+  }
+  @media (min-width: 768px) {
+    max-width: 90%;
+  }
+  @media (min-width: 992px) {
+    max-width: 800px;
+  }
+  @media (min-width: 1200px) {
+    max-width: 1000px;
+  }
+}
+
+.modal-body {
+  position: relative;
+  padding: 0px;
+  & .embed-responsive {
+    height: 300px;
+    @media (min-width: 576px) {
+      height: 400px;
+    }
+    @media (min-width: 768px) {
+      height: 500px;
+    }
+  }
+}
+.close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+  z-index: 999;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  opacity: 1;
 }

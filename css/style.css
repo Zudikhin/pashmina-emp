@@ -1139,8 +1139,9 @@ div:focus {
 
 @media (min-width: 1200px) {
   .kashmir:before {
-    height: 350px;
+    height: 300px;
     left: -65%;
+    top: 210px;
   }
 }
 
@@ -1165,10 +1166,11 @@ div:focus {
     text-align: center;
   }
   .kashmir__item-desc p {
-    font-size: 25px;
+    font-size: 22px;
     color: #2d2d2d;
     font-family: "FuturaNewBook-Obl";
     margin-top: 25px;
+    line-height: 30px;
   }
   .kashmir__item-desc button {
     padding: 20px 20px 20px 20px;
@@ -1223,22 +1225,24 @@ div:focus {
     margin-top: 150px;
   }
   .kashmir__item-desc-quotes {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 
 @media (min-width: 1200px) {
   .kashmir__item-desc-img {
-    margin-top: 100px;
+    margin-top: 130px;
+    height: 400px;
   }
   .kashmir__item-desc-img img {
     width: auto;
+    height: 100%;
   }
   .kashmir__item-desc-text {
-    margin-top: 150px;
+    margin-top: 190px;
   }
   .kashmir__item-desc button {
-    margin-top: 50px;
+    margin-top: 30px;
   }
 }
 
@@ -1444,17 +1448,17 @@ div:focus {
   }
   .catalog__item-img {
     width: auto;
-    height: auto;
+    height: 500px;
+  }
+  .catalog__item-img img {
+    height: 100%;
+    width: auto;
   }
   .catalog__item-img .mob {
     display: none;
   }
   .catalog__item-img .desk {
     display: block;
-  }
-  .catalog__item-img img {
-    width: auto;
-    height: auto;
   }
   .catalog__item-text {
     display: -webkit-box;
@@ -1627,6 +1631,16 @@ div:focus {
 @media (min-width: 992px) {
   .catalog__item-last {
     margin-top: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .catalog__item-last .catalog__item-img {
+    height: 550px;
+    width: 900px;
+  }
+  .catalog__item-last .catalog__item-img img {
+    width: 100%;
   }
 }
 
@@ -2574,10 +2588,10 @@ div:focus {
     margin-top: 70px;
   }
   .care__main {
-    padding: 70px 0px 60px 0px;
+    padding: 50px 0px 40px 0px;
   }
   .care__main p {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 
@@ -6300,9 +6314,11 @@ div:focus {
   }
 }
 
-.product__images .slider__main .slider__item-video a {
+.product__images .slider__main .slider__item-video button {
   width: 60px;
   display: block;
+  border: none;
+  background-color: transparent;
 }
 
 .product__images .slider__main .slider__item-video span {
@@ -6686,6 +6702,10 @@ div:focus {
   margin-top: 50px;
 }
 
+.recommend__product .recommend__main .recommend__slider .item a:focus {
+  outline: none;
+}
+
 .recommend__product .recommend__main .recommend__slider .item .img {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -6712,6 +6732,67 @@ div:focus {
   font-family: "FuturaNewBook-Obl";
   color: black;
   margin-top: 10px;
+}
+
+.modal-dialog {
+  max-width: 80%;
+  margin: 30px auto;
+}
+
+@media (min-width: 576px) {
+  .modal-dialog {
+    max-width: 86%;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-dialog {
+    max-width: 90%;
+  }
+}
+
+@media (min-width: 992px) {
+  .modal-dialog {
+    max-width: 800px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .modal-dialog {
+    max-width: 1000px;
+  }
+}
+
+.modal-body {
+  position: relative;
+  padding: 0px;
+}
+
+.modal-body .embed-responsive {
+  height: 300px;
+}
+
+@media (min-width: 576px) {
+  .modal-body .embed-responsive {
+    height: 400px;
+  }
+}
+
+@media (min-width: 768px) {
+  .modal-body .embed-responsive {
+    height: 500px;
+  }
+}
+
+.close {
+  position: absolute;
+  right: -30px;
+  top: 0;
+  z-index: 999;
+  font-size: 2rem;
+  font-weight: normal;
+  color: #fff;
+  opacity: 1;
 }
 
 .footer {

@@ -154,9 +154,15 @@
                   </div>
                   <div class="item">
                     <div class="slider__item slider__item-video">
-                      <a href="#">
+                      <button
+                        type="button"
+                        class="video-btn"
+                        data-toggle="modal"
+                        data-src="https://www.youtube.com/embed/Jfrjeg26Cwk"
+                        data-target="#myModal"
+                      >
                         <img src="img/roduct/play.png" alt="" />
-                      </a>
+                      </button>
                       <span>Видео</span>
                     </div>
                   </div>
@@ -387,6 +393,40 @@
       </div>
     </section>
 
+    <div
+      class="modal fade"
+      id="myModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-body">
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <!-- 16:9 aspect ratio -->
+            <div class="embed-responsive embed-responsive-16by9">
+              <iframe
+                class="embed-responsive-item"
+                src=""
+                id="video"
+                allowscriptaccess="always"
+                allow="autoplay"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
     <footer class="footer">
       <div class="container">
         <div class="row">
@@ -443,6 +483,7 @@
     </footer>
 
     <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/slick.min.js"></script>
     <script src="js/main.js"></script>
     <script>
