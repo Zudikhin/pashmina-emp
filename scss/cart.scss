@@ -65,10 +65,11 @@
       margin-top: 30px;
       display: flex;
       justify-content: center;
-      & button {
+      & a {
         margin-left: 20px;
         background-color: transparent;
         border: none;
+        transform: translateY(-3px);
       }
     }
     @media (min-width: 768px) {
@@ -99,9 +100,12 @@
         flex-direction: column;
         margin-top: 0px;
         justify-content: flex-start;
-        & button {
+        & a {
           margin-left: 0px;
           margin-top: 15px;
+          display: flex;
+          justify-content: center;
+          transform: translateY(0px);
         }
       }
       & .title {
@@ -127,7 +131,7 @@
         }
       }
       & .delete {
-        & button {
+        & a {
           margin-top: 27px;
         }
       }

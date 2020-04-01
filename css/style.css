@@ -942,13 +942,15 @@ div:focus {
 }
 
 .main__item {
-  min-height: 600px;
+  height: 600px;
+  width: 100%;
 }
 
 @media (min-width: 992px) {
   .main__item {
     min-height: auto;
     height: 100vh;
+    position: relative;
   }
 }
 
@@ -1025,6 +1027,29 @@ div:focus {
   }
   .main__content button {
     margin-left: 18%;
+  }
+}
+
+#myVideo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1000;
+  overflow: hidden;
+}
+
+@media (min-width: 992px) {
+  #myVideo {
+    top: 0%;
+    left: 0%;
+    -webkit-transform: translateX(0%) translateY(0%);
+            transform: translateX(0%) translateY(0%);
   }
 }
 
@@ -4576,10 +4601,12 @@ div:focus {
           justify-content: center;
 }
 
-.cart__item .delete button {
+.cart__item .delete a {
   margin-left: 20px;
   background-color: transparent;
   border: none;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
 }
 
 @media (min-width: 768px) {
@@ -4633,9 +4660,17 @@ div:focus {
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
-  .cart__item .delete button {
+  .cart__item .delete a {
     margin-left: 0px;
     margin-top: 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
   }
   .cart__item .title {
     margin-top: 0px;
@@ -4663,7 +4698,7 @@ div:focus {
   .cart__item .price p {
     margin-top: 27px;
   }
-  .cart__item .delete button {
+  .cart__item .delete a {
     margin-top: 27px;
   }
 }
