@@ -106,13 +106,24 @@ $(document).ready(function() {
   });
 
   $(".main__item").each(function() {
-    if ($(this).attr("data-bg")) {
-      $(this).css({
-        background: "url(" + $(this).data("bg") + ")",
-        "background-position": "50% 0%",
-        "background-repeat": "no-repeat",
-        "background-size": "cover"
-      });
+    if (window.matchMedia("(min-width: 576px)").matches) {
+      if ($(this).attr("data-bg")) {
+        $(this).css({
+          background: "url(" + $(this).data("bg") + ")",
+          "background-position": "50% 0%",
+          "background-repeat": "no-repeat",
+          "background-size": "cover"
+        });
+      }
+    } else {
+      if ($(this).attr("data-bg")) {
+        $(this).css({
+          background: "url(" + $(this).data("bg") + ")",
+          "background-position": "90% 0%",
+          "background-repeat": "no-repeat",
+          "background-size": "cover"
+        });
+      }
     }
   });
 

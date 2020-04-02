@@ -34,8 +34,8 @@
                 <a href="/"><img src="img/header/logo.png" alt=""/></a>
               </div>
               <div class="header__mobile__icons">
-                <a href="#"><img src="img/header/telephone.png" alt=""/></a>
-                <a href="#"><img src="img/header/cart.png" alt=""/></a>
+                <a href="#"><img src="img/header/call.png" alt=""/></a>
+                <a href="#"><img src="img/header-desc/bag.png" alt=""/></a>
               </div>
             </div>
           </div>
@@ -184,145 +184,146 @@
               <p>Итого: <span>27 640 &#x20BD</span></p>
             </div>
           </div>
-          <div class="col-12">
-            <div class="cart__contact">
-              <h3>1. Контактная информация</h3>
-              <div class="auth">
-                <a href="#">Войти в аккаунт</a>
-                <p>Авторизуйтесь, чтобы быстрее заполнить поля</p>
-              </div>
-              <div class="form">
-                <p>Покупаю впервые:</p>
-                <form action="">
-                  <label class="name">
-                    <span>имя</span>
-                    <input type="text">
-                  </label>
-                  <label class="surname">
-                    <span>фамилия</span>
-                    <input type="text">
-                  </label>
-                  <label class="mail">
-                    <span>эл.почта</span>
-                    <input type="text">
-                  </label>
-                  <label class="tel">
-                    <span>телефон</span>
-                    <input type="text">
-                  </label>
-                </form>
-              </div>
-        
-            </div>
-          </div>
-          <div class="col-12">
-            <div class="cart__delivery">
-              <h3>2. Доставка</h3>
-              <div id="delivery" class="form">
-                  <div class="country">
-                    <label>
-                      <span>Страна</span>
+          <form action="">
+            <div class="col-12">
+              <div class="cart__contact">
+                <h3>1. Контактная информация</h3>
+                <div class="auth">
+                  <a href="#">Войти в аккаунт</a>
+                  <p>Авторизуйтесь, чтобы быстрее заполнить поля</p>
+                </div>
+                <div class="form">
+                  <p>Покупаю впервые:</p>
+                  <div class="form__main">
+                    <label class="name">
+                      <span>имя</span>
                       <input type="text">
                     </label>
-                    <label>
-                      <span>Город</span>
+                    <label class="surname">
+                      <span>фамилия</span>
+                      <input type="text">
+                    </label>
+                    <label class="mail">
+                      <span>эл.почта</span>
+                      <input type="text">
+                    </label>
+                    <label class="tel">
+                      <span>телефон</span>
                       <input type="text">
                     </label>
                   </div>
-                  <div class="checkbox">
-
-
-                    <div id="delivery" class="checkbox__block">
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="cart__delivery">
+                <h3>2. Доставка</h3>
+                <div id="delivery" class="form">
+                    <div class="country">
                       <label>
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
+                        <span>Страна</span>
+                        <input type="text">
                       </label>
-                      <div class="info">
-                        <p>Доставка с примеркой</p>
-                        <span class="price">350 р</span>
-                        <span class="text">Доставка курьером с примеркой на адрес</span>
+                      <label>
+                        <span>Город</span>
+                        <input type="text">
+                      </label>
+                    </div>
+                    <div class="checkbox">
+
+
+                      <div id="delivery" class="checkbox__block">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                        <div class="info">
+                          <p>Доставка с примеркой</p>
+                          <span class="price">350 р</span>
+                          <span class="text">Доставка курьером с примеркой на адрес</span>
+                        </div>
+                      </div>
+                      
+                      <div id="pickup" class="checkbox__block">
+                        <label>
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+                        <div class="info">
+                          <p>Самовывоз (СДЭК)</p>
+                          <span class="price">290 р</span>
+                          <span class="text">Самовывоз из пункта выдачи заказа</span>
+                        </div> 
+                      </div>
+
+
+                    </div>
+                    <div class="main">
+                      <label class="street">
+                        <span>Улица</span>
+                        <input type="text">
+                      </label>
+                      <label class="index">
+                        <span>Индекс</span>
+                        <input type="text">
+                      </label>
+                      <label class="house">
+                        <span>Дом</span>
+                        <input type="text">
+                      </label>
+                      <label class="corpus">
+                        <span>Корпус</span>
+                        <input type="text">
+                      </label>
+                      <label class="apartment">
+                        <span>Квартира/офис</span>
+                        <input type="text">
+                      </label>
+                      <label class="comments">
+                        <span>Комментарии</span>
+                        <textarea rows="10" cols="45"></textarea>
+                      </label>
+                    </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-12">
+              <div class="cart__payment">
+                <h3>3. Оплата</h3>
+                <div class="checkbox">
+
+                  <div id="card" class="checkbox__block">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="info">
+                      <p>Оплата при получении</p>
+                      <div class="img">
+                        <img src="img/cart/visa.png" alt="">
                       </div>
                     </div>
-                    
-                    <div id="pickup" class="checkbox__block">
-                      <label>
-                        <input type="checkbox">
-                        <span class="checkmark"></span>
-                      </label>
-                      <div class="info">
-                        <p>Самовывоз (СДЭК)</p>
-                        <span class="price">290 р</span>
-                        <span class="text">Самовывоз из пункта выдачи заказа</span>
-                      </div> 
-                    </div>
-
-
                   </div>
-                  <div class="main">
-                    <label class="street">
-                      <span>Улица</span>
-                      <input type="text">
+                  
+                  <div id="stock" class="checkbox__block">
+                    <label>
+                      <input type="checkbox">
+                      <span class="checkmark"></span>
                     </label>
-                    <label class="index">
-                      <span>Индекс</span>
-                      <input type="text">
-                    </label>
-                    <label class="house">
-                      <span>Дом</span>
-                      <input type="text">
-                    </label>
-                    <label class="corpus">
-                      <span>Корпус</span>
-                      <input type="text">
-                    </label>
-                    <label class="apartment">
-                      <span>Квартира/офис</span>
-                      <input type="text">
-                    </label>
-                    <label class="comments">
-                      <span>Комментарии</span>
-                      <textarea rows="10" cols="45"></textarea>
-                    </label>
+                    <div class="info">
+                      <p>Наличными курьеру</p>
+                    </div> 
                   </div>
+
+                </div>
               </div>
             </div>
-          </div>
-          <div class="col-12">
-            <div class="cart__payment">
-              <h3>3. Оплата</h3>
-              <div class="checkbox">
-
-                <div id="card" class="checkbox__block">
-                  <label>
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                  <div class="info">
-                    <p>Оплата при получении</p>
-                    <div class="img">
-                      <img src="img/cart/visa.png" alt="">
-                    </div>
-                  </div>
-                </div>
-                
-                <div id="stock" class="checkbox__block">
-                  <label>
-                    <input type="checkbox">
-                    <span class="checkmark"></span>
-                  </label>
-                  <div class="info">
-                    <p>Наличными курьеру</p>
-                  </div> 
-                </div>
-
+            <div class="col-12">
+              <div class="cart__submit">
+                <button>Оформить заказ</button>
               </div>
             </div>
-          </div>
-          <div class="col-12">
-            <div class="cart__submit">
-              <button>Оформить заказ</button>
-            </div>
-          </div>
+          </form>
         </div>
       </div>
     </section>

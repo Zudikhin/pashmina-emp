@@ -529,7 +529,7 @@ div:focus {
 
 .header__mobile__btn p {
   font-family: "FuturaNewBook-Reg";
-  font-size: 14px;
+  font-size: 12px;
   color: #2d2d2d;
   text-transform: uppercase;
   opacity: 1;
@@ -537,7 +537,7 @@ div:focus {
 
 .header__mobile__btn span {
   padding: 0;
-  width: 40px;
+  width: 36px;
   height: 2px;
   background-color: black;
   display: block;
@@ -659,7 +659,14 @@ div:focus {
 }
 
 .header__mobile__icons a {
-  margin: 0px 5px;
+  margin: 0px 6px;
+  width: 25px;
+  height: 25px;
+}
+
+.header__mobile__icons a img {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 576px) {
@@ -942,7 +949,7 @@ div:focus {
 }
 
 .main__item {
-  height: 600px;
+  height: 450px;
   width: 100%;
 }
 
@@ -4493,6 +4500,11 @@ div:focus {
   transform: rotate(45deg);
 }
 
+.cart form {
+  margin: 0 auto;
+  width: 100%;
+}
+
 @media (min-width: 768px) {
   .cart {
     margin-top: 55px;
@@ -4716,6 +4728,7 @@ div:focus {
   text-transform: uppercase;
   color: black;
   font-family: "FuturaNewMedium-Reg";
+  margin-top: 10px;
 }
 
 .cart__coupon label {
@@ -4876,7 +4889,6 @@ div:focus {
 }
 
 .cart__contact {
-  margin-top: 25px;
   position: relative;
 }
 
@@ -4958,7 +4970,7 @@ div:focus {
   margin-bottom: 0px;
 }
 
-.cart__contact .form form label {
+.cart__contact .form__main label {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4968,20 +4980,20 @@ div:focus {
           flex-direction: column;
 }
 
-.cart__contact .form form label span {
+.cart__contact .form__main label span {
   font-size: 16px;
   text-transform: uppercase;
   color: #a9a9a9;
   font-family: "FuturaNewBook-Reg";
 }
 
-.cart__contact .form form label input {
+.cart__contact .form__main label input {
   height: 40px;
   padding-left: 10px;
 }
 
 @media (min-width: 576px) {
-  .cart__contact .form form {
+  .cart__contact .form__main {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -4991,32 +5003,32 @@ div:focus {
         -ms-flex-pack: justify;
             justify-content: space-between;
   }
-  .cart__contact .form form label input {
+  .cart__contact .form__main label input {
     width: 250px;
   }
-  .cart__contact .form form p {
+  .cart__contact .form__main p {
     position: absolute;
     top: 0;
   }
 }
 
 @media (min-width: 768px) {
-  .cart__contact .form form label input {
+  .cart__contact .form__main label input {
     width: 330px;
   }
 }
 
 @media (min-width: 992px) {
-  .cart__contact .form form label input {
+  .cart__contact .form__main label input {
     width: 450px;
   }
 }
 
 @media (min-width: 1200px) {
-  .cart__contact .form form label {
+  .cart__contact .form__main label {
     margin-top: 10px;
   }
-  .cart__contact .form form label input {
+  .cart__contact .form__main label input {
     width: 390px;
   }
 }
@@ -6517,6 +6529,7 @@ div:focus {
   .product__description {
     width: 100%;
     margin-top: 0px;
+    margin-left: 30px;
   }
 }
 
@@ -6609,10 +6622,18 @@ div:focus {
 
 .product__description .drop .item h3 span {
   margin-right: 10px;
-  font-size: 22px;
   display: inline-block;
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
+  width: 15px;
+  height: 15px;
+}
+
+.product__description .drop .item h3 span img {
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .product__description .drop .item p {
@@ -6634,6 +6655,11 @@ div:focus {
 .product__description .drop .item.active h3 span {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
+}
+
+.product__description .drop .item.active h3 span img {
+  -webkit-transform: translateX(5px);
+          transform: translateX(5px);
 }
 
 .product__description .drop .item.active p {
