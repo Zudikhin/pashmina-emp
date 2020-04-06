@@ -222,6 +222,9 @@
       }
     }
     @media (min-width: 1200px) {
+      & p {
+        transform: translateY(8px);
+      }
       width: 800px;
       margin: 30px auto;
     }

@@ -4847,6 +4847,10 @@ div:focus {
     width: 800px;
     margin: 30px auto;
   }
+  .cart__coupon p {
+    -webkit-transform: translateY(8px);
+            transform: translateY(8px);
+  }
 }
 
 .cart__fake-btn {
