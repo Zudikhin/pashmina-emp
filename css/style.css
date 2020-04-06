@@ -859,7 +859,9 @@ div:focus {
   position: fixed;
   top: 0;
   right: 0;
-  background-color: rgba(189, 204, 221, 0.7);
+  background-color: white;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
   width: 50%;
   height: 1004px;
   right: 0;
@@ -6774,6 +6776,14 @@ div:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 200px;
+  height: 230px;
+  margin: 0 auto;
+}
+
+.recommend__product .recommend__main .recommend__slider .item .img img {
+  width: 100%;
+  height: 100%;
 }
 
 .recommend__product .recommend__main .recommend__slider .item p {
@@ -6782,6 +6792,8 @@ div:focus {
   color: black;
   font-family: "FuturaNewBook-Obl";
   margin-bottom: 0px;
+  width: 240px;
+  margin: 0 auto;
   margin-top: 15px;
 }
 
@@ -6854,6 +6866,209 @@ div:focus {
   font-weight: normal;
   color: #fff;
   opacity: 1;
+}
+
+.account .links a {
+  color: black;
+  font-size: 18px;
+  font-family: "FuturaNewBook-Reg";
+}
+
+.account__content {
+  margin-top: 40px;
+  position: relative;
+}
+
+.account__content .links {
+  position: absolute;
+  left: 0;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 1200px) {
+  .account__content .links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+.account__content .links h3 {
+  font-size: 20px;
+  color: black;
+  font-family: "FuturaNewBook-Reg";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.account__content .personal {
+  display: block;
+}
+
+.account__content .personal.active {
+  display: none;
+}
+
+.account__content .personal h3 {
+  font-size: 20px;
+  color: black;
+  font-family: "FuturaNewBook-Reg";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.account__content .personal form {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.account__content .personal form input {
+  position: relative;
+  height: auto;
+  margin-top: 15px;
+  padding: 8px 13px 10px;
+  background-color: #fff;
+  border: 1px solid #c4c4c4;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #000000;
+  border-radius: 5px;
+  width: 300px;
+}
+
+.account__content .personal form .submit {
+  background-color: black;
+  color: white;
+  margin-top: 30px;
+}
+
+.account__content .order {
+  width: 500px;
+  margin: 0 auto;
+  display: none;
+}
+
+.account__content .order.active {
+  display: block;
+}
+
+.account__content .order h3 {
+  font-size: 20px;
+  color: black;
+  font-family: "FuturaNewBook-Reg";
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.account__content .order .item {
+  position: relative;
+  margin-top: 30px;
+}
+
+.account__content .order .item .total__cost {
+  margin-top: 10px;
+  display: block;
+  text-align: right;
+  color: black;
+  font-family: "FuturaNewBook-Reg";
+  font-size: 16px;
+  text-transform: uppercase;
+}
+
+.account__content .order .item .info span {
+  color: black;
+  font-family: "FuturaNewBook-Reg";
+  font-size: 18px;
+}
+
+.account__content .order .item::before {
+  content: "";
+  position: absolute;
+  bottom: -5px;
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  left: 0;
+}
+
+.account__content .order .item .info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.account__content .order .item .order__product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 20px;
+}
+
+.account__content .order .item .order__product .description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-left: 50px;
+}
+
+.account__content .order .item .order__product .description .title {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: black;
+  font-family: "FuturaNewBook-Reg";
+  margin-bottom: 0px;
+}
+
+.account__content .order .item .order__product .description .article {
+  font-size: 16px;
+  color: black;
+  font-family: "FuturaNewBook-Reg";
+  margin-bottom: 0px;
+  font-size: 18px;
+}
+
+.account__content .order .item .order__product .description .cost {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: black;
+  font-family: "FuturaNewBook-Reg";
+  margin-bottom: 0px;
+}
+
+.account__content .order .item .order__product .img {
+  width: 140px;
+  height: 140px;
+}
+
+.account__content .order .item .order__product .img img {
+  width: 100%;
+  height: 100%;
 }
 
 .footer {

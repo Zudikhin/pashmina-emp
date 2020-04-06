@@ -1,0 +1,153 @@
+.account {
+  & .links {
+    & a {
+      color: black;
+      font-size: 18px;
+      font-family: "FuturaNewBook-Reg";
+    }
+  }
+  &__content {
+    margin-top: 40px;
+    position: relative;
+    & .links {
+      position: absolute;
+      left: 0;
+      display: none;
+      flex-direction: column;
+      @media (min-width: 1200px) {
+        display: flex;
+      }
+      & h3 {
+        font-size: 20px;
+        color: black;
+        font-family: "FuturaNewBook-Reg";
+        text-align: center;
+        text-transform: uppercase;
+      }
+    }
+    & .personal {
+      display: block;
+      &.active {
+        display: none;
+      }
+      & h3 {
+        font-size: 20px;
+        color: black;
+        font-family: "FuturaNewBook-Reg";
+        text-align: center;
+        text-transform: uppercase;
+      }
+      & form {
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        & input {
+          position: relative;
+          height: auto;
+          margin-top: 15px;
+          padding: 8px 13px 10px;
+          background-color: #fff;
+          border: 1px solid #c4c4c4;
+          box-shadow: none;
+          color: #000000;
+          border-radius: 5px;
+          width: 300px;
+        }
+        & .submit {
+          background-color: black;
+          color: white;
+          margin-top: 30px;
+        }
+      }
+    }
+    & .order {
+      width: 500px;
+      margin: 0 auto;
+      display: none;
+      &.active {
+        display: block;
+      }
+      & h3 {
+        font-size: 20px;
+        color: black;
+        font-family: "FuturaNewBook-Reg";
+        text-align: left;
+        text-transform: uppercase;
+      }
+      & .item {
+        position: relative;
+        margin-top: 30px;
+        & .total__cost {
+          margin-top: 10px;
+          display: block;
+          text-align: right;
+          color: black;
+          font-family: "FuturaNewBook-Reg";
+          font-size: 16px;
+          text-transform: uppercase;
+        }
+        & .info {
+          & span {
+            color: black;
+            font-family: "FuturaNewBook-Reg";
+            font-size: 18px;
+          }
+        }
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          width: 100%;
+          height: 2px;
+          background-color: black;
+          left: 0;
+        }
+        & .info {
+          display: flex;
+          flex-direction: column;
+        }
+        & .order__product {
+          display: flex;
+          margin-top: 20px;
+          & .description {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            margin-left: 50px;
+            & .title {
+              font-size: 16px;
+              text-transform: uppercase;
+              color: black;
+              font-family: "FuturaNewBook-Reg";
+              margin-bottom: 0px;
+            }
+            & .article {
+              font-size: 16px;
+              color: black;
+              font-family: "FuturaNewBook-Reg";
+              margin-bottom: 0px;
+              font-size: 18px;
+            }
+            & .cost {
+              font-size: 16px;
+              text-transform: uppercase;
+              color: black;
+              font-family: "FuturaNewBook-Reg";
+              margin-bottom: 0px;
+            }
+          }
+          & .img {
+            width: 140px;
+            height: 140px;
+            & img {
+              width: 100%;
+              height: 100%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
