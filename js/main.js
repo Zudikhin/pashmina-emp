@@ -3,6 +3,20 @@ $(document).ready(function () {
   $(".header__desc-btn").click(function () {
     $(this).toggleClass("active");
     $(".header__dropdown").toggleClass("active");
+    if ($(".header__dropdown").hasClass("active")) {
+      $(".header__modal").css("display", "block");
+      $("body").css("overflow", "hidden");
+    } else {
+      $(".header__modal").css("display", "none");
+      $("body").css("overflow", "auto");
+    }
+  });
+
+  $(".header__modal").click(function () {
+    $(this).css("display", "none");
+    $(".header__dropdown").removeClass("active");
+    $(".header__desc-btn").removeClass("active");
+    $("body").css("overflow", "auto");
   });
 
   $(".header__mobile__btn").click(function () {
@@ -200,11 +214,32 @@ $(document).ready(function () {
     event.preventDefault();
     $(".account__content .order").addClass("active");
     $(".account__content .personal").addClass("active");
+    $(".account__content .address").removeClass("active");
   });
 
   $("#lk").click(function (event) {
     event.preventDefault();
     $(".account__content .order").removeClass("active");
     $(".account__content .personal").removeClass("active");
+    $(".account__content .address").removeClass("active");
+  });
+  $("#addres").click(function (event) {
+    event.preventDefault();
+    $(".account__content .address").addClass("active");
+    $(".account__content .order").removeClass("active");
+    $(".account__content .personal").addClass("active");
+  });
+
+  $(".account__content .address .table .radio input").each(function (
+    index,
+    value
+  ) {
+    $(this).click(function () {
+      $(".account__content .address .table .radio input").prop(
+        "checked",
+        false
+      );
+      $(this).prop("checked", true);
+    });
   });
 });

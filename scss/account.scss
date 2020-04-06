@@ -149,5 +149,100 @@
         }
       }
     }
+    & .address {
+      width: 500px;
+      margin: 0 auto;
+      display: none;
+      &.active {
+        display: block;
+      }
+      & .add__address {
+        font-family: "FuturaNewBook-Reg";
+        font-size: 18px;
+        color: black;
+      }
+      & h3 {
+        font-size: 20px;
+        color: black;
+        font-family: "FuturaNewBook-Reg";
+        text-align: center;
+        text-transform: uppercase;
+      }
+      & .table {
+        display: flex;
+        position: relative;
+        margin-top: 20px;
+        &::before {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background-color: black;
+          position: absolute;
+          left: 0;
+          top: 0;
+        }
+        &::after {
+          content: "";
+          width: 100%;
+          height: 1px;
+          background-color: black;
+          position: absolute;
+          left: 0;
+          bottom: 0;
+        }
+        & .td {
+          padding: 10px 0px;
+          & p {
+            margin-bottom: 0px;
+            margin-left: 10px;
+          }
+          & input {
+            transform: translateY(2px);
+          }
+        }
+        & .td-delete {
+          margin-left: auto;
+          & a {
+            color: black;
+            font-size: 14px;
+            position: relative;
+            font-family: "FuturaNewBook-Reg";
+            &:after {
+              content: "";
+              width: 100%;
+              position: absolute;
+              bottom: 0;
+              left: 0;
+              background-color: black;
+              height: 1px;
+            }
+          }
+        }
+      }
+      & .add__table {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        & input {
+          padding-left: 10px;
+          font-size: 14px;
+          height: 33px;
+          margin-top: 10px;
+          border: 1px solid black;
+          border-radius: 4px;
+        }
+        & .city {
+          width: 100%;
+        }
+        & .street {
+          width: 100%;
+        }
+        & .house,
+        & .corpus,
+        & .apartment {
+          width: 32%;
+        }
+      }
+    }
   }
 }

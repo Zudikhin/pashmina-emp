@@ -66,7 +66,9 @@
       width: 100%;
     }
     & .img {
-      width: 100%;
+      width: 260px;
+      height: 390px;
+      margin: 0 auto;
       @media (min-width: 768px) {
         width: 450px;
         margin: 0 auto;
@@ -75,10 +77,11 @@
         width: auto;
       }
       @media (min-width: 992px) {
-        height: 650px;
+        height: 720px;
       }
       & img {
         width: 100%;
+        height: 100%;
         @media (min-width: 992px) {
           height: 100%;
         }
@@ -109,8 +112,8 @@
         }
         &__item {
           margin: 0 auto;
-          width: 200px;
-          height: 230px;
+          width: 150px;
+          height: 170px;
           @media (min-width: 992px) {
             width: 180px;
             height: 200px;
@@ -125,7 +128,8 @@
           }
           &-video {
             border: 1px solid #e6e6e6;
-            height: 220px;
+            width: 150px;
+            height: 170px;
             display: flex;
             justify-content: center;
             align-items: center;
@@ -180,7 +184,7 @@
     }
   }
   & .product__prev {
-    left: 0;
+    left: 10%;
     @media (min-width: 768px) {
       left: -30px;
     }
@@ -192,7 +196,7 @@
     }
   }
   & .product__next {
-    right: 0;
+    right: 10%;
     @media (min-width: 768px) {
       right: -30px;
     }
@@ -211,6 +215,9 @@
   @media (min-width: 768px) {
     display: block;
     margin-top: 20px;
+  }
+  & h3 {
+    margin-left: 41px;
   }
   & .main {
     display: flex;
@@ -271,8 +278,13 @@
       font-size: 18px;
       color: black;
       text-align: center;
+      line-height: 22px;
       @media (min-width: 768px) {
         text-align: left;
+        line-height: 25px;
+      }
+      @media (min-width: 1200px) {
+        transform: translateY(-7px);
       }
     }
   }
@@ -321,7 +333,7 @@
         padding-left: 10px;
         cursor: pointer;
         display: inline-block;
-        & span {
+        & .img {
           margin-right: 10px;
           display: inline-block;
           transform: rotate(0deg);
@@ -346,7 +358,7 @@
       &.active {
         transition: all 0.3s ease;
         & h3 {
-          & span {
+          & .img {
             transform: rotate(90deg);
             & img {
               transform: translateX(5px);
@@ -435,8 +447,8 @@
         & .img {
           display: flex;
           justify-content: center;
-          width: 200px;
-          height: 230px;
+          width: 150px;
+          height: 170px;
           margin: 0 auto;
           & img {
             width: 100%;
