@@ -6228,6 +6228,7 @@ div:focus {
 @media (min-width: 768px) {
   .product__name p {
     font-size: 22px;
+    margin-top: 20px;
   }
 }
 
@@ -6589,7 +6590,7 @@ div:focus {
 }
 
 .product__description .text p {
-  font-family: "FuturaNewBook-Obl";
+  font-family: "FuturaNewLight-Obl";
   font-size: 18px;
   color: black;
   text-align: center;

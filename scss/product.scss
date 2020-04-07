@@ -41,6 +41,7 @@
       color: black;
       @media (min-width: 768px) {
         font-size: 22px;
+        margin-top: 20px;
       }
     }
   }
@@ -274,7 +275,7 @@
   }
   & .text {
     & p {
-      font-family: "FuturaNewBook-Obl";
+      font-family: "FuturaNewLight-Obl";
       font-size: 18px;
       color: black;
       text-align: center;
