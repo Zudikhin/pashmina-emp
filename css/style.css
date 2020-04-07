@@ -6507,6 +6507,7 @@ div:focus {
 
 .characteristics-desk h3 {
   margin-left: 41px;
+  font-size: 18px;
 }
 
 .characteristics-desk .main {
@@ -6683,6 +6684,7 @@ div:focus {
   padding-left: 10px;
   cursor: pointer;
   display: inline-block;
+  font-size: 18px;
 }
 
 .product__description .drop .item h3 .img {
