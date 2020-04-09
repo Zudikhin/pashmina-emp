@@ -6272,6 +6272,7 @@ div:focus {
   width: 260px;
   height: 390px;
   margin: 0 auto;
+  display: none;
 }
 
 @media (min-width: 768px) {
@@ -6284,12 +6285,8 @@ div:focus {
 @media (min-width: 992px) {
   .product__images .img {
     width: auto;
-  }
-}
-
-@media (min-width: 992px) {
-  .product__images .img {
     height: 720px;
+    display: block;
   }
 }
 
@@ -6306,6 +6303,51 @@ div:focus {
 
 .product__images .slider__main {
   position: relative;
+}
+
+.product__images .slider__main .slider__btns {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .product__images .slider__main .slider__btns {
+    display: block;
+  }
+}
+
+.product__images .slider__main .slick-dots {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 15px;
+}
+
+.product__images .slider__main .slick-dots li {
+  width: 9px;
+  height: 9px;
+  margin: 0 2px;
+  border: 1px solid black;
+  border-radius: 50%;
+  position: relative;
+}
+
+.product__images .slider__main .slick-dots li::before {
+  content: "";
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  background-color: black;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  display: none;
+}
+
+.product__images .slider__main .slick-dots .slick-active:before {
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -6348,14 +6390,14 @@ div:focus {
 
 .product__images .slider__main .slider__item {
   margin: 0 auto;
-  width: 150px;
-  height: 170px;
+  width: 260px;
+  height: 340px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .product__images .slider__main .slider__item {
     width: 180px;
-    height: 200px;
+    height: 240px;
   }
 }
 
@@ -6373,8 +6415,8 @@ div:focus {
 
 .product__images .slider__main .slider__item-video {
   border: 1px solid #e6e6e6;
-  width: 150px;
-  height: 170px;
+  width: 260px;
+  height: 340px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6392,8 +6434,8 @@ div:focus {
 
 @media (min-width: 768px) {
   .product__images .slider__main .slider__item-video {
-    width: 200px;
-    height: 230px;
+    width: 180px;
+    height: 240px;
   }
 }
 

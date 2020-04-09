@@ -76,6 +76,7 @@ $(document).ready(function () {
         breakpoint: 992,
         settings: {
           slidesToShow: 2,
+          dots: false,
         },
       },
       {
@@ -83,6 +84,10 @@ $(document).ready(function () {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
+          dots: true,
+          customPaging: function (slider, i) {
+            return '<a class="dot"></a>';
+          },
         },
       },
     ],
