@@ -247,4 +247,12 @@ $(document).ready(function () {
       $(this).prop("checked", true);
     });
   });
+
+  $("#btnMobFilter").click(function () {
+    $("#mobFilter").css("display", "block");
+  });
+
+  $("#closeMobFilter").click(function () {
+    $("#mobFilter").css("display", "none");
+  });
 });

@@ -8,16 +8,18 @@
   }
   &__item {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     margin-top: 50px;
     border: 1px solid black;
     box-sizing: border-box;
     padding: 20px;
+    position: relative;
     & .name {
       font-size: 16px;
       text-transform: uppercase;
       color: #a9a9a9;
       font-family: "FuturaNewBook-Reg";
+      display: none;
     }
     & p {
       font-size: 16px;
@@ -43,6 +45,7 @@
     & .title {
       margin-top: 30px;
       & .articul {
+        display: none;
         font-size: 16px;
         text-transform: uppercase;
         color: #a9a9a9;
@@ -53,6 +56,7 @@
       margin-top: 30px;
       display: flex;
       justify-content: center;
+      display: none;
       & p {
         margin-left: 20px;
       }
@@ -61,6 +65,8 @@
       margin-top: 30px;
       display: flex;
       justify-content: center;
+      position: absolute;
+      bottom: 0;
       & p {
         margin-left: 20px;
       }
