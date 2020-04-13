@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/all.min.css" />
     <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/nice-select.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -114,6 +115,11 @@
             <li><a href="#">Главная</a></li>
             <li><a href="#">Каталог</a></li>
           </ul>
+          <ul class="shop__breadcrumb-mob">
+            <li>
+              <a href="#"><i class="fas fa-chevron-left"></i>Назад</a>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
@@ -147,44 +153,196 @@
       <div class="container">
         <div class="shop__filters-mob">
           <button id="btnMobFilter">Показать фильтры</button>
-
+          <div class="show__mob_filter">
+            <div class="filter__main">
+              <div class="item">
+                <span>Для мужчин</span>
+                <button><img src="img/cart/close-icon.png" alt="" /></button>
+              </div>
+              <div class="item">
+                <span>Элитный кашемир</span>
+                <button><img src="img/cart/close-icon.png" alt="" /></button>
+              </div>
+            </div>
+            <a class="filter__clear" href="#">Очистить фильтр</a>
+          </div>
           <div id="mobFilter" class="modal">
             <div class="modal-content">
-              <span id="closeMobFilter" class="close">&times;</span>
+              <span id="closeMobFilter" class="close"
+                ><img src="img/cart/close-icon.png" alt=""
+              /></span>
               <div class="content">
-                <ul>
-                  <li><a href="">Для мужчин</a></li>
-                  <li><a href="">Для женщин</a></li>
+                <ul class="gender">
+                  <li>
+                    <label class="container"
+                      >Для мужчин
+                      <input type="checkbox" checked="checked" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Для женщин
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
                 </ul>
-                <ul>
-                  <li><p>Вид товара</p></li>
-                  <li><a href="">Шарф</a></li>
-                  <li><a href="">Палантин</a></li>
-                  <li><a href="">Шаль</a></li>
-                  <li><a href="">Платок</a></li>
+                <h4>Вид товара</h4>
+                <ul class="view">
+                  <li>
+                    <label class="container"
+                      >Шарф
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Палантин
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Шаль
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Платок
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
                 </ul>
-                <ul>
-                  <li><p>Состав</p></li>
-                  <li><a href="">Элитный кашемир</a></li>
-                  <li><a href="">Кашемир</a></li>
-                  <li><a href="">Кашемир и шелк</a></li>
+                <h4>Состав</h4>
+                <ul class="structure">
+                  <li>
+                    <label class="container"
+                      >Элитный кашемир
+                      <input type="checkbox" checked />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Кашемир
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Кашемир и шелк
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                  </li>
                 </ul>
-                <ul>
-                  <li><p>Цвет</p></li>
-                  <li><a href="">Розовый</a></li>
-                  <li><a href="">Красный</a></li>
-                  <li><a href="">Коричневый</a></li>
-                  <li><a href="">Оранжевый</a></li>
-                  <li><a href="">Бежевый</a></li>
-                  <li><a href="">Желтый</a></li>
-                  <li><a href="">Зеленый</a></li>
-                  <li><a href="">Голубой</a></li>
-                  <li><a href="">Синий</a></li>
-                  <li><a href="">Фиолетовый</a></li>
-                  <li><a href="">Серый</a></li>
-                  <li><a href="">Белый</a></li>
-                  <li><a href="">Черный</a></li>
-                  <li><a href="">Неокрашеный</a></li>
+                <h4>Цвет</h4>
+                <ul class="color">
+                  <li>
+                    <label class="container"
+                      >Розовый
+                      <input type="checkbox" />
+                      <span class="checkmark pink"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Красный
+                      <input type="checkbox" />
+                      <span class="checkmark red"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Коричневый
+                      <input type="checkbox" />
+                      <span class="checkmark brown"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Оранжевый
+                      <input type="checkbox" />
+                      <span class="checkmark orange"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Бежевый
+                      <input type="checkbox" />
+                      <span class="checkmark beige"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Желтый
+                      <input type="checkbox" />
+                      <span class="checkmark yellow"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Зеленый
+                      <input type="checkbox" />
+                      <span class="checkmark green"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Голубой
+                      <input type="checkbox" />
+                      <span class="checkmark lightblue"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Синий
+                      <input type="checkbox" />
+                      <span class="checkmark blue"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Фиолетовый
+                      <input type="checkbox" />
+                      <span class="checkmark purple"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Серый
+                      <input type="checkbox" />
+                      <span class="checkmark grey"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Белый
+                      <input type="checkbox" />
+                      <span class="checkmark white"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Черный
+                      <input type="checkbox" />
+                      <span class="checkmark black"></span>
+                    </label>
+                  </li>
+                  <li>
+                    <label class="container"
+                      >Неокрашеный
+                      <input type="checkbox" />
+                      <span class="checkmark unpainted"></span>
+                    </label>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -192,9 +350,210 @@
         </div>
 
         <div class="shop__filters">
-          filter
+          <div class="content">
+            <ul class="gender">
+              <li>
+                <label class="container"
+                  >Для мужчин
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Для женщин
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+            </ul>
+            <h4>Вид товара</h4>
+            <ul class="view">
+              <li>
+                <label class="container"
+                  >Шарф
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Палантин
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Шаль
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Платок
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+            </ul>
+            <h4>Состав</h4>
+            <ul class="structure">
+              <li>
+                <label class="container"
+                  >Элитный кашемир
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Кашемир
+                  <input type="checkbox" checked="checked" />
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Кашемир и шелк
+                  <input type="checkbox" />
+                  <span class="checkmark"></span>
+                </label>
+              </li>
+            </ul>
+            <h4>Цвет</h4>
+            <ul class="color">
+              <li>
+                <label class="container"
+                  >Розовый
+                  <input type="checkbox" />
+                  <span class="checkmark pink"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Красный
+                  <input type="checkbox" />
+                  <span class="checkmark red"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Коричневый
+                  <input type="checkbox" />
+                  <span class="checkmark brown"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Оранжевый
+                  <input type="checkbox" />
+                  <span class="checkmark orange"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Бежевый
+                  <input type="checkbox" />
+                  <span class="checkmark beige"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Желтый
+                  <input type="checkbox" />
+                  <span class="checkmark yellow"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Зеленый
+                  <input type="checkbox" />
+                  <span class="checkmark green"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Голубой
+                  <input type="checkbox" />
+                  <span class="checkmark lightblue"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Синий
+                  <input type="checkbox" />
+                  <span class="checkmark blue"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Фиолетовый
+                  <input type="checkbox" />
+                  <span class="checkmark purple"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Серый
+                  <input type="checkbox" />
+                  <span class="checkmark grey"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Белый
+                  <input type="checkbox" />
+                  <span class="checkmark white"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Черный
+                  <input type="checkbox" />
+                  <span class="checkmark black"></span>
+                </label>
+              </li>
+              <li>
+                <label class="container"
+                  >Неокрашеный
+                  <input type="checkbox" />
+                  <span class="checkmark unpainted"></span>
+                </label>
+              </li>
+            </ul>
+          </div>
         </div>
         <div class="shop__content">
+          <div class="filters__desk">
+            <div class="selected__filter">
+              <div class="filter__item">
+                <span>Для мужчин</span>
+                <button><img src="img/cart/close-icon.png" alt="" /></button>
+              </div>
+
+              <div class="filter__item">
+                <span>Кашемир</span>
+                <button><img src="img/cart/close-icon.png" alt="" /></button>
+              </div>
+              <div class="filter__item">
+                <span>Синий</span>
+                <button><img src="img/cart/close-icon.png" alt="" /></button>
+              </div>
+              <div class="clear__filter">
+                <a href="#">Очистить фильтр</a>
+              </div>
+            </div>
+
+            <div class="base__filter">
+              <p class="text">Сортировать:</p>
+              <select name="" id="baseFilter">
+                <option value="">по возрастанию цены</option>
+                <option value="">по убыванию цены</option>
+              </select>
+            </div>
+          </div>
           <div class="row">
             <div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-4">
               <div class="shop__item">
@@ -384,6 +743,7 @@
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

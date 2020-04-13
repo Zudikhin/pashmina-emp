@@ -9,14 +9,15 @@
     }
   }
   &__breadcrumb {
-    display: flex;
     position: relative;
     padding: 5px 0px;
     margin-top: 15px;
     flex-wrap: wrap;
+    display: none;
     @media (min-width: 768px) {
       padding: 15px 0px;
       margin-top: 30px;
+      display: flex;
     }
     @media (min-width: 992px) {
       margin-top: 30px;
@@ -85,6 +86,51 @@
         &::before {
           content: "";
         }
+      }
+    }
+  }
+  &__breadcrumb-mob {
+    position: relative;
+    padding: 5px 0px;
+    margin-top: 15px;
+    flex-wrap: wrap;
+    & li {
+      & a {
+        font-size: 12px;
+        color: #2d2d2d;
+        font-family: "FuturaNewBook-Obl";
+        text-transform: uppercase;
+        opacity: 0.5;
+        & i {
+          margin-right: 6px;
+        }
+      }
+    }
+    @media (min-width: 768px) {
+      display: none;
+    }
+    &::after {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+      position: absolute;
+      top: 6px;
+      left: 0;
+      @media (min-width: 768px) {
+        height: 2px;
+      }
+    }
+    &::before {
+      content: "";
+      width: 100%;
+      height: 1px;
+      background-color: #e6e6e6;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      @media (min-width: 768px) {
+        height: 2px;
       }
     }
   }
@@ -445,9 +491,101 @@
   @media (min-width: 992px) {
     display: block;
     position: absolute;
-    top: 0;
+    top: 6%;
     left: 5%;
-    width: 200px;
+    width: 300px;
+  }
+}
+
+.filters__desk {
+  display: none;
+  @media (min-width: 992px) {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+  }
+  & .selected__filter {
+    display: flex;
+    align-items: flex-start;
+    & .filter__item {
+      border: 1px solid black;
+      padding: 10px 0px 10px 10px;
+      margin-right: 30px;
+      cursor: pointer;
+      & span {
+        font-size: 22px;
+        font-family: "FuturaNewBook-Obl";
+        color: black;
+      }
+      & button {
+        border: none;
+        background-color: transparent;
+        transform: translateY(-2px);
+      }
+    }
+    & .clear__filter {
+      margin-left: 10px;
+      & a {
+        font-size: 22px;
+        font-family: "FuturaNewBook-Reg";
+        color: black;
+      }
+    }
+  }
+  & .base__filter {
+    display: flex;
+    & .text {
+      font-size: 22px;
+      font-family: "FuturaNewBook-Reg";
+      color: black;
+    }
+    & .nice-select {
+      border: none;
+      padding-left: 8px;
+      transform: translateY(-4px);
+      & .list {
+        border-radius: 0px;
+        left: auto;
+        right: 0%;
+        & li {
+          font-size: 20px;
+          font-family: "FuturaNewBook-Reg";
+          padding-right: 20px;
+          padding-left: 40px;
+          &:hover {
+            background-color: transparent;
+          }
+        }
+        & .selected {
+          font-weight: normal;
+          background-color: transparent;
+          position: relative;
+          &:before {
+            content: "";
+            background-image: url(../img/shop/check.png);
+            background-size: 100% 100%;
+            position: absolute;
+            top: 55%;
+            transform: translateY(-50%);
+            left: 10px;
+            width: 15px;
+            height: 15px;
+          }
+        }
+      }
+      & .current {
+        font-size: 20px;
+        font-family: "FuturaNewBook-Reg";
+      }
+      &:after {
+        width: 12px;
+        height: 12px;
+        top: 42%;
+        right: 0px;
+        border-bottom: 2px solid black;
+        border-right: 2px solid black;
+      }
+    }
   }
 }
 
@@ -467,7 +605,7 @@
 .shop__filters-mob .modal {
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
-  z-index: 1; /* Sit on top */
+  z-index: 9999; /* Sit on top */
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -483,5 +621,347 @@
   margin: 15% auto; /* 15% from the top and centered */
   padding: 20px;
   border: 1px solid #888;
-  width: 80%; /* Could be more or less, depending on screen size */
+  width: 80%;
+  & .content {
+    & h4 {
+      font-family: "FuturaNewBook-Reg";
+      font-size: 22px;
+      color: black;
+      text-transform: uppercase;
+      margin-top: 30px;
+    }
+  }
+  & ul {
+    margin-top: 20px;
+    & li {
+      & label {
+        display: block;
+        position: relative;
+        padding-left: 35px;
+        cursor: pointer;
+        font-size: 20px;
+        font-family: "FuturaNewBook-Obl";
+        & input {
+          position: absolute;
+          opacity: 0;
+          cursor: pointer;
+          height: 0;
+          width: 0;
+          &:checked ~ .checkmark:after {
+            display: block;
+          }
+        }
+        .checkmark {
+          position: absolute;
+          top: 2px;
+          left: 0;
+          height: 26px;
+          width: 26px;
+          background-color: white;
+          border-radius: 50%;
+          border: 1px solid black;
+          &:after {
+            content: "";
+            position: absolute;
+            display: none;
+            width: 16px;
+            height: 16px;
+            background-color: black;
+            border-radius: 50%;
+            left: 4px;
+            top: 4px;
+          }
+        }
+      }
+    }
+  }
+  & .color {
+    & li {
+      & label {
+        & .checkmark {
+          &::after {
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            display: block;
+          }
+        }
+        & .pink {
+          &:after {
+            background-color: #eebdc9;
+          }
+        }
+        & .red {
+          &:after {
+            background-color: red;
+          }
+        }
+        & .brown {
+          &:after {
+            background-color: #6e410f;
+          }
+        }
+        & .orange {
+          &:after {
+            background-color: #e9a326;
+          }
+        }
+        & .beige {
+          &:after {
+            background-color: #f5f5dc;
+          }
+        }
+        & .yellow {
+          &:after {
+            background-color: #eddd68;
+          }
+        }
+        & .green {
+          &:after {
+            background-color: #48801e;
+          }
+        }
+        & .lightblue {
+          &:after {
+            background-color: #6ca8fc;
+          }
+        }
+        & .blue {
+          &:after {
+            background-color: #014080;
+          }
+        }
+        & .purple {
+          &:after {
+            background-color: #7600fa;
+          }
+        }
+        & .grey {
+          &:after {
+            background-color: #7f7f7f;
+          }
+        }
+        & .white {
+          &:after {
+            background-color: white;
+          }
+        }
+        & .black {
+          &:after {
+            background-color: black;
+          }
+        }
+        & .unpainted {
+          &:after {
+            background-color: #a29990;
+          }
+        }
+      }
+    }
+  }
+}
+
+.shop__filters-mob {
+  & #btnMobFilter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: "FuturaNewBook-Reg";
+    font-size: 20px;
+    background-color: transparent;
+    border: 1px solid black;
+    margin: 20px auto;
+    width: 200px;
+    height: 40px;
+  }
+  & .modal {
+    & .modal-content {
+      & .close {
+        width: 30px;
+        height: 30px;
+        right: 10px;
+        top: 10px;
+        cursor: pointer;
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+      & .content {
+        margin-top: 50px;
+      }
+    }
+  }
+}
+.show__mob_filter {
+  & .filter__main {
+    display: flex;
+    justify-content: space-between;
+    & .item {
+      border: 1px solid black;
+      width: auto;
+      padding: 10px 0px 10px 10px;
+      cursor: pointer;
+      & button {
+        width: 30px;
+        height: 15px;
+        border: none;
+        background-color: transparent;
+        & img {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+  & .filter__clear {
+    font-family: "FuturaNewBook-Reg";
+    font-size: 20px;
+    color: black;
+    margin-top: 20px;
+    display: block;
+  }
+}
+.shop__filters {
+  & .content {
+    & h4 {
+      font-size: 30px;
+      text-transform: uppercase;
+      color: black;
+      font-family: "FuturaNewMedium-Reg";
+      margin-top: 60px;
+    }
+    & ul {
+      margin-top: 40px;
+      & li {
+        margin-top: 24px;
+        & label {
+          display: block;
+          position: relative;
+          padding-left: 52px;
+          cursor: pointer;
+          font-size: 24px;
+          font-family: "FuturaNewBook-Obl";
+          & input {
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+            height: 0;
+            width: 0;
+            &:checked ~ .checkmark:after {
+              display: block;
+            }
+          }
+          .checkmark {
+            position: absolute;
+            top: 0px;
+            left: -10px;
+            height: 36px;
+            width: 36px;
+            background-color: white;
+            border-radius: 50%;
+            border: 1px solid black;
+            &:after {
+              content: "";
+              position: absolute;
+              display: none;
+              width: 22px;
+              height: 22px;
+              background-color: black;
+              border-radius: 50%;
+              left: 6px;
+              top: 6px;
+            }
+          }
+        }
+      }
+    }
+    & .color {
+      & li {
+        & label {
+          & .checkmark {
+            &::after {
+              width: 100%;
+              height: 100%;
+              top: 0;
+              left: 0;
+              display: block;
+            }
+          }
+          & .pink {
+            &:after {
+              background-color: #eebdc9;
+            }
+          }
+          & .red {
+            &:after {
+              background-color: red;
+            }
+          }
+          & .brown {
+            &:after {
+              background-color: #6e410f;
+            }
+          }
+          & .orange {
+            &:after {
+              background-color: #e9a326;
+            }
+          }
+          & .beige {
+            &:after {
+              background-color: #f5f5dc;
+            }
+          }
+          & .yellow {
+            &:after {
+              background-color: #eddd68;
+            }
+          }
+          & .green {
+            &:after {
+              background-color: #48801e;
+            }
+          }
+          & .lightblue {
+            &:after {
+              background-color: #6ca8fc;
+            }
+          }
+          & .blue {
+            &:after {
+              background-color: #014080;
+            }
+          }
+          & .purple {
+            &:after {
+              background-color: #7600fa;
+            }
+          }
+          & .grey {
+            &:after {
+              background-color: #7f7f7f;
+            }
+          }
+          & .white {
+            &:after {
+              background-color: white;
+            }
+          }
+          & .black {
+            &:after {
+              background-color: black;
+            }
+          }
+          & .unpainted {
+            &:after {
+              background-color: #a29990;
+            }
+          }
+        }
+      }
+    }
+  }
 }

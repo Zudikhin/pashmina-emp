@@ -1915,20 +1915,21 @@ div:focus {
 }
 
 .shop__breadcrumb {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
   padding: 5px 0px;
   margin-top: 15px;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  display: none;
 }
 
 @media (min-width: 768px) {
   .shop__breadcrumb {
     padding: 15px 0px;
     margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 }
 
@@ -2023,6 +2024,64 @@ div:focus {
 
 .shop__breadcrumb li:first-child::before {
   content: "";
+}
+
+.shop__breadcrumb-mob {
+  position: relative;
+  padding: 5px 0px;
+  margin-top: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.shop__breadcrumb-mob li a {
+  font-size: 12px;
+  color: #2d2d2d;
+  font-family: "FuturaNewBook-Obl";
+  text-transform: uppercase;
+  opacity: 0.5;
+}
+
+.shop__breadcrumb-mob li a i {
+  margin-right: 6px;
+}
+
+@media (min-width: 768px) {
+  .shop__breadcrumb-mob {
+    display: none;
+  }
+}
+
+.shop__breadcrumb-mob::after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+  position: absolute;
+  top: 6px;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .shop__breadcrumb-mob::after {
+    height: 2px;
+  }
+}
+
+.shop__breadcrumb-mob::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #e6e6e6;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+@media (min-width: 768px) {
+  .shop__breadcrumb-mob::before {
+    height: 2px;
+  }
 }
 
 .shop__item {
@@ -2519,10 +2578,134 @@ div:focus {
   .shop__filters {
     display: block;
     position: absolute;
-    top: 0;
+    top: 6%;
     left: 5%;
-    width: 200px;
+    width: 300px;
   }
+}
+
+.filters__desk {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .filters__desk {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin-bottom: 50px;
+  }
+}
+
+.filters__desk .selected__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.filters__desk .selected__filter .filter__item {
+  border: 1px solid black;
+  padding: 10px 0px 10px 10px;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.filters__desk .selected__filter .filter__item span {
+  font-size: 22px;
+  font-family: "FuturaNewBook-Obl";
+  color: black;
+}
+
+.filters__desk .selected__filter .filter__item button {
+  border: none;
+  background-color: transparent;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
+}
+
+.filters__desk .selected__filter .clear__filter {
+  margin-left: 10px;
+}
+
+.filters__desk .selected__filter .clear__filter a {
+  font-size: 22px;
+  font-family: "FuturaNewBook-Reg";
+  color: black;
+}
+
+.filters__desk .base__filter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.filters__desk .base__filter .text {
+  font-size: 22px;
+  font-family: "FuturaNewBook-Reg";
+  color: black;
+}
+
+.filters__desk .base__filter .nice-select {
+  border: none;
+  padding-left: 8px;
+  -webkit-transform: translateY(-4px);
+          transform: translateY(-4px);
+}
+
+.filters__desk .base__filter .nice-select .list {
+  border-radius: 0px;
+  left: auto;
+  right: 0%;
+}
+
+.filters__desk .base__filter .nice-select .list li {
+  font-size: 20px;
+  font-family: "FuturaNewBook-Reg";
+  padding-right: 20px;
+  padding-left: 40px;
+}
+
+.filters__desk .base__filter .nice-select .list li:hover {
+  background-color: transparent;
+}
+
+.filters__desk .base__filter .nice-select .list .selected {
+  font-weight: normal;
+  background-color: transparent;
+  position: relative;
+}
+
+.filters__desk .base__filter .nice-select .list .selected:before {
+  content: "";
+  background-image: url(../img/shop/check.png);
+  background-size: 100% 100%;
+  position: absolute;
+  top: 55%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 10px;
+  width: 15px;
+  height: 15px;
+}
+
+.filters__desk .base__filter .nice-select .current {
+  font-size: 20px;
+  font-family: "FuturaNewBook-Reg";
+}
+
+.filters__desk .base__filter .nice-select:after {
+  width: 12px;
+  height: 12px;
+  top: 42%;
+  right: 0px;
+  border-bottom: 2px solid black;
+  border-right: 2px solid black;
 }
 
 .shop__filters-mob {
@@ -2546,7 +2729,7 @@ div:focus {
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 9999;
   /* Sit on top */
   left: 0;
   top: 0;
@@ -2570,7 +2753,323 @@ div:focus {
   padding: 20px;
   border: 1px solid #888;
   width: 80%;
-  /* Could be more or less, depending on screen size */
+}
+
+.shop__filters-mob .modal .modal-content .content h4 {
+  font-family: "FuturaNewBook-Reg";
+  font-size: 22px;
+  color: black;
+  text-transform: uppercase;
+  margin-top: 30px;
+}
+
+.shop__filters-mob .modal .modal-content ul {
+  margin-top: 20px;
+}
+
+.shop__filters-mob .modal .modal-content ul li label {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "FuturaNewBook-Obl";
+}
+
+.shop__filters-mob .modal .modal-content ul li label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.shop__filters-mob .modal .modal-content ul li label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.shop__filters-mob .modal .modal-content ul li label .checkmark {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 26px;
+  width: 26px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.shop__filters-mob .modal .modal-content ul li label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 16px;
+  height: 16px;
+  background-color: black;
+  border-radius: 50%;
+  left: 4px;
+  top: 4px;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .checkmark::after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .pink:after {
+  background-color: #eebdc9;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .red:after {
+  background-color: red;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .brown:after {
+  background-color: #6e410f;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .orange:after {
+  background-color: #e9a326;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .beige:after {
+  background-color: #f5f5dc;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .yellow:after {
+  background-color: #eddd68;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .green:after {
+  background-color: #48801e;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .lightblue:after {
+  background-color: #6ca8fc;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .blue:after {
+  background-color: #014080;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .purple:after {
+  background-color: #7600fa;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .grey:after {
+  background-color: #7f7f7f;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .white:after {
+  background-color: white;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .black:after {
+  background-color: black;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .unpainted:after {
+  background-color: #a29990;
+}
+
+.shop__filters-mob #btnMobFilter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: black;
+  font-family: "FuturaNewBook-Reg";
+  font-size: 20px;
+  background-color: transparent;
+  border: 1px solid black;
+  margin: 20px auto;
+  width: 200px;
+  height: 40px;
+}
+
+.shop__filters-mob .modal .modal-content .close {
+  width: 30px;
+  height: 30px;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+.shop__filters-mob .modal .modal-content .close img {
+  width: 100%;
+  height: 100%;
+}
+
+.shop__filters-mob .modal .modal-content .content {
+  margin-top: 50px;
+}
+
+.show__mob_filter .filter__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.show__mob_filter .filter__main .item {
+  border: 1px solid black;
+  width: auto;
+  padding: 10px 0px 10px 10px;
+  cursor: pointer;
+}
+
+.show__mob_filter .filter__main .item button {
+  width: 30px;
+  height: 15px;
+  border: none;
+  background-color: transparent;
+}
+
+.show__mob_filter .filter__main .item button img {
+  width: 100%;
+  height: 100%;
+}
+
+.show__mob_filter .filter__clear {
+  font-family: "FuturaNewBook-Reg";
+  font-size: 20px;
+  color: black;
+  margin-top: 20px;
+  display: block;
+}
+
+.shop__filters .content h4 {
+  font-size: 30px;
+  text-transform: uppercase;
+  color: black;
+  font-family: "FuturaNewMedium-Reg";
+  margin-top: 60px;
+}
+
+.shop__filters .content ul {
+  margin-top: 40px;
+}
+
+.shop__filters .content ul li {
+  margin-top: 24px;
+}
+
+.shop__filters .content ul li label {
+  display: block;
+  position: relative;
+  padding-left: 52px;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "FuturaNewBook-Obl";
+}
+
+.shop__filters .content ul li label input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+.shop__filters .content ul li label input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.shop__filters .content ul li label .checkmark {
+  position: absolute;
+  top: 0px;
+  left: -10px;
+  height: 36px;
+  width: 36px;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid black;
+}
+
+.shop__filters .content ul li label .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+  width: 22px;
+  height: 22px;
+  background-color: black;
+  border-radius: 50%;
+  left: 6px;
+  top: 6px;
+}
+
+.shop__filters .content .color li label .checkmark::after {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  display: block;
+}
+
+.shop__filters .content .color li label .pink:after {
+  background-color: #eebdc9;
+}
+
+.shop__filters .content .color li label .red:after {
+  background-color: red;
+}
+
+.shop__filters .content .color li label .brown:after {
+  background-color: #6e410f;
+}
+
+.shop__filters .content .color li label .orange:after {
+  background-color: #e9a326;
+}
+
+.shop__filters .content .color li label .beige:after {
+  background-color: #f5f5dc;
+}
+
+.shop__filters .content .color li label .yellow:after {
+  background-color: #eddd68;
+}
+
+.shop__filters .content .color li label .green:after {
+  background-color: #48801e;
+}
+
+.shop__filters .content .color li label .lightblue:after {
+  background-color: #6ca8fc;
+}
+
+.shop__filters .content .color li label .blue:after {
+  background-color: #014080;
+}
+
+.shop__filters .content .color li label .purple:after {
+  background-color: #7600fa;
+}
+
+.shop__filters .content .color li label .grey:after {
+  background-color: #7f7f7f;
+}
+
+.shop__filters .content .color li label .white:after {
+  background-color: white;
+}
+
+.shop__filters .content .color li label .black:after {
+  background-color: black;
+}
+
+.shop__filters .content .color li label .unpainted:after {
+  background-color: #a29990;
 }
 
 .return {

@@ -255,4 +255,6 @@ $(document).ready(function () {
   $("#closeMobFilter").click(function () {
     $("#mobFilter").css("display", "none");
   });
+
+  $("#baseFilter").niceSelect();
 });
