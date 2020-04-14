@@ -2043,6 +2043,7 @@ div:focus {
 }
 
 .shop__breadcrumb-mob li a i {
+  font-size: 10px;
   margin-right: 6px;
 }
 
@@ -5103,7 +5104,7 @@ div:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin-top: 50px;
+  margin-top: 30px;
   border: 1px solid black;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -5119,12 +5120,32 @@ div:focus {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .cart__item .name {
+    display: block;
+  }
+}
+
 .cart__item p {
-  font-size: 16px;
+  font-size: 12px;
   text-transform: uppercase;
   color: black;
   font-family: "FuturaNewBook-Reg";
   margin-bottom: 0px;
+  margin-left: 20px;
+}
+
+@media (min-width: 576px) {
+  .cart__item p {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cart__item p {
+    font-size: 14px;
+    margin-left: 0px;
+  }
 }
 
 .cart__item .img {
@@ -5134,14 +5155,21 @@ div:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 175px;
-  height: 175px;
+  width: 200px;
+  height: 100px;
   margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .cart__item .img {
+    height: 150px;
+  }
 }
 
 @media (min-width: 768px) {
   .cart__item .img {
     margin: unset;
+    height: 200px;
   }
 }
 
@@ -5151,15 +5179,28 @@ div:focus {
 }
 
 .cart__item .title {
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 .cart__item .title .articul {
-  display: none;
-  font-size: 16px;
+  display: block;
+  margin-left: 20px;
+  font-size: 12px;
   text-transform: uppercase;
   color: #a9a9a9;
   font-family: "FuturaNewBook-Obl";
+}
+
+@media (min-width: 576px) {
+  .cart__item .title .articul {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cart__item .title .articul {
+    margin-left: 0px;
+  }
 }
 
 .cart__item .quantity {
@@ -5173,12 +5214,17 @@ div:focus {
   display: none;
 }
 
+@media (min-width: 768px) {
+  .cart__item .quantity {
+    display: block;
+  }
+}
+
 .cart__item .quantity p {
   margin-left: 20px;
 }
 
 .cart__item .price {
-  margin-top: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5186,11 +5232,67 @@ div:focus {
       -ms-flex-pack: center;
           justify-content: center;
   position: absolute;
-  bottom: 0;
+  bottom: 12%;
+  left: 36%;
+}
+
+@media (min-width: 576px) {
+  .cart__item .price {
+    left: 30%;
+  }
+}
+
+@media (min-width: 768px) {
+  .cart__item .price {
+    position: relative;
+    left: auto;
+    bottom: auto;
+  }
+}
+
+.cart__item .price .name {
+  display: block;
+  font-size: 16px;
+  text-transform: none;
+  color: black;
+}
+
+@media (min-width: 576px) {
+  .cart__item .price .name {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cart__item .price .name {
+    text-transform: uppercase;
+    color: #a9a9a9;
+    font-family: "FuturaNewBook-Reg";
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+  }
 }
 
 .cart__item .price p {
-  margin-left: 20px;
+  font-size: 14px;
+  margin-left: 0px;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+@media (min-width: 576px) {
+  .cart__item .price p {
+    font-size: 16px;
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
+}
+
+@media (min-width: 768px) {
+  .cart__item .price p {
+    -webkit-transform: translateY(-2px);
+            transform: translateY(-2px);
+  }
 }
 
 .cart__item .delete {
@@ -5201,14 +5303,38 @@ div:focus {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  position: absolute;
+  right: 20px;
+  bottom: 24px;
+}
+
+@media (min-width: 576px) {
+  .cart__item .delete {
+    right: 20px;
+    bottom: 32px;
+  }
+}
+
+@media (min-width: 768px) {
+  .cart__item .delete {
+    position: relative;
+    right: auto;
+    bottom: auto;
+  }
 }
 
 .cart__item .delete a {
-  margin-left: 20px;
+  width: 15px;
+  height: 15px;
   background-color: transparent;
   border: none;
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
+}
+
+.cart__item .delete a img {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 768px) {
@@ -5236,7 +5362,7 @@ div:focus {
   }
   .cart__item .quantity p {
     margin-left: 0px;
-    margin-top: 15px;
+    margin-top: 40px;
   }
   .cart__item .price {
     -webkit-box-orient: vertical;
@@ -5249,8 +5375,7 @@ div:focus {
             justify-content: flex-start;
   }
   .cart__item .price p {
-    margin-left: 0px;
-    margin-top: 15px;
+    margin-top: 40px;
   }
   .cart__item .delete {
     -webkit-box-orient: vertical;
@@ -5263,8 +5388,8 @@ div:focus {
             justify-content: flex-start;
   }
   .cart__item .delete a {
-    margin-left: 0px;
-    margin-top: 15px;
+    margin-left: 25px;
+    margin-top: 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -5292,7 +5417,13 @@ div:focus {
 
 @media (min-width: 992px) {
   .cart__item .title {
-    width: 300px;
+    width: 200px;
+    -webkit-transform: translateX(-50px);
+            transform: translateX(-50px);
+  }
+  .cart__item .title p {
+    -webkit-transform: translateY(-15px);
+            transform: translateY(-15px);
   }
   .cart__item .quantity p {
     margin-top: 27px;
@@ -5311,6 +5442,20 @@ div:focus {
     margin: 0 auto;
     margin-top: 20px;
   }
+  .cart__item .title {
+    -webkit-transform: translateX(-20px);
+            transform: translateX(-20px);
+  }
+}
+
+.cart__coupon {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .cart__coupon {
+    display: block;
+  }
 }
 
 .cart__coupon p {
@@ -5319,6 +5464,12 @@ div:focus {
   color: black;
   font-family: "FuturaNewMedium-Reg";
   margin-top: 10px;
+}
+
+@media (min-width: 992px) {
+  .cart__coupon p {
+    margin-top: 0px;
+  }
 }
 
 .cart__coupon label {
@@ -5385,12 +5536,7 @@ div:focus {
 
 @media (min-width: 576px) {
   .cart__coupon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    display: none;
   }
   .cart__coupon p {
     -webkit-transform: translateY(30px);
@@ -5400,6 +5546,12 @@ div:focus {
 
 @media (min-width: 768px) {
   .cart__coupon {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     position: relative;
     margin-top: 30px;
   }
@@ -5436,8 +5588,8 @@ div:focus {
     margin: 30px auto;
   }
   .cart__coupon p {
-    -webkit-transform: translateY(8px);
-            transform: translateY(8px);
+    -webkit-transform: translateY(16px);
+            transform: translateY(16px);
   }
 }
 
@@ -5506,7 +5658,7 @@ div:focus {
 
 .cart__contact h3 {
   font-family: "FuturaNewMedium-Reg";
-  font-size: 16px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #2d2d2d;
 }
@@ -5562,6 +5714,7 @@ div:focus {
   text-transform: uppercase;
   font-family: "FuturaNewBook-Reg";
   margin-bottom: 0px;
+  color: #7f7f7f;
 }
 
 .cart__contact .form__main label {
@@ -5576,7 +5729,6 @@ div:focus {
 
 .cart__contact .form__main label span {
   font-size: 16px;
-  text-transform: uppercase;
   color: #a9a9a9;
   font-family: "FuturaNewBook-Reg";
 }
@@ -5652,7 +5804,7 @@ div:focus {
 
 .cart__delivery h3 {
   font-family: "FuturaNewMedium-Reg";
-  font-size: 16px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #2d2d2d;
 }
@@ -5675,7 +5827,6 @@ div:focus {
 
 .cart__delivery .form .country label span {
   font-size: 16px;
-  text-transform: uppercase;
   color: #a9a9a9;
   font-family: "FuturaNewBook-Reg";
 }
@@ -5755,17 +5906,17 @@ div:focus {
   content: "";
   position: absolute;
   display: none;
-  top: 8px;
-  left: 7.5px;
-  width: 8px;
-  height: 8px;
+  top: 3px;
+  left: 3px;
+  width: 17px;
+  height: 17px;
   border-radius: 50%;
   background: black;
 }
 
 .cart__delivery .form .checkbox__block .info {
   margin-left: 40px;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .cart__delivery .form .checkbox__block .info p {
@@ -5774,6 +5925,8 @@ div:focus {
   font-family: "FuturaNewBook-Reg";
   font-size: 16px;
   color: #2d2d2d;
+  -webkit-transform: translateY(1px);
+          transform: translateY(1px);
 }
 
 .cart__delivery .form .checkbox__block .info .price {
@@ -5794,6 +5947,10 @@ div:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     margin-top: 30px;
   }
   .cart__delivery .form .checkbox__block label {
@@ -5801,6 +5958,19 @@ div:focus {
   }
   .cart__delivery .form .checkbox__block .info {
     margin-top: 0px;
+  }
+}
+
+@media (min-width: 992px) {
+  .cart__delivery .form .checkbox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-top: 30px;
+  }
+  .cart__delivery .form .checkbox .checkbox__block:last-child {
+    margin-left: 50px;
   }
 }
 
@@ -5820,7 +5990,6 @@ div:focus {
 
 .cart__delivery .form .main label span {
   font-size: 16px;
-  text-transform: uppercase;
   color: #a9a9a9;
   font-family: "FuturaNewBook-Reg";
 }
@@ -5847,7 +6016,7 @@ div:focus {
             justify-content: space-between;
   }
   .cart__delivery .form .main .street {
-    width: 100%;
+    width: 250px;
   }
   .cart__delivery .form .main .index,
   .cart__delivery .form .main .house,
@@ -5928,7 +6097,7 @@ div:focus {
 
 .cart__payment h3 {
   font-family: "FuturaNewMedium-Reg";
-  font-size: 16px;
+  font-size: 20px;
   text-transform: uppercase;
   color: #2d2d2d;
 }
@@ -5950,7 +6119,7 @@ div:focus {
 }
 
 .cart__payment .checkbox__block {
-  margin-top: 30px;
+  margin-top: 10px;
 }
 
 .cart__payment .checkbox__block label {
@@ -5991,10 +6160,10 @@ div:focus {
   content: "";
   position: absolute;
   display: none;
-  top: 8px;
-  left: 7.5px;
-  width: 8px;
-  height: 8px;
+  top: 3px;
+  left: 3px;
+  width: 17px;
+  height: 17px;
   border-radius: 50%;
   background: black;
 }
@@ -6015,10 +6184,10 @@ div:focus {
 
 @media (min-width: 576px) {
   .cart__payment .checkbox {
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .cart__payment .checkbox__block {
     margin-right: 30px;
@@ -6040,6 +6209,10 @@ div:focus {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   .cart__payment .checkbox__block .info .img {
     -webkit-transform: translateY(-5px);
@@ -6049,8 +6222,23 @@ div:focus {
 }
 
 @media (min-width: 992px) {
+  .cart__payment .checkbox {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
   .cart__payment .checkbox__block {
     margin-top: 0px;
+  }
+  .cart__payment .checkbox__block .info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
 }
 
@@ -6084,6 +6272,78 @@ div:focus {
   }
   .cart__submit button {
     height: 50px;
+  }
+}
+
+.cart__coupon-mob {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .cart__coupon-mob {
+    display: none;
+  }
+}
+
+.cart__coupon-mob p {
+  font-family: "FuturaNewBook-Reg";
+  font-size: 18px;
+}
+
+.cart__coupon-mob label span {
+  font-family: "FuturaNewBook-Reg";
+  margin-right: 20px;
+}
+
+.cart__coupon-mob label input {
+  padding-left: 10px;
+}
+
+.cart__coupon-mob label .arrow {
+  position: absolute;
+  right: 10px;
+}
+
+.mobile__cart-form {
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  font-family: "GazetatitulItalic";
+}
+
+@media (min-width: 1200px) {
+  .mobile__cart-form {
+    margin-top: 30px;
+    margin-bottom: 0px;
+  }
+}
+
+.cart__title-main {
+  font-size: 22px;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  font-family: "GazetatitulItalic";
+}
+
+@media (min-width: 768px) {
+  .cart__title-main {
+    margin-bottom: 40px;
   }
 }
 

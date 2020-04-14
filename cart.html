@@ -116,6 +116,9 @@
               <li><a href="#">Главная</a></li>
               <li><a href="#">Корзина</a></li>
             </ul>
+            <ul class="shop__breadcrumb-mob">
+              <li><a href="#"><i class="fas fa-chevron-left"></i>Назад</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -125,6 +128,9 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
+            <h3 class="cart__title-main">Корзина</h3>
+          </div>
+          <div class="col-12">
             <div class="cart__item">
               <div class="img">
                 <img src="img/cart/cart-item.png" alt="" />
@@ -175,6 +181,16 @@
             </div>
           </div>
           <div class="col-12">
+
+            <div class="cart__coupon-mob">
+              <label for="">
+                <span>Промокод</span>
+                <input type="text">
+                <span class="arrow"><i class="fas fa-long-arrow-alt-right"></i></span>
+              </label>
+              <p>Итого: <span>27 640 &#x20BD</span></p>
+            </div>
+
             <div class="cart__coupon">
               <label for="">
                 <span class="coupon"><i class="fas fa-tags"></i></span>
@@ -184,33 +200,37 @@
               <p>Итого: <span>27 640 &#x20BD</span></p>
             </div>
           </div>
+          <div class="col-12">
+            <h3 class="mobile__cart-form">Оформление заказа</h3>
+          </div>
           <form action="">
             <div class="col-12">
               <div class="cart__contact">
                 <h3>1. Контактная информация</h3>
                 <div class="auth">
                   <a href="#">Войти в аккаунт</a>
-                  <p>Авторизуйтесь, чтобы быстрее заполнить поля</p>
+                  <p>*авторизуйтесь, чтобы быстрее заполнить поля</p>
                 </div>
                 <div class="form">
                   <p>Покупаю впервые:</p>
                   <div class="form__main">
                     <label class="name">
-                      <span>имя</span>
+                      <span>Имя*</span>
                       <input type="text">
                     </label>
                     <label class="surname">
-                      <span>фамилия</span>
-                      <input type="text">
-                    </label>
-                    <label class="mail">
-                      <span>эл.почта</span>
+                      <span>Фамилия*</span>
                       <input type="text">
                     </label>
                     <label class="tel">
-                      <span>телефон</span>
+                      <span>Телефон*</span>
                       <input type="text">
                     </label>
+                    <label class="mail">
+                      <span>E-mail*</span>
+                      <input type="text">
+                    </label>
+                    
                   </div>
                 </div>
               </div>
@@ -225,7 +245,7 @@
                         <input type="text">
                       </label>
                       <label>
-                        <span>Город</span>
+                        <span>Город*</span>
                         <input type="text">
                       </label>
                     </div>
@@ -238,9 +258,7 @@
                           <span class="checkmark"></span>
                         </label>
                         <div class="info">
-                          <p>Доставка с примеркой</p>
-                          <span class="price">350 р</span>
-                          <span class="text">Доставка курьером с примеркой на адрес</span>
+                          <p>Бесконтактная доставка курьером</p>
                         </div>
                       </div>
                       
@@ -250,25 +268,24 @@
                           <span class="checkmark"></span>
                         </label>
                         <div class="info">
-                          <p>Самовывоз (СДЭК)</p>
-                          <span class="price">290 р</span>
-                          <span class="text">Самовывоз из пункта выдачи заказа</span>
+                          <p>Пункт выдачи</p>
                         </div> 
                       </div>
 
 
                     </div>
                     <div class="main">
-                      <label class="street">
-                        <span>Улица</span>
-                        <input type="text">
-                      </label>
                       <label class="index">
                         <span>Индекс</span>
                         <input type="text">
                       </label>
+                      <label class="street">
+                        <span>Улица*</span>
+                        <input type="text">
+                      </label>
+                      
                       <label class="house">
-                        <span>Дом</span>
+                        <span>Дом*</span>
                         <input type="text">
                       </label>
                       <label class="corpus">
@@ -276,7 +293,7 @@
                         <input type="text">
                       </label>
                       <label class="apartment">
-                        <span>Квартира/офис</span>
+                        <span>Квартира/офис*</span>
                         <input type="text">
                       </label>
                       <label class="comments">
@@ -298,7 +315,7 @@
                       <span class="checkmark"></span>
                     </label>
                     <div class="info">
-                      <p>Оплата при получении</p>
+                      <p>Оплата картой при получении</p>
                       <div class="img">
                         <img src="img/cart/visa.png" alt="">
                       </div>
@@ -311,7 +328,7 @@
                       <span class="checkmark"></span>
                     </label>
                     <div class="info">
-                      <p>Наличными курьеру</p>
+                      <p>Оплата наличными <br> при получении</p>
                     </div> 
                   </div>
 
