@@ -4305,16 +4305,56 @@ div:focus {
 }
 
 .advantage__block-fake {
-  display: none;
+  display: block;
+  position: absolute;
+  bottom: -25px;
+  right: 20px;
+  width: 300px;
+  height: 800px;
+  background-color: #e6ebf2;
+  z-index: -1;
+  border: 2px solid #838688;
+}
+
+@media (min-width: 414px) {
+  .advantage__block-fake {
+    height: 680px;
+  }
+}
+
+@media (min-width: 576px) {
+  .advantage__block-fake {
+    height: 550px;
+    width: 460px;
+    bottom: -40px;
+  }
+}
+
+@media (min-width: 768px) {
+  .advantage__block-fake {
+    height: 1030px;
+    width: 624px;
+    bottom: -60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .advantage__block-fake {
+    height: 1170px;
+    width: 840px;
+    bottom: -60px;
+  }
 }
 
 .advantage__block {
   -webkit-box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.75);
-  padding: 30px 15px 60px 15px;
+  padding: 10px 15px 0px 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   margin-top: 30px;
+  background-color: white;
+  width: 90%;
 }
 
 .advantage__title {
@@ -4327,7 +4367,6 @@ div:focus {
 
 .advantage__item {
   position: relative;
-  margin-top: 30px;
 }
 
 .advantage__item:after {
@@ -4338,6 +4377,7 @@ div:focus {
   position: absolute;
   top: 20px;
   left: 0;
+  display: none;
 }
 
 .advantage__item h3 {
@@ -4345,6 +4385,18 @@ div:focus {
   color: #4c3d33;
   font-family: "FuturaNewBook-Reg";
   text-transform: uppercase;
+  position: relative;
+}
+
+.advantage__item h3:after {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: black;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  display: block;
 }
 
 .advantage__item p {
@@ -4375,6 +4427,7 @@ div:focus {
 
 @media (min-width: 992px) {
   .advantage__block {
+    width: 90%;
     margin-top: 100px;
     padding: 50px 50px 80px 50px;
   }
@@ -4388,6 +4441,7 @@ div:focus {
 
 @media (min-width: 1200px) {
   .advantage__block {
+    width: 100%;
     padding: 80px 60px 100px 60px;
     margin-top: 120px;
     position: relative;
@@ -4398,19 +4452,18 @@ div:focus {
     -webkit-box-shadow: -4px 2px 13px 0px rgba(0, 0, 0, 0.75);
     box-shadow: -4px 2px 13px 0px rgba(0, 0, 0, 0.75);
   }
+  .advantage__item {
+    margin-top: 30px;
+  }
   .advantage__item h3 {
     font-size: 20px;
   }
   .advantage__block-fake {
     display: block;
-    position: absolute;
-    bottom: -50px;
-    right: -50px;
-    width: 1080px;
     height: 1200px;
-    background-color: #e6ebf2;
-    z-index: -1;
-    border: 2px solid #838688;
+    width: 1112px;
+    bottom: -20px;
+    right: -20px;
   }
 }
 
