@@ -199,7 +199,7 @@
     bottom: -25px;
     right: 20px;
     width: 300px;
-    height: 800px;
+    height: 750px;
     background-color: #e6ebf2;
     z-index: -1;
     border: 2px solid #838688;
@@ -353,17 +353,18 @@
       justify-content: center;
     }
     & h3 {
-      font-size: 18px;
+      font-size: 14px;
       color: #4c3d33;
       font-family: "FuturaNewBook-Reg";
       text-transform: uppercase;
       text-align: center;
     }
     & p {
-      font-size: 16px;
+      font-size: 12px;
       color: #4c3d33;
       font-family: "FuturaNewBook-Reg";
       text-align: center;
+      line-height: 12px;
     }
     & a {
       display: flex;
@@ -372,14 +373,14 @@
       text-align: center;
       margin: 0 auto;
       color: #2d2d2d;
-      font-size: 16px;
+      font-size: 12px;
       font-family: "FuturaNewBook-Reg";
       border: 1px solid #2d2d2d;
-      width: 200px;
+      width: 100%;
       height: 40px;
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: 576px) {
     margin-top: 100px;
     &__title {
       font-size: 26px;
@@ -390,9 +391,10 @@
       }
       & p {
         font-size: 18px;
+        line-height: 20px;
       }
       & a {
-        width: 200px;
+        width: 100%;
         height: 50px;
         font-size: 18px;
       }
@@ -407,6 +409,10 @@
       }
       & p {
         font-size: 20px;
+        line-height: 24px;
+      }
+      & a {
+        display: none;
       }
       &:after {
         content: "";
@@ -428,11 +434,15 @@
           display: none;
         }
         & a {
+          display: block;
           position: absolute;
           bottom: 50px;
           left: 50%;
           transform: translateX(-50%);
           z-index: 9;
+          width: 200px;
+          height: 50px;
+          line-height: 45px;
         }
         &:after {
           opacity: 1;
@@ -443,72 +453,76 @@
   }
 }
 .sale {
+  background: url("../img/banner/background.jpg") no-repeat scroll center center /
+    cover;
+  height: 420px;
   &__block {
-    margin-top: 50px;
+    margin-top: 10px;
     & .text {
       font-family: "FuturaNewBook-Reg";
-      font-size: 16px;
+      font-size: 8px;
       color: black;
     }
     & h3 {
-      font-size: 18px;
+      font-size: 10px;
       text-transform: uppercase;
       font-family: "FuturaNewBook-Reg";
       color: #2d2d2d;
       text-align: center;
+      margin-bottom: 0px;
     }
     & ul {
-      margin-top: 30px;
-      & span {
-        font-size: 16px;
+      margin-top: 10px;
+      & h4 {
+        font-size: 8px;
         text-transform: uppercase;
         font-family: "FuturaNewBook-Reg";
         color: #2d2d2d;
+        line-height: 12px;
+        margin-bottom: 0px;
       }
       & li {
         color: black;
         position: relative;
         padding-left: 10px;
-        font-size: 16px;
+        font-size: 8px;
         font-family: "FuturaNewLight-Obl";
         &:before {
           content: "";
-          width: 4px;
-          height: 4px;
+          width: 2px;
+          height: 2px;
           background-color: black;
           position: absolute;
           left: 0;
-          top: 13px;
+          top: 6px;
         }
       }
       & p {
         font-family: "FuturaNewLight-Obl";
-        font-size: 16px;
+        font-size: 8px;
         color: black;
+        margin-bottom: 0px;
       }
     }
     & .link {
       display: flex;
-      flex-direction: column;
+      flex-direction: row;
+      justify-content: space-between;
       & a {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 16px;
+        font-size: 6px;
         font-family: "FuturaNewBook-Reg";
         color: black;
-        margin-top: 10px;
         & .img {
-          width: 20px;
-          height: 20px;
+          width: 10px;
+          height: 10px;
           & img {
             width: 100%;
             height: 100%;
           }
-        }
-        & span {
-          margin-top: 10px;
         }
       }
     }
