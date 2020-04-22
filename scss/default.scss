@@ -1,4 +1,5 @@
-body {
+body,
+html {
   overflow-x: hidden;
 }
 ul {
@@ -60,6 +61,7 @@ div:focus {
       color: #2d2d2d;
       font-family: "FuturaNewLight-Obl";
       text-transform: uppercase;
+      line-height: 16px;
       & a {
         font-size: 14px;
         color: #2d2d2d;
@@ -72,6 +74,7 @@ div:focus {
       padding: 70px 0px 60px 0px;
       & p {
         font-size: 20px;
+        line-height: 26px;
         & a {
           font-size: 20px;
         }

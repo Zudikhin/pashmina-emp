@@ -316,7 +316,8 @@ template, [hidden] {
 /**
  * Add the correct display in IE 10.
  */
-body {
+body,
+html {
   overflow-x: hidden;
 }
 
@@ -399,6 +400,7 @@ div:focus {
   color: #2d2d2d;
   font-family: "FuturaNewLight-Obl";
   text-transform: uppercase;
+  line-height: 16px;
 }
 
 .section__block .main p a {
@@ -415,6 +417,7 @@ div:focus {
   }
   .section__block .main p {
     font-size: 20px;
+    line-height: 26px;
   }
   .section__block .main p a {
     font-size: 20px;
@@ -3083,7 +3086,7 @@ div:focus {
   }
 }
 
-.return__title {
+.return__title h3 {
   font-size: 18px;
   color: #2d2d2d;
   font-family: "FuturaNewMedium-Reg";
@@ -3091,20 +3094,27 @@ div:focus {
   text-align: center;
   position: relative;
   display: inline-block;
+  margin-left: 30px;
 }
 
-.return__title:before {
+.return__title h3:before {
   content: "";
-  width: 200%;
+  width: 500%;
   height: 1px;
   background-color: #2d2d2d;
   position: absolute;
-  bottom: 0px;
+  bottom: -10px;
   left: 0;
 }
 
+@media (min-width: 768px) {
+  .return__title h3:before {
+    display: none;
+  }
+}
+
 @media (min-width: 992px) {
-  .return__title {
+  .return__title h3 {
     font-size: 30px;
     text-align: left;
   }
@@ -3113,6 +3123,23 @@ div:focus {
 .return__main {
   margin-top: 20px;
   position: relative;
+}
+
+.return__main:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #2d2d2d;
+  position: absolute;
+  top: -20px;
+  left: 0;
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .return__main:before {
+    display: block;
+  }
 }
 
 .return__main p {
@@ -3200,6 +3227,7 @@ div:focus {
   color: #2d2d2d;
   font-family: "FuturaNewLight-Obl";
   text-transform: uppercase;
+  line-height: 16px;
 }
 
 @media (min-width: 992px) {
@@ -3210,7 +3238,8 @@ div:focus {
     padding: 50px 0px 40px 0px;
   }
   .care__main p {
-    font-size: 18px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -4312,14 +4341,14 @@ div:focus {
 }
 
 .advantage__item h3 {
-  font-size: 16px;
+  font-size: 10px;
   color: #4c3d33;
   font-family: "FuturaNewBook-Reg";
   text-transform: uppercase;
 }
 
 .advantage__item p {
-  font-size: 14px;
+  font-size: 8px;
   color: #4c3d33;
   font-family: "FuturaNewBook-Obl";
   text-transform: uppercase;
@@ -5753,6 +5782,12 @@ div:focus {
   }
   .cart__contact .form__main label input {
     width: 250px;
+  }
+  .cart__contact .form__main .name {
+    width: 100%;
+  }
+  .cart__contact .form__main .name input {
+    width: 100%;
   }
   .cart__contact .form__main p {
     position: absolute;
