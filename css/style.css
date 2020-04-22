@@ -4963,8 +4963,7 @@ div:focus {
 
 .sertificate__item .img {
   margin: auto;
-  width: 300px;
-  height: 400px;
+  width: 100%;
 }
 
 .sertificate__item .img img {
@@ -4973,9 +4972,9 @@ div:focus {
 }
 
 .sertificate__item a {
-  width: 280px;
+  width: 98%;
   margin: 0 auto;
-  margin-top: 30px;
+  margin-top: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -4985,23 +4984,21 @@ div:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 40px;
+  text-align: center;
+  height: 26px;
   color: #2d2d2d;
-  font-size: 16px;
+  font-size: 10px;
+  line-height: 10px;
   font-family: "FuturaNewBook-Reg";
   border: 1px solid black;
 }
 
 @media (min-width: 576px) {
   .sertificate__item .img {
-    width: auto;
-    height: auto;
+    width: 100%;
   }
   .sertificate__item .img img {
-    display: block;
-    margin: 0 auto;
-    width: auto;
-    height: auto;
+    width: 100%;
   }
 }
 
@@ -5024,6 +5021,9 @@ div:focus {
   }
   .sertificate__item {
     margin-top: 50px;
+  }
+  .sertificate__item a {
+    height: 40px;
   }
 }
 
@@ -5054,6 +5054,8 @@ div:focus {
             transform: translate(-50%, -50%);
     -webkit-transition: all 0.3s ease;
     transition: all 0.3s ease;
+    font-size: 16px;
+    width: 80%;
   }
   .sertificate__item.active .img {
     opacity: 0.2;
@@ -5079,23 +5081,31 @@ div:focus {
 .feedback {
   background: url("../img/banner/form.jpg") no-repeat scroll left center/cover;
   margin-top: 50px;
+  height: 350px;
 }
 
 @media (min-width: 768px) {
   .feedback {
     margin-top: 100px;
+    height: 600px;
   }
 }
 
 @media (min-width: 992px) {
   .feedback {
     margin-bottom: 120px;
+    height: 650px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .feedback {
+    height: auto;
   }
 }
 
 .feedback__form {
-  width: 300px;
-  margin: 50px auto;
+  width: 150px;
   background-color: white;
   -webkit-box-shadow: 0px -6px 52px -13px rgba(0, 0, 0, 0.26);
   box-shadow: 0px -6px 52px -13px rgba(0, 0, 0, 0.26);
@@ -5113,19 +5123,27 @@ div:focus {
       -ms-flex-align: center;
           align-items: center;
   padding-bottom: 10px;
+  margin-top: 35px;
+}
+
+@media (min-width: 576px) {
+  .feedback__form {
+    width: 200px;
+  }
 }
 
 @media (min-width: 768px) {
   .feedback__form {
-    margin: 100px auto;
-    width: 400px;
+    width: 300px;
+    margin-top: 75px;
   }
 }
 
 @media (min-width: 992px) {
   .feedback__form {
+    width: 400px;
     margin-left: 0px;
-    margin-top: 160px;
+    margin-top: 50px;
     margin-bottom: 60px;
   }
 }
@@ -5133,103 +5151,154 @@ div:focus {
 @media (min-width: 1200px) {
   .feedback__form {
     margin-top: 270px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
 }
 
 .feedback__form h3 {
-  font-size: 18px;
+  font-size: 10px;
   text-transform: uppercase;
   font-family: "FuturaNewBook-Reg";
   color: #2d2d2d;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 10px;
+}
+
+@media (min-width: 576px) {
+  .feedback__form h3 {
+    font-size: 12px;
+  }
 }
 
 @media (min-width: 768px) {
   .feedback__form h3 {
-    font-size: 24px;
+    font-size: 16px;
+    margin-top: 30px;
+  }
+}
+
+@media (min-width: 992px) {
+  .feedback__form h3 {
+    font-size: 18px;
+    margin-top: 40px;
+    width: 250px;
   }
 }
 
 .feedback__form .input {
-  width: 280px;
-  height: 40px;
+  width: 90%;
+  height: 20px;
   padding-left: 10px;
   border: 1px solid #dcdcdb;
   margin-top: 10px;
+  font-size: 10px;
 }
 
 .feedback__form .input::-webkit-input-placeholder {
   color: black;
-  font-size: 16px;
+  font-size: 10px;
   font-family: "FuturaNewLight-Obl";
 }
 
 .feedback__form .input::-moz-placeholder {
   color: black;
-  font-size: 16px;
+  font-size: 10px;
   font-family: "FuturaNewLight-Obl";
 }
 
 .feedback__form .input:-ms-input-placeholder {
   color: black;
-  font-size: 16px;
+  font-size: 10px;
   font-family: "FuturaNewLight-Obl";
 }
 
 .feedback__form .input::-ms-input-placeholder {
   color: black;
-  font-size: 16px;
+  font-size: 10px;
   font-family: "FuturaNewLight-Obl";
 }
 
 .feedback__form .input::placeholder {
   color: black;
-  font-size: 16px;
+  font-size: 10px;
   font-family: "FuturaNewLight-Obl";
 }
 
 @media (min-width: 768px) {
   .feedback__form .input {
-    width: 360px;
+    width: 90%;
+    height: 40px;
+    font-size: 16px;
+  }
+  .feedback__form .input::-webkit-input-placeholder {
+    font-size: 16px;
+  }
+  .feedback__form .input::-moz-placeholder {
+    font-size: 16px;
+  }
+  .feedback__form .input:-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .feedback__form .input::-ms-input-placeholder {
+    font-size: 16px;
+  }
+  .feedback__form .input::placeholder {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .feedback__form .input {
     height: 50px;
   }
 }
 
 .feedback__form button {
-  width: 280px;
-  height: 40px;
+  width: 90%;
+  height: 20px;
   background-color: black;
   color: white;
   font-family: "FuturaNewBook-Reg";
-  font-size: 16px;
+  font-size: 10px;
   border: 1px solid black;
   margin-top: 10px;
 }
 
 @media (min-width: 768px) {
   .feedback__form button {
-    width: 360px;
+    width: 90%;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 992px) {
+  .feedback__form button {
     height: 50px;
   }
 }
 
 .feedback__form__footer {
-  width: 280px;
+  width: 100%;
 }
 
 @media (min-width: 768px) {
   .feedback__form__footer {
-    width: 360px;
+    width: 90%;
   }
 }
 
 .feedback__form__footer p {
   margin-left: 20px;
-  font-size: 14px;
+  font-size: 8px;
   color: black;
   font-family: "FuturaNewBook-Reg";
+}
+
+@media (min-width: 768px) {
+  .feedback__form__footer p {
+    font-size: 16px;
+  }
 }
 
 .feedback__form__footer p a {
@@ -5241,7 +5310,7 @@ div:focus {
   display: block;
   position: relative;
   cursor: pointer;
-  font-size: 22px;
+  font-size: 12px;
   -webkit-user-select: none;
   -moz-user-select: none;
   -ms-user-select: none;
@@ -5262,10 +5331,10 @@ div:focus {
 
 .feedback__form__footer label span {
   position: absolute;
-  top: 12px;
-  left: 0;
-  height: 12px;
-  width: 12px;
+  top: 11px;
+  left: 10px;
+  height: 6px;
+  width: 6px;
   background-color: transparent;
   border: 1px solid black;
 }
@@ -5274,14 +5343,30 @@ div:focus {
   content: "";
   position: absolute;
   display: none;
-  left: 2px;
-  top: 1px;
-  width: 6px;
-  height: 6px;
+  left: 1px;
+  top: 0px;
+  width: 3px;
+  height: 3px;
   border: solid black;
-  border-width: 0 2px 2px 0;
+  border-width: 0 1px 1px 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+@media (min-width: 768px) {
+  .feedback__form__footer label span {
+    height: 12px;
+    width: 12px;
+    left: 0px;
+    top: 14px;
+  }
+  .feedback__form__footer label span:after {
+    left: 2px;
+    top: 1px;
+    width: 6px;
+    height: 6px;
+    border-width: 0 2px 2px 0;
+  }
 }
 
 .cart form {
