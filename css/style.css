@@ -4608,7 +4608,7 @@ div:focus {
 
 .sale {
   background: url("../img/banner/background.jpg") no-repeat scroll center center/cover;
-  height: 420px;
+  height: 470px;
 }
 
 .sale__block {
@@ -4619,6 +4619,7 @@ div:focus {
   font-family: "FuturaNewBook-Reg";
   font-size: 8px;
   color: black;
+  margin-bottom: 0px;
 }
 
 .sale__block h3 {
@@ -4631,7 +4632,7 @@ div:focus {
 }
 
 .sale__block ul {
-  margin-top: 10px;
+  margin-top: 5px;
 }
 
 .sale__block ul h4 {
@@ -4679,6 +4680,7 @@ div:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 5px;
 }
 
 .sale__block .link a {
