@@ -1,6 +1,10 @@
 .banner {
   background: url("../img/banner/banner.png") no-repeat scroll center center /
     cover;
+  margin-top: 10px;
+  @media (min-width: 768px) {
+    margin-top: 0px;
+  }
   @media (min-width: 1200px) {
     padding-bottom: 50px;
   }
@@ -11,22 +15,22 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 70px;
   & h2 {
     font-family: "FuturaNewDemi-Reg";
-    font-size: 30px;
+    font-size: 18px;
     color: #424242;
     text-align: center;
     text-transform: uppercase;
   }
   & .quality {
-    width: 250px;
-    height: 50px;
+    width: 150px;
+    height: 40px;
     background-color: #424242;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 10px;
     position: relative;
     &:after {
       content: "";
@@ -40,7 +44,7 @@
     }
     & p {
       color: #b29e89;
-      font-size: 16px;
+      font-size: 9px;
       font-family: "FuturaNewDemi-Reg";
       margin-bottom: 0px;
       text-transform: uppercase;
@@ -48,7 +52,7 @@
   }
   & span {
     font-family: "FuturaNewLight-Reg";
-    font-size: 24px;
+    font-size: 17px;
     text-align: center;
     color: #404852;
     display: block;
@@ -58,37 +62,57 @@
     font-family: "FuturaNewLight-Reg";
     color: #4c3d33;
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 12px;
+    line-height: 12px;
   }
   @media (min-width: 576px) {
-    margin-top: 150px;
+    margin-top: 70px;
+    & h2 {
+      font-size: 22px;
+    }
     & span {
-      margin-top: 22px;
+      margin-top: 10px;
+      font-size: 20px;
+    }
+    & .quality {
+      margin-top: 30px;
+      width: 200px;
+      height: 50px;
+      & p {
+        font-size: 12px;
+      }
     }
     & .text {
       margin-top: 50px;
+      font-size: 16px;
+      line-height: 16px;
     }
   }
   @media (min-width: 768px) {
+    margin-top: 150px;
     & h2 {
-      font-size: 40px;
+      font-size: 30px;
     }
     & span {
-      font-size: 30px;
+      font-size: 24px;
     }
     & .text {
       font-size: 25px;
     }
     & .quality {
-      width: 350px;
-      height: 80px;
+      margin-top: 10px;
+      width: 300px;
+      height: 60px;
       & p {
-        font-size: 25px;
+        font-size: 20px;
       }
+    }
+    & .text {
+      margin-bottom: 50px;
     }
   }
   @media (min-width: 992px) {
-    margin-top: 250px;
+    margin-top: 200px;
     & h2 {
       font-size: 52px;
     }
@@ -98,11 +122,11 @@
     & .quality {
       width: 400px;
       height: 100px;
-      margin-top: 100px;
+      margin-top: 50px;
       &:after {
         width: 100px;
         height: 8px;
-        bottom: -70px;
+        bottom: -30px;
       }
       & p {
         font-size: 26px;
@@ -110,24 +134,54 @@
     }
     & .text {
       font-size: 30px;
-      margin-top: 240px;
+      margin-top: 200px;
       line-height: 30px;
+      margin-bottom: 30px;
     }
   }
   @media (min-width: 1200px) {
+    margin-top: 250px;
     & .quality {
-      width: 520px;
-      height: 120px;
+      width: 500px;
+      height: 100px;
+    }
+    & .text {
+      font-size: 30px;
     }
   }
 }
 
 .about {
   margin-top: 50px;
+  position: relative;
   &__img {
+    display: none;
     width: 100%;
+    height: 100%;
+    @media (min-width: 992px) {
+      display: block;
+    }
     & img {
       width: 100%;
+    }
+  }
+  &__fake-block {
+    position: relative;
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      bottom: 0;
+      z-index: -1;
+      opacity: 0.3;
+      display: block;
+      background: url(../img/banner/about.png);
+      @media (min-width: 992px) {
+        display: none;
+      }
     }
   }
   &__text {
@@ -140,6 +194,10 @@
       position: absolute;
       top: 22px;
       left: 0px;
+      display: none;
+      @media (min-width: 992px) {
+        display: block;
+      }
     }
     & h3 {
       font-size: 18px;
@@ -147,6 +205,21 @@
       font-family: "FuturaNewMedium-Reg";
       color: #2d2d2d;
       text-align: center;
+      margin-left: 30px;
+      display: inline-block;
+      position: relative;
+      &:after {
+        content: "";
+        width: 500%;
+        height: 2px;
+        background-color: #2d2d2d;
+        position: absolute;
+        bottom: -5px;
+        left: 0px;
+        @media (min-width: 992px) {
+          display: none;
+        }
+      }
     }
     & p {
       font-size: 16px;
