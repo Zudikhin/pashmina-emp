@@ -4493,7 +4493,8 @@ div:focus {
 }
 
 .availability__block .img img {
-  width: 100%;
+  width: 177px;
+  height: 170px;
 }
 
 .availability__block h3 {
