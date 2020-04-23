@@ -4492,6 +4492,10 @@ div:focus {
           justify-content: center;
 }
 
+.availability__block .img img {
+  width: 100%;
+}
+
 .availability__block h3 {
   font-size: 14px;
   color: #4c3d33;
