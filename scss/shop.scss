@@ -955,7 +955,8 @@
       background-color: transparent;
       margin: 0px;
       padding: 0px;
-      right: 10px;
+      right: 15px;
+      top: 10px;
       @media (min-width: 992px) {
         right: 20px;
         top: 20px;
@@ -1075,9 +1076,20 @@
       line-height: 40px;
       margin-top: 10px;
       font-family: "FuturaNewBook-Reg";
+      transition: all 0.3s ease;
       @media (min-width: 768px) {
         width: 48%;
         font-size: 18px;
+      }
+      @media (min-width: 992px) {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        &:hover {
+          color: white;
+          background-color: black;
+          transition: all 0.3s ease;
+        }
       }
     }
     & button {
@@ -1090,9 +1102,20 @@
       border: none;
       margin-top: 9px;
       font-family: "FuturaNewBook-Reg";
+      transition: all 0.3s ease;
       @media (min-width: 768px) {
         width: 48%;
         font-size: 18px;
+      }
+      @media (min-width: 992px) {
+        background-color: white;
+        color: black;
+        border: 1px solid black;
+        &:hover {
+          color: white;
+          background-color: black;
+          transition: all 0.3s ease;
+        }
       }
     }
   }
