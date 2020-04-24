@@ -180,14 +180,6 @@ $(document).ready(function () {
     $(this).children().eq(1).toggleClass("active");
   });
 
-  $(".shop__btn-desc").click(function () {
-    $(this).addClass("loading");
-  });
-
-  $(".shop__btn-mob").click(function () {
-    $(this).addClass("loading");
-  });
-
   $(".sertificate__item").hover(function () {
     $(this).toggleClass("active");
   });

@@ -655,7 +655,13 @@
               <div class="shop__item">
                 <div class="shop__img">
                   <img src="img/shop/eigth.png" alt="" />
-                  <a class="shop__btn-desc" href="#">В корзину</a>
+                  <a
+                    data-toggle="modal"
+                    data-target="#shopModal"
+                    class="shop__btn-desc"
+                    href="#"
+                    >В корзину</a
+                  >
                 </div>
                 <p>
                   Светло-коричевный полонтин из элитного кашемира (пашмины)
@@ -668,13 +674,25 @@
               <div class="shop__item">
                 <div class="shop__img">
                   <img src="img/shop/nine.png" alt="" />
-                  <a class="shop__btn-desc" href="#">В корзину</a>
+                  <a
+                    data-toggle="modal"
+                    data-target="#shopModal"
+                    class="shop__btn-desc"
+                    href=""
+                    >В корзину</a
+                  >
                 </div>
                 <p>
                   Светло-коричевный полонтин из элитного кашемира (пашмины)
                 </p>
                 <span>16905 руб.</span>
-                <a class="shop__btn-mob" href="#">В корзину</a>
+                <a
+                  data-toggle="modal"
+                  data-target="#shopModal"
+                  class="shop__btn-mob"
+                  href="#"
+                  >В корзину</a
+                >
               </div>
             </div>
           </div>
@@ -685,6 +703,127 @@
     <hr class="hr" />
 
     <div class="header__modal"></div>
+
+    <div
+      class="modal fade"
+      id="shopModal"
+      tabindex="-1"
+      role="dialog"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Товар добавлен в корзину
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true"
+                ><img src="img/cart/close-icon.png" alt=""
+              /></span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="item">
+              <a class="item__close" href="">
+                <i class="fas fa-times"></i>
+              </a>
+              <a class="img">
+                <img src="img/shop/nine.png" alt="" />
+              </a>
+              <div class="item__title">
+                <a href="#"
+                  >Светло-коричевный полонтин из элитного кашемира (пашмины)</a
+                >
+                <span class="count">2 x</span>
+                <span>16905 руб.</span>
+              </div>
+            </div>
+            <div class="item">
+              <a class="item__close" href="">
+                <i class="fas fa-times"></i>
+              </a>
+              <a class="img">
+                <img src="img/shop/nine.png" alt="" />
+              </a>
+              <div class="item__title">
+                <a href="#"
+                  >Светло-коричевный полонтин из элитного кашемира (пашмины)</a
+                >
+                <span class="count">2 x</span>
+                <span>16905 руб.</span>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <p class="total">Итог: <span>33810 руб.</span></p>
+            <div class="btns">
+              <a href="">В корзину</a>
+              <button>Продолжить покупки</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- <div class="modal__shop">
+      <div class="modal__shop-base">
+        <button class="modal__shop-close">
+          <img src="img/cart/close-icon.png" alt="" />
+        </button>
+        <div class="modal__shop-body">
+          <div class="modal__shop-body-header">
+            <p>Товар добавлен в корзину</p>
+          </div>
+          <div class="modal__shop-body-main">
+            <div class="item">
+              <a class="item__close" href="">
+                <img src="img/cart/close-icon.png" alt="" />
+              </a>
+              <a class="img">
+                <img src="img/shop/nine.png" alt="" />
+              </a>
+              <div class="item__title">
+                <a href="#"
+                  >Светло-коричевный полонтин из элитного кашемира (пашмины)</a
+                >
+                <span class="count">2x</span>
+                <span>16905 руб.</span>
+              </div>
+            </div>
+
+            <div class="item">
+              <button class="item__close">
+                <img src="img/cart/close-icon.png" alt="" />
+              </button>
+              <div class="img">
+                <img src="img/shop/eigth.png" alt="" />
+              </div>
+              <div class="item__title">
+                <a href="#"
+                  >Светло-коричевный полонтин из элитного кашемира (пашмины)</a
+                >
+                <span class="count">1x</span>
+                <span>16905 руб.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="modal__shop-body-total">
+          <p>Итог:<span></span></p>
+        </div>
+        <div class="modal__shop-body-footer">
+          
+        </div>
+      </div>
+    </div> -->
 
     <footer class="footer">
       <div class="container">
@@ -743,6 +882,7 @@
 
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/slick.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <script src="js/jquery.nice-select.min.js"></script>
     <script src="js/main.js"></script>
   </body>

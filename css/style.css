@@ -2256,28 +2256,6 @@ div:focus {
   position: relative;
 }
 
-.shop__btn-mob.loading:after {
-  font-family: WooCommerce;
-  content: "\e01c";
-  vertical-align: top;
-  font-weight: 400;
-  position: absolute;
-  top: 15%;
-  right: 10px;
-  -webkit-animation: spin 2s linear infinite;
-          animation: spin 2s linear infinite;
-}
-
-.shop__btn-mob.added:after {
-  font-family: WooCommerce;
-  content: "\e017";
-  margin-left: 0.53em;
-  vertical-align: bottom;
-  position: absolute;
-  right: 10px;
-  top: 15%;
-}
-
 @media (min-width: 992px) {
   .shop__btn-mob {
     display: none;
@@ -2295,26 +2273,6 @@ div:focus {
     display: flex;
     position: relative;
     width: 100%;
-  }
-  .shop__btn-desc.loading:after {
-    font-family: WooCommerce;
-    content: "\e01c";
-    vertical-align: top;
-    font-weight: 400;
-    position: absolute;
-    top: 15%;
-    right: 10px;
-    -webkit-animation: spin 2s linear infinite;
-            animation: spin 2s linear infinite;
-  }
-  .shop__btn-desc.added:after {
-    font-family: WooCommerce;
-    content: "\e017";
-    margin-left: 0.53em;
-    vertical-align: bottom;
-    right: 10px;
-    top: 15%;
-    position: absolute;
   }
 }
 
@@ -3084,6 +3042,267 @@ div:focus {
 
 .shop__filters .content .color li label .unpainted:after {
   background-color: #a29990;
+}
+
+#shopModal .modal-content {
+  top: 100px;
+}
+
+#shopModal .modal-dialog {
+  max-width: 90%;
+}
+
+@media (min-width: 576px) {
+  #shopModal .modal-dialog {
+    max-width: 80%;
+  }
+}
+
+@media (min-width: 992px) {
+  #shopModal .modal-dialog {
+    max-width: 40%;
+  }
+}
+
+#shopModal .modal-header {
+  border: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#shopModal .modal-header h5 {
+  font-size: 18px;
+  color: black;
+  font-family: "FuturaNewBook-Reg";
+  text-align: center;
+  margin-top: 30px;
+}
+
+@media (min-width: 576px) {
+  #shopModal .modal-header h5 {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  #shopModal .modal-header h5 {
+    font-size: 24px;
+  }
+}
+
+#shopModal .modal-header button {
+  border: none;
+  background-color: transparent;
+  margin: 0px;
+  padding: 0px;
+  right: 10px;
+}
+
+@media (min-width: 992px) {
+  #shopModal .modal-header button {
+    right: 20px;
+    top: 20px;
+  }
+}
+
+#shopModal .modal-body {
+  padding: 0px 20px;
+}
+
+@media (min-width: 992px) {
+  #shopModal .modal-body {
+    padding: 0px 50px;
+  }
+}
+
+#shopModal .modal-body .item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  margin-top: 20px;
+}
+
+#shopModal .modal-body .item:before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #e8e4e3;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+}
+
+#shopModal .modal-body .item__title {
+  margin-left: 10px;
+}
+
+@media (min-width: 768px) {
+  #shopModal .modal-body .item__title {
+    width: 300px;
+  }
+}
+
+#shopModal .modal-body .item__title span {
+  font-size: 14px;
+  font-family: "FuturaNewBook-Reg";
+  color: black;
+}
+
+@media (min-width: 576px) {
+  #shopModal .modal-body .item__title span {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  #shopModal .modal-body .item__title span {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+#shopModal .modal-body .item__title a {
+  font-size: 14px;
+  font-family: "FuturaNewBook-Reg";
+  color: black;
+  line-height: 16px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 576px) {
+  #shopModal .modal-body .item__title a {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) {
+  #shopModal .modal-body .item__title a {
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+#shopModal .modal-body .item__close i {
+  color: black;
+}
+
+#shopModal .modal-body .item .img {
+  width: 150px;
+  height: 90px;
+  display: block;
+}
+
+@media (min-width: 576px) {
+  #shopModal .modal-body .item .img {
+    width: 200px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 768px) {
+  #shopModal .modal-body .item .img {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+@media (min-width: 992px) {
+  #shopModal .modal-body .item .img {
+    width: 120px;
+    height: 150px;
+  }
+}
+
+#shopModal .modal-body .item .img img {
+  width: 100%;
+  height: 100%;
+}
+
+#shopModal .modal-footer {
+  border: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 10px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+@media (min-width: 992px) {
+  #shopModal .modal-footer {
+    padding: 20px 50px;
+  }
+}
+
+#shopModal .modal-footer .total {
+  font-size: 16px;
+  font-family: "FuturaNewBook-Reg";
+  color: black;
+}
+
+@media (min-width: 768px) {
+  #shopModal .modal-footer .total {
+    font-size: 20px;
+  }
+}
+
+#shopModal .modal-footer .btns {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  #shopModal .modal-footer .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+#shopModal .modal-footer a {
+  height: 40px;
+  color: white;
+  font-size: 14px;
+  background-color: black;
+  display: block;
+  width: 100%;
+  text-align: center;
+  line-height: 40px;
+  margin-top: 10px;
+  font-family: "FuturaNewBook-Reg";
+}
+
+@media (min-width: 768px) {
+  #shopModal .modal-footer a {
+    width: 48%;
+    font-size: 18px;
+  }
+}
+
+#shopModal .modal-footer button {
+  background-color: black;
+  color: white;
+  font-size: 14px;
+  height: 40px;
+  width: 100%;
+  display: block;
+  border: none;
+  margin-top: 9px;
+  font-family: "FuturaNewBook-Reg";
+}
+
+@media (min-width: 768px) {
+  #shopModal .modal-footer button {
+    width: 48%;
+    font-size: 18px;
+  }
 }
 
 .return {
