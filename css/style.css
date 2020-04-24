@@ -8775,6 +8775,7 @@ div:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  position: relative;
 }
 
 .footer__text-desc {
@@ -9062,5 +9063,51 @@ div:focus {
   .hr {
     display: block;
     margin-top: 62px;
+  }
+}
+
+.footer__up {
+  position: absolute;
+  bottom: 45px;
+  right: 20px;
+  border: none;
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  z-index: 9;
+  -webkit-box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 5px 24px 0px rgba(0, 0, 0, 0.75);
+}
+
+.footer__up img {
+  width: 80%;
+  height: 50%;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+}
+
+@media (min-width: 576px) {
+  .footer__up {
+    right: 80px;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__up {
+    bottom: 60px;
+    right: 100px;
+  }
+}
+
+@media (min-width: 992px) {
+  .footer__up {
+    right: 200px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .footer__up {
+    right: 280px;
   }
 }

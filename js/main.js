@@ -240,6 +240,15 @@ $(document).ready(function () {
     });
   });
 
+  $(".footer__up").click(function () {
+    $("html, body").animate(
+      {
+        scrollTop: $("header").offset().top,
+      },
+      2000
+    );
+  });
+
   $("#btnMobFilter").click(function () {
     $("#mobFilter").css("display", "block");
   });
