@@ -212,6 +212,7 @@ $(document).ready(function () {
     $(".account__content .order").addClass("active");
     $(".account__content .personal").addClass("active");
     $(".account__content .address").removeClass("active");
+    $(".account__content .discounts").removeClass("active");
   });
 
   $("#lk").click(function (event) {
@@ -219,12 +220,21 @@ $(document).ready(function () {
     $(".account__content .order").removeClass("active");
     $(".account__content .personal").removeClass("active");
     $(".account__content .address").removeClass("active");
+    $(".account__content .discounts").removeClass("active");
+  });
+  $("#discounts").click(function (event) {
+    event.preventDefault();
+    $(".account__content .discounts").addClass("active");
+    $(".account__content .personal").addClass("active");
+    $(".account__content .order").removeClass("active");
+    $(".account__content .address").removeClass("active");
   });
   $("#addres").click(function (event) {
     event.preventDefault();
     $(".account__content .address").addClass("active");
     $(".account__content .order").removeClass("active");
     $(".account__content .personal").addClass("active");
+    $(".account__content .discounts").removeClass("active");
   });
 
   $(".account__content .address .table .radio input").each(function (

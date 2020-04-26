@@ -797,10 +797,12 @@ div:focus {
   }
   .header__desc__logo {
     margin-top: 28px;
-    width: 120px;
+    width: 130px;
+    height: 60px;
   }
   .header__desc__logo img {
     width: 100%;
+    height: 100%;
   }
   .header__desc__icons {
     display: -webkit-box;
@@ -2550,7 +2552,7 @@ div:focus {
   .shop__filters {
     display: block;
     position: absolute;
-    top: 6%;
+    top: 8%;
     left: 5%;
     width: 300px;
   }
@@ -2568,41 +2570,64 @@ div:focus {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-bottom: 50px;
+    margin-bottom: 60px;
   }
 }
 
 .filters__desk .selected__filter {
+  width: 770px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .filters__desk .selected__filter .filter__item {
   border: 1px solid black;
-  padding: 10px 0px 10px 10px;
   margin-right: 30px;
   cursor: pointer;
+  width: 180px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 20px;
 }
 
 .filters__desk .selected__filter .filter__item span {
   font-size: 18px;
   font-family: "FuturaNewBook-Obl";
   color: black;
+  padding-left: 10px;
 }
 
 .filters__desk .selected__filter .filter__item button {
   border: none;
   background-color: transparent;
-  -webkit-transform: translateY(-2px);
-          transform: translateY(-2px);
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+  width: 30px;
+  height: 15px;
+}
+
+.filters__desk .selected__filter .filter__item button img {
+  width: 100%;
+  height: 100%;
 }
 
 .filters__desk .selected__filter .clear__filter {
   margin-left: 10px;
+  margin-top: 25px;
 }
 
 .filters__desk .selected__filter .clear__filter a {
@@ -2615,6 +2640,7 @@ div:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 24px;
 }
 
 .filters__desk .base__filter .text {
@@ -2930,17 +2956,17 @@ div:focus {
 }
 
 .shop__filters .content ul {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .shop__filters .content ul li {
-  margin-top: 24px;
+  margin-top: 18px;
 }
 
 .shop__filters .content ul li label {
   display: block;
   position: relative;
-  padding-left: 40px;
+  padding-left: 30px;
   cursor: pointer;
   font-size: 18px;
   font-family: "FuturaNewBook-Obl";
@@ -2960,10 +2986,10 @@ div:focus {
 
 .shop__filters .content ul li label .checkmark {
   position: absolute;
-  top: -5px;
+  top: 1px;
   left: -10px;
-  height: 36px;
-  width: 36px;
+  height: 24px;
+  width: 24px;
   background-color: white;
   border-radius: 50%;
   border: 1px solid black;
@@ -2973,12 +2999,12 @@ div:focus {
   content: "";
   position: absolute;
   display: none;
-  width: 22px;
-  height: 22px;
+  width: 14px;
+  height: 14px;
   background-color: black;
   border-radius: 50%;
-  left: 6px;
-  top: 6px;
+  left: 4px;
+  top: 4px;
 }
 
 .shop__filters .content .color li label .checkmark::after {
@@ -3649,28 +3675,34 @@ div:focus {
 
 @media (min-width: 992px) {
   .error__content {
-    margin-top: 200px;
+    margin-top: 60px;
   }
   .error__content p {
-    font-size: 24px;
+    font-size: 20px;
+    margin-top: 40px;
   }
   .error__content .error__first_text {
-    margin-top: 120px;
+    margin-top: 20px;
   }
   .error__img {
-    width: auto;
+    width: 460px;
+    height: 260px;
+  }
+  .error__img img {
+    width: 100%;
+    height: 100%;
   }
   .error__catalog {
     width: 260px;
     height: 50px;
     font-size: 24px;
-    margin-top: 36px;
+    margin-top: 0px;
   }
   .error__connect {
     width: 260px;
     height: 50px;
     font-size: 24px;
-    margin-top: 30px;
+    margin-top: 0px;
   }
 }
 
@@ -4090,7 +4122,7 @@ div:focus {
 @media (min-width: 1200px) {
   .blog__info:after {
     width: 38.5%;
-    display: block;
+    display: none;
   }
 }
 
@@ -4212,6 +4244,18 @@ div:focus {
   font-family: "FuturaNewBook-Reg";
 }
 
+.blog__item-third:after {
+  content: "";
+  width: 1100%;
+  height: 350px;
+  position: absolute;
+  left: -15px;
+  bottom: 0;
+  background-color: #e6ebf2;
+  z-index: -1;
+  display: none;
+}
+
 @media (min-width: 768px) {
   .blog__item-third {
     -webkit-transform: translateY(-44px);
@@ -4230,6 +4274,9 @@ div:focus {
   .blog__item-third {
     -webkit-transform: translateY(-70px);
             transform: translateY(-70px);
+  }
+  .blog__item-third:after {
+    display: block;
   }
 }
 
@@ -6100,7 +6147,7 @@ div:focus {
 }
 
 .cart__coupon {
-  display: none;
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -6109,17 +6156,33 @@ div:focus {
   }
 }
 
+.cart__coupon .promo__name {
+  position: absolute;
+  right: 220px;
+  top: 30px;
+  color: black;
+  font-family: "FuturaNewMedium-Reg";
+  font-size: 18px;
+}
+
+@media (min-width: 992px) {
+  .cart__coupon .promo__name {
+    display: none;
+  }
+}
+
 .cart__coupon p {
   font-size: 18px;
-  text-transform: uppercase;
   color: black;
   font-family: "FuturaNewMedium-Reg";
   margin-top: 10px;
+  text-align: right;
 }
 
 @media (min-width: 992px) {
   .cart__coupon p {
     margin-top: 0px;
+    text-transform: uppercase;
   }
 }
 
@@ -6127,7 +6190,17 @@ div:focus {
   border: 1px dashed #a5a5b1;
   position: relative;
   display: block;
+  width: 180px;
+  margin-left: auto;
+  height: 30px;
   margin-top: 30px;
+}
+
+@media (min-width: 992px) {
+  .cart__coupon label {
+    margin-left: 0px;
+    width: 260px;
+  }
 }
 
 .cart__coupon label span {
@@ -6142,34 +6215,75 @@ div:focus {
   color: #a5a5b1;
 }
 
+.cart__coupon label input {
+  border: none;
+  width: 150px;
+  padding-left: 40px;
+}
+
+@media (min-width: 992px) {
+  .cart__coupon label input {
+    padding-left: 50px;
+    width: auto;
+  }
+}
+
 .cart__coupon label input::-webkit-input-placeholder {
   font-family: "FuturaNewLight-Obl";
   font-size: 16px;
   color: #a5a5b1;
+  opacity: 0;
 }
 
 .cart__coupon label input::-moz-placeholder {
   font-family: "FuturaNewLight-Obl";
   font-size: 16px;
   color: #a5a5b1;
+  opacity: 0;
 }
 
 .cart__coupon label input:-ms-input-placeholder {
   font-family: "FuturaNewLight-Obl";
   font-size: 16px;
   color: #a5a5b1;
+  opacity: 0;
 }
 
 .cart__coupon label input::-ms-input-placeholder {
   font-family: "FuturaNewLight-Obl";
   font-size: 16px;
   color: #a5a5b1;
+  opacity: 0;
 }
 
 .cart__coupon label input::placeholder {
   font-family: "FuturaNewLight-Obl";
   font-size: 16px;
   color: #a5a5b1;
+  opacity: 0;
+}
+
+@media (min-width: 992px) {
+  .cart__coupon label input::-webkit-input-placeholder {
+    opacity: 1;
+    line-height: 25px;
+  }
+  .cart__coupon label input::-moz-placeholder {
+    opacity: 1;
+    line-height: 25px;
+  }
+  .cart__coupon label input:-ms-input-placeholder {
+    opacity: 1;
+    line-height: 25px;
+  }
+  .cart__coupon label input::-ms-input-placeholder {
+    opacity: 1;
+    line-height: 25px;
+  }
+  .cart__coupon label input::placeholder {
+    opacity: 1;
+    line-height: 25px;
+  }
 }
 
 .cart__coupon label .arrow {
@@ -6178,11 +6292,6 @@ div:focus {
 
 .cart__coupon label .arrow i {
   color: #a5a5b1;
-}
-
-.cart__coupon label input {
-  border: none;
-  margin-left: 50px;
 }
 
 @media (min-width: 576px) {
@@ -7521,6 +7630,12 @@ div:focus {
   }
 }
 
+@media (min-width: 1200px) {
+  .contact__content .item {
+    margin-top: 30px;
+  }
+}
+
 .contact__content .item-addres p {
   margin-bottom: 0px;
 }
@@ -7545,6 +7660,12 @@ div:focus {
   }
 }
 
+@media (min-width: 1200px) {
+  .contact__content .item ul li {
+    font-size: 24px;
+  }
+}
+
 .contact__content .item h3 {
   font-family: "FuturaNewMedium-Reg";
   font-size: 18px;
@@ -7557,6 +7678,12 @@ div:focus {
   .contact__content .item h3 {
     font-size: 18px;
     margin-bottom: 10px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact__content .item h3 {
+    font-size: 24px;
   }
 }
 
@@ -7585,6 +7712,15 @@ div:focus {
   }
 }
 
+@media (min-width: 1200px) {
+  .contact__content .item span {
+    font-size: 24px;
+  }
+  .contact__content .item span a {
+    font-size: 24px;
+  }
+}
+
 .contact__content .item p {
   font-size: 16px;
   font-family: "FuturaNewBook-Obl";
@@ -7594,6 +7730,12 @@ div:focus {
 @media (min-width: 768px) {
   .contact__content .item p {
     font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .contact__content .item p {
+    font-size: 24px;
   }
 }
 
@@ -7616,6 +7758,7 @@ div:focus {
 @media (min-width: 1200px) {
   .contact__img img {
     height: 100%;
+    width: 110%;
   }
 }
 
@@ -8792,6 +8935,36 @@ div:focus {
 .account__content .address .add__table .corpus,
 .account__content .address .add__table .apartment {
   width: 32%;
+}
+
+.account__content .discounts {
+  display: none;
+  font-size: 20px;
+  color: black;
+  font-family: "FuturaNewBook-Reg";
+  width: 500px;
+  margin: 0 auto;
+}
+
+.account__content .discounts h3 {
+  font-size: 20px;
+  color: black;
+  font-family: "FuturaNewBook-Reg";
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.account__content .discounts ul {
+  margin-top: 10px;
+}
+
+.account__content .discounts p {
+  margin-bottom: 0px;
+  margin-top: 10px;
+}
+
+.account__content .discounts.active {
+  display: block;
 }
 
 .footer {

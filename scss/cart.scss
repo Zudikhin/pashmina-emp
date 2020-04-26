@@ -233,25 +233,45 @@
     }
   }
   &__coupon {
-    display: none;
+    display: block;
     @media (min-width: 768px) {
       display: block;
     }
+    & .promo__name {
+      position: absolute;
+      right: 220px;
+      top: 30px;
+      color: black;
+      font-family: "FuturaNewMedium-Reg";
+      font-size: 18px;
+      @media (min-width: 992px) {
+        display: none;
+      }
+    }
     & p {
       font-size: 18px;
-      text-transform: uppercase;
+      // text-transform: uppercase;
       color: black;
       font-family: "FuturaNewMedium-Reg";
       margin-top: 10px;
+      text-align: right;
       @media (min-width: 992px) {
         margin-top: 0px;
+        text-transform: uppercase;
       }
     }
     & label {
       border: 1px dashed #a5a5b1;
       position: relative;
       display: block;
+      width: 180px;
+      margin-left: auto;
+      height: 30px;
       margin-top: 30px;
+      @media (min-width: 992px) {
+        margin-left: 0px;
+        width: 260px;
+      }
       & span {
         position: absolute;
       }
@@ -262,10 +282,22 @@
         }
       }
       & input {
+        border: none;
+        width: 150px;
+        padding-left: 40px;
+        @media (min-width: 992px) {
+          padding-left: 50px;
+          width: auto;
+        }
         &::placeholder {
           font-family: "FuturaNewLight-Obl";
           font-size: 16px;
           color: #a5a5b1;
+          opacity: 0;
+          @media (min-width: 992px) {
+            opacity: 1;
+            line-height: 25px;
+          }
         }
       }
       & .arrow {
@@ -273,10 +305,6 @@
         & i {
           color: #a5a5b1;
         }
-      }
-      & input {
-        border: none;
-        margin-left: 50px;
       }
     }
     @media (min-width: 576px) {

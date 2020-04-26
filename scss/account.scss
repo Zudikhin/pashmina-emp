@@ -244,5 +244,30 @@
         }
       }
     }
+    & .discounts {
+      display: none;
+      font-size: 20px;
+      color: black;
+      font-family: "FuturaNewBook-Reg";
+      width: 500px;
+      margin: 0 auto;
+      & h3 {
+        font-size: 20px;
+        color: black;
+        font-family: "FuturaNewBook-Reg";
+        text-align: center;
+        text-transform: uppercase;
+      }
+      & ul {
+        margin-top: 10px;
+      }
+      & p {
+        margin-bottom: 0px;
+        margin-top: 10px;
+      }
+      &.active {
+        display: block;
+      }
+    }
   }
 }
