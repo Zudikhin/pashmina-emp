@@ -468,7 +468,7 @@
       margin-right: 30px;
       cursor: pointer;
       & span {
-        font-size: 22px;
+        font-size: 18px;
         font-family: "FuturaNewBook-Obl";
         color: black;
       }
@@ -481,7 +481,7 @@
     & .clear__filter {
       margin-left: 10px;
       & a {
-        font-size: 22px;
+        font-size: 18px;
         font-family: "FuturaNewBook-Reg";
         color: black;
       }
@@ -490,20 +490,21 @@
   & .base__filter {
     display: flex;
     & .text {
-      font-size: 22px;
+      font-size: 18px;
       font-family: "FuturaNewBook-Reg";
       color: black;
+      margin-bottom: 0px;
     }
     & .nice-select {
       border: none;
       padding-left: 8px;
-      transform: translateY(-4px);
+      transform: translateY(-7px);
       & .list {
         border-radius: 0px;
         left: auto;
         right: 0%;
         & li {
-          font-size: 20px;
+          font-size: 18px;
           font-family: "FuturaNewBook-Reg";
           padding-right: 20px;
           padding-left: 40px;
@@ -529,7 +530,7 @@
         }
       }
       & .current {
-        font-size: 20px;
+        font-size: 18px;
         font-family: "FuturaNewBook-Reg";
       }
       &:after {
@@ -782,7 +783,7 @@
 .shop__filters {
   & .content {
     & h4 {
-      font-size: 30px;
+      font-size: 24px;
       text-transform: uppercase;
       color: black;
       font-family: "FuturaNewMedium-Reg";
@@ -795,9 +796,9 @@
         & label {
           display: block;
           position: relative;
-          padding-left: 52px;
+          padding-left: 40px;
           cursor: pointer;
-          font-size: 24px;
+          font-size: 18px;
           font-family: "FuturaNewBook-Obl";
           & input {
             position: absolute;
@@ -811,7 +812,7 @@
           }
           .checkmark {
             position: absolute;
-            top: 0px;
+            top: -5px;
             left: -10px;
             height: 36px;
             width: 36px;

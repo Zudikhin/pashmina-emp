@@ -606,7 +606,7 @@ div:focus {
 }
 
 .header__mobile__logo {
-  width: 50px;
+  width: 100px;
   height: 50px;
 }
 
@@ -708,7 +708,7 @@ div:focus {
     max-width: 100%;
   }
   .header__mobile__btn {
-    top: 20px;
+    top: 10px;
   }
   .header__mobile__container {
     width: 100%;
@@ -717,8 +717,8 @@ div:focus {
     margin: 0px 5px;
   }
   .header__mobile__logo {
-    width: 70px;
-    height: 70px;
+    width: 100px;
+    height: 50px;
   }
 }
 
@@ -796,8 +796,8 @@ div:focus {
     display: flex;
   }
   .header__desc__logo {
-    margin-top: 18px;
-    width: 100px;
+    margin-top: 28px;
+    width: 120px;
   }
   .header__desc__logo img {
     width: 100%;
@@ -2589,7 +2589,7 @@ div:focus {
 }
 
 .filters__desk .selected__filter .filter__item span {
-  font-size: 22px;
+  font-size: 18px;
   font-family: "FuturaNewBook-Obl";
   color: black;
 }
@@ -2606,7 +2606,7 @@ div:focus {
 }
 
 .filters__desk .selected__filter .clear__filter a {
-  font-size: 22px;
+  font-size: 18px;
   font-family: "FuturaNewBook-Reg";
   color: black;
 }
@@ -2618,16 +2618,17 @@ div:focus {
 }
 
 .filters__desk .base__filter .text {
-  font-size: 22px;
+  font-size: 18px;
   font-family: "FuturaNewBook-Reg";
   color: black;
+  margin-bottom: 0px;
 }
 
 .filters__desk .base__filter .nice-select {
   border: none;
   padding-left: 8px;
-  -webkit-transform: translateY(-4px);
-          transform: translateY(-4px);
+  -webkit-transform: translateY(-7px);
+          transform: translateY(-7px);
 }
 
 .filters__desk .base__filter .nice-select .list {
@@ -2637,7 +2638,7 @@ div:focus {
 }
 
 .filters__desk .base__filter .nice-select .list li {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "FuturaNewBook-Reg";
   padding-right: 20px;
   padding-left: 40px;
@@ -2667,7 +2668,7 @@ div:focus {
 }
 
 .filters__desk .base__filter .nice-select .current {
-  font-size: 20px;
+  font-size: 18px;
   font-family: "FuturaNewBook-Reg";
 }
 
@@ -2921,7 +2922,7 @@ div:focus {
 }
 
 .shop__filters .content h4 {
-  font-size: 30px;
+  font-size: 24px;
   text-transform: uppercase;
   color: black;
   font-family: "FuturaNewMedium-Reg";
@@ -2939,9 +2940,9 @@ div:focus {
 .shop__filters .content ul li label {
   display: block;
   position: relative;
-  padding-left: 52px;
+  padding-left: 40px;
   cursor: pointer;
-  font-size: 24px;
+  font-size: 18px;
   font-family: "FuturaNewBook-Obl";
 }
 
@@ -2959,7 +2960,7 @@ div:focus {
 
 .shop__filters .content ul li label .checkmark {
   position: absolute;
-  top: 0px;
+  top: -5px;
   left: -10px;
   height: 36px;
   width: 36px;
@@ -3353,7 +3354,6 @@ div:focus {
   color: #2d2d2d;
   font-family: "FuturaNewMedium-Reg";
   text-transform: uppercase;
-  text-align: center;
   position: relative;
   display: inline-block;
   margin-left: 30px;
@@ -7687,12 +7687,15 @@ div:focus {
   text-align: center;
   font-family: "FuturaNewLight-Obl";
   color: black;
+  margin-bottom: 0px;
+  margin-top: 40px;
 }
 
 @media (min-width: 768px) {
   .product__name p {
     font-size: 22px;
     margin-top: 20px;
+    margin-bottom: 1rem;
   }
 }
 
@@ -7770,7 +7773,7 @@ div:focus {
 }
 
 .product__images .slider__main .slider__btns {
-  display: none;
+  display: block;
 }
 
 @media (min-width: 768px) {
@@ -7835,7 +7838,7 @@ div:focus {
 }
 
 .product__images .slider__main .slider {
-  margin-top: 30px;
+  margin-top: 15px;
 }
 
 @media (min-width: 992px) {
@@ -7956,7 +7959,7 @@ div:focus {
 }
 
 .slider__btns .product__prev {
-  left: 10%;
+  left: 0;
 }
 
 @media (min-width: 768px) {
@@ -7978,7 +7981,7 @@ div:focus {
 }
 
 .slider__btns .product__next {
-  right: 10%;
+  right: 0;
 }
 
 @media (min-width: 768px) {
@@ -8102,6 +8105,13 @@ div:focus {
   color: black;
   text-align: center;
   line-height: 22px;
+  display: none;
+}
+
+@media (min-width: 576px) {
+  .product__description .text p {
+    display: block;
+  }
 }
 
 @media (min-width: 768px) {
@@ -8128,10 +8138,24 @@ div:focus {
   }
 }
 
+.product__description .characteristics-mob-title {
+  margin-left: 30px;
+}
+
+.product__description .characteristics-mob ul {
+  margin-top: 10px;
+}
+
 .product__description .characteristics-mob ul li {
   font-family: "FuturaNewLight-Obl";
   font-size: 18px;
   color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .product__description .characteristics-mob .btns {
@@ -8145,6 +8169,7 @@ div:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 20px;
 }
 
 .product__description .characteristics-mob .btns a {
@@ -8160,7 +8185,7 @@ div:focus {
   color: black;
   font-size: 16px;
   border: 1px solid black;
-  width: 200px;
+  width: 90%;
   height: 40px;
   margin-top: 10px;
   font-family: "FuturaNewBook-Reg";
@@ -8187,10 +8212,16 @@ div:focus {
 }
 
 .product__description .drop .item h3 {
-  padding-left: 10px;
+  padding-left: 0px;
   cursor: pointer;
   display: inline-block;
   font-size: 18px;
+}
+
+@media (min-width: 768px) {
+  .product__description .drop .item h3 {
+    padding-left: 10px;
+  }
 }
 
 .product__description .drop .item h3 .img {
