@@ -6209,6 +6209,7 @@ div:focus {
 
 .cart__coupon label .coupon {
   left: 10px;
+  top: 2px;
 }
 
 .cart__coupon label .coupon i {
@@ -6288,6 +6289,7 @@ div:focus {
 
 .cart__coupon label .arrow {
   right: 10px;
+  top: 2px;
 }
 
 .cart__coupon label .arrow i {
