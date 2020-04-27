@@ -12,6 +12,11 @@ $(document).ready(function () {
     }
   });
 
+  $(".header__mobile__nav li a").click(function (event) {
+    event.preventDefault();
+    $(this).parent().toggleClass("active");
+  });
+
   $(".header__modal").click(function () {
     $(this).css("display", "none");
     $(".header__dropdown").removeClass("active");

@@ -607,7 +607,7 @@ div:focus {
 
 .header__mobile__logo {
   width: 120px;
-  height: 50px;
+  height: 40px;
 }
 
 .header__mobile__logo a img {
@@ -767,28 +767,29 @@ div:focus {
     margin-left: 20px;
     position: relative;
   }
-  .header__desc__nav ul li:after {
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: #292929;
-    left: 0;
-    top: 25px;
-    position: absolute;
-    opacity: 0;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
-  .header__desc__nav ul li:hover:after {
-    opacity: 1;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
-  }
   .header__desc__nav ul li a {
     font-family: "FuturaNewBook-Reg";
     font-size: 15px;
     text-transform: uppercase;
     color: #292929;
+    position: relative;
+  }
+  .header__desc__nav ul li a:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: #292929;
+    left: 0;
+    bottom: -5px;
+    position: absolute;
+    opacity: 0;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+  }
+  .header__desc__nav ul li a:hover:after {
+    opacity: 1;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
   }
   .header__desc__left {
     display: -webkit-box;
@@ -798,7 +799,7 @@ div:focus {
   .header__desc__logo {
     margin-top: 28px;
     width: 130px;
-    height: 60px;
+    height: 50px;
   }
   .header__desc__logo img {
     width: 100%;
@@ -950,6 +951,79 @@ div:focus {
 
 .header__mobile-shop {
   position: relative;
+}
+
+.header__desc__nav .submenu {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  padding: 15px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: white;
+  -webkit-box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 2px 15px 0px rgba(0, 0, 0, 0.75);
+}
+
+.header__desc__nav .submenu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 0px;
+}
+
+.header__desc__nav .submenu ul li {
+  margin-left: 0px;
+  margin-top: 10px;
+}
+
+.header__desc__nav .submenu ul li:first-child {
+  margin-top: 0px;
+}
+
+.header__desc__nav ul li:hover > .submenu {
+  display: block;
+}
+
+.header__mobile__nav ul li a i {
+  margin-left: 10px;
+}
+
+.header__mobile__nav ul li .submenu {
+  display: none;
+}
+
+.header__mobile__nav ul li .submenu ul {
+  margin-top: 20px;
+  margin-bottom: 0px;
+}
+
+.header__mobile__nav ul li .submenu ul li {
+  position: relative;
+}
+
+.header__mobile__nav ul li .submenu ul li::after {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 2px;
+  background-color: black;
+  top: 13px;
+  left: -15px;
+}
+
+.header__mobile__nav ul li.active a i {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+}
+
+.header__mobile__nav ul li.active .submenu {
+  display: block;
 }
 
 .slick-next.slick-arrow,
