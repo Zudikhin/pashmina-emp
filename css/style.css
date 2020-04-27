@@ -2617,7 +2617,7 @@ div:focus {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   width: 30px;
-  height: 20px;
+  height: 15px;
 }
 
 .filters__desk .selected__filter .filter__item button img {
