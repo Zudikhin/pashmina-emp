@@ -318,6 +318,8 @@
   @media (min-width: 992px) {
     align-items: flex-start;
     margin-top: 0px;
+    width: 330px;
+    position: relative;
     & .img {
       width: 100%;
       &::after {
@@ -336,12 +338,32 @@
   & h3 {
     font-family: "FuturaNewBook-Reg";
   }
+  @media (min-width: 1200px) {
+    transform: translateY(-12px);
+    & h3 {
+      margin-top: 17px;
+    }
+    & .img {
+      height: 234px;
+      &:after {
+        bottom: -52px;
+      }
+      & img {
+        height: 106%;
+        width: 105%;
+        transform: translateX(-8px);
+      }
+    }
+  }
 }
 
 .blog__item-second {
   transform: translateY(-3px);
   & h3 {
     font-family: "FuturaNewBook-Reg";
+  }
+  @media (min-width: 1200px) {
+    transform: translateY(-5px);
   }
 }
 
@@ -356,7 +378,7 @@
     width: 1100%;
     height: 350px;
     position: absolute;
-    left: -15px;
+    left: -45px;
     bottom: 0;
     background-color: #e6ebf2;
     z-index: -1;
@@ -369,7 +391,7 @@
     transform: translateY(-56px);
   }
   @media (min-width: 1200px) {
-    transform: translateY(-70px);
+    transform: translate(30px, -70px);
     &:after {
       display: block;
     }

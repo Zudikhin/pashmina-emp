@@ -13,7 +13,7 @@
     top: -50px;
     width: 40%;
     background-color: #e6ebf2;
-    height: 400px;
+    height: 600px;
     z-index: -1;
     display: none;
     @media (min-width: 992px) {
@@ -137,5 +137,11 @@
   display: none;
   @media (min-width: 992px) {
     display: block;
+  }
+  @media (min-width: 1200px) {
+    transform: translateX(30px);
+    & .container {
+      max-width: 1200px;
+    }
   }
 }

@@ -485,7 +485,7 @@
         background-color: transparent;
         transform: translateY(-3px);
         width: 30px;
-        height: 15px;
+        height: 20px;
         & img {
           width: 100%;
           height: 100%;
@@ -652,82 +652,57 @@
       & label {
         & .checkmark {
           &::after {
-            width: 100%;
-            height: 100%;
-            top: 0;
-            left: 0;
-            display: block;
+            width: 16px;
+            height: 16px;
+            left: 4px;
+            top: 4px;
+            display: none;
           }
         }
         & .pink {
-          &:after {
-            background-color: #eebdc9;
-          }
+          background-color: #eebdc9;
         }
         & .red {
-          &:after {
-            background-color: red;
-          }
+          background-color: red;
         }
         & .brown {
-          &:after {
-            background-color: #6e410f;
-          }
+          background-color: #6e410f;
         }
         & .orange {
-          &:after {
-            background-color: #e9a326;
-          }
+          background-color: #e9a326;
         }
         & .beige {
-          &:after {
-            background-color: #f5f5dc;
-          }
+          background-color: #f5f5dc;
         }
         & .yellow {
-          &:after {
-            background-color: #eddd68;
-          }
+          background-color: #eddd68;
         }
         & .green {
-          &:after {
-            background-color: #48801e;
-          }
+          background-color: #48801e;
         }
         & .lightblue {
-          &:after {
-            background-color: #6ca8fc;
-          }
+          background-color: #6ca8fc;
         }
         & .blue {
-          &:after {
-            background-color: #014080;
-          }
+          background-color: #014080;
         }
         & .purple {
-          &:after {
-            background-color: #7600fa;
-          }
+          background-color: #7600fa;
         }
         & .grey {
-          &:after {
-            background-color: #7f7f7f;
-          }
+          background-color: #7f7f7f;
         }
         & .white {
-          &:after {
+          background-color: white;
+        }
+        & .black {
+          background-color: black;
+          &::after {
             background-color: white;
           }
         }
-        & .black {
-          &:after {
-            background-color: black;
-          }
-        }
         & .unpainted {
-          &:after {
-            background-color: #a29990;
-          }
+          background-color: #a29990;
         }
       }
     }
@@ -770,12 +745,12 @@
 .show__mob_filter {
   & .filter__main {
     display: flex;
-    justify-content: space-between;
     & .item {
       border: 1px solid black;
       width: auto;
       padding: 10px 0px 10px 10px;
       cursor: pointer;
+      margin-right: 20px;
       & button {
         width: 30px;
         height: 15px;
@@ -855,82 +830,57 @@
         & label {
           & .checkmark {
             &::after {
-              width: 100%;
-              height: 100%;
-              top: 0;
-              left: 0;
-              display: block;
+              width: 14px;
+              height: 14px;
+              left: 4px;
+              top: 4px;
+              display: none;
             }
           }
           & .pink {
-            &:after {
-              background-color: #eebdc9;
-            }
+            background-color: #eebdc9;
           }
           & .red {
-            &:after {
-              background-color: red;
-            }
+            background-color: red;
           }
           & .brown {
-            &:after {
-              background-color: #6e410f;
-            }
+            background-color: #6e410f;
           }
           & .orange {
-            &:after {
-              background-color: #e9a326;
-            }
+            background-color: #e9a326;
           }
           & .beige {
-            &:after {
-              background-color: #f5f5dc;
-            }
+            background-color: #f5f5dc;
           }
           & .yellow {
-            &:after {
-              background-color: #eddd68;
-            }
+            background-color: #eddd68;
           }
           & .green {
-            &:after {
-              background-color: #48801e;
-            }
+            background-color: #48801e;
           }
           & .lightblue {
-            &:after {
-              background-color: #6ca8fc;
-            }
+            background-color: #6ca8fc;
           }
           & .blue {
-            &:after {
-              background-color: #014080;
-            }
+            background-color: #014080;
           }
           & .purple {
-            &:after {
-              background-color: #7600fa;
-            }
+            background-color: #7600fa;
           }
           & .grey {
-            &:after {
-              background-color: #7f7f7f;
-            }
+            background-color: #7f7f7f;
           }
           & .white {
-            &:after {
+            background-color: white;
+          }
+          & .black {
+            background-color: black;
+            &::after {
               background-color: white;
             }
           }
-          & .black {
-            &:after {
-              background-color: black;
-            }
-          }
           & .unpainted {
-            &:after {
-              background-color: #a29990;
-            }
+            background-color: #a29990;
           }
         }
       }

@@ -2617,7 +2617,7 @@ div:focus {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
   width: 30px;
-  height: 15px;
+  height: 20px;
 }
 
 .filters__desk .selected__filter .filter__item button img {
@@ -2811,66 +2811,70 @@ div:focus {
 }
 
 .shop__filters-mob .modal .modal-content .color li label .checkmark::after {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: block;
+  width: 16px;
+  height: 16px;
+  left: 4px;
+  top: 4px;
+  display: none;
 }
 
-.shop__filters-mob .modal .modal-content .color li label .pink:after {
+.shop__filters-mob .modal .modal-content .color li label .pink {
   background-color: #eebdc9;
 }
 
-.shop__filters-mob .modal .modal-content .color li label .red:after {
+.shop__filters-mob .modal .modal-content .color li label .red {
   background-color: red;
 }
 
-.shop__filters-mob .modal .modal-content .color li label .brown:after {
+.shop__filters-mob .modal .modal-content .color li label .brown {
   background-color: #6e410f;
 }
 
-.shop__filters-mob .modal .modal-content .color li label .orange:after {
+.shop__filters-mob .modal .modal-content .color li label .orange {
   background-color: #e9a326;
 }
 
-.shop__filters-mob .modal .modal-content .color li label .beige:after {
+.shop__filters-mob .modal .modal-content .color li label .beige {
   background-color: #f5f5dc;
 }
 
-.shop__filters-mob .modal .modal-content .color li label .yellow:after {
+.shop__filters-mob .modal .modal-content .color li label .yellow {
   background-color: #eddd68;
 }
 
-.shop__filters-mob .modal .modal-content .color li label .green:after {
+.shop__filters-mob .modal .modal-content .color li label .green {
   background-color: #48801e;
 }
 
-.shop__filters-mob .modal .modal-content .color li label .lightblue:after {
+.shop__filters-mob .modal .modal-content .color li label .lightblue {
   background-color: #6ca8fc;
 }
 
-.shop__filters-mob .modal .modal-content .color li label .blue:after {
+.shop__filters-mob .modal .modal-content .color li label .blue {
   background-color: #014080;
 }
 
-.shop__filters-mob .modal .modal-content .color li label .purple:after {
+.shop__filters-mob .modal .modal-content .color li label .purple {
   background-color: #7600fa;
 }
 
-.shop__filters-mob .modal .modal-content .color li label .grey:after {
+.shop__filters-mob .modal .modal-content .color li label .grey {
   background-color: #7f7f7f;
 }
 
-.shop__filters-mob .modal .modal-content .color li label .white:after {
+.shop__filters-mob .modal .modal-content .color li label .white {
   background-color: white;
 }
 
-.shop__filters-mob .modal .modal-content .color li label .black:after {
+.shop__filters-mob .modal .modal-content .color li label .black {
   background-color: black;
 }
 
-.shop__filters-mob .modal .modal-content .color li label .unpainted:after {
+.shop__filters-mob .modal .modal-content .color li label .black::after {
+  background-color: white;
+}
+
+.shop__filters-mob .modal .modal-content .color li label .unpainted {
   background-color: #a29990;
 }
 
@@ -2915,9 +2919,6 @@ div:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
 }
 
 .show__mob_filter .filter__main .item {
@@ -2925,6 +2926,7 @@ div:focus {
   width: auto;
   padding: 10px 0px 10px 10px;
   cursor: pointer;
+  margin-right: 20px;
 }
 
 .show__mob_filter .filter__main .item button {
@@ -3008,66 +3010,70 @@ div:focus {
 }
 
 .shop__filters .content .color li label .checkmark::after {
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: block;
+  width: 14px;
+  height: 14px;
+  left: 4px;
+  top: 4px;
+  display: none;
 }
 
-.shop__filters .content .color li label .pink:after {
+.shop__filters .content .color li label .pink {
   background-color: #eebdc9;
 }
 
-.shop__filters .content .color li label .red:after {
+.shop__filters .content .color li label .red {
   background-color: red;
 }
 
-.shop__filters .content .color li label .brown:after {
+.shop__filters .content .color li label .brown {
   background-color: #6e410f;
 }
 
-.shop__filters .content .color li label .orange:after {
+.shop__filters .content .color li label .orange {
   background-color: #e9a326;
 }
 
-.shop__filters .content .color li label .beige:after {
+.shop__filters .content .color li label .beige {
   background-color: #f5f5dc;
 }
 
-.shop__filters .content .color li label .yellow:after {
+.shop__filters .content .color li label .yellow {
   background-color: #eddd68;
 }
 
-.shop__filters .content .color li label .green:after {
+.shop__filters .content .color li label .green {
   background-color: #48801e;
 }
 
-.shop__filters .content .color li label .lightblue:after {
+.shop__filters .content .color li label .lightblue {
   background-color: #6ca8fc;
 }
 
-.shop__filters .content .color li label .blue:after {
+.shop__filters .content .color li label .blue {
   background-color: #014080;
 }
 
-.shop__filters .content .color li label .purple:after {
+.shop__filters .content .color li label .purple {
   background-color: #7600fa;
 }
 
-.shop__filters .content .color li label .grey:after {
+.shop__filters .content .color li label .grey {
   background-color: #7f7f7f;
 }
 
-.shop__filters .content .color li label .white:after {
+.shop__filters .content .color li label .white {
   background-color: white;
 }
 
-.shop__filters .content .color li label .black:after {
+.shop__filters .content .color li label .black {
   background-color: black;
 }
 
-.shop__filters .content .color li label .unpainted:after {
+.shop__filters .content .color li label .black::after {
+  background-color: white;
+}
+
+.shop__filters .content .color li label .unpainted {
   background-color: #a29990;
 }
 
@@ -4206,6 +4212,8 @@ div:focus {
         -ms-flex-align: start;
             align-items: flex-start;
     margin-top: 0px;
+    width: 330px;
+    position: relative;
   }
   .blog__item .img {
     width: 100%;
@@ -4225,6 +4233,28 @@ div:focus {
   font-family: "FuturaNewBook-Reg";
 }
 
+@media (min-width: 1200px) {
+  .blog__item-first {
+    -webkit-transform: translateY(-12px);
+            transform: translateY(-12px);
+  }
+  .blog__item-first h3 {
+    margin-top: 17px;
+  }
+  .blog__item-first .img {
+    height: 234px;
+  }
+  .blog__item-first .img:after {
+    bottom: -52px;
+  }
+  .blog__item-first .img img {
+    height: 106%;
+    width: 105%;
+    -webkit-transform: translateX(-8px);
+            transform: translateX(-8px);
+  }
+}
+
 .blog__item-second {
   -webkit-transform: translateY(-3px);
           transform: translateY(-3px);
@@ -4232,6 +4262,13 @@ div:focus {
 
 .blog__item-second h3 {
   font-family: "FuturaNewBook-Reg";
+}
+
+@media (min-width: 1200px) {
+  .blog__item-second {
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px);
+  }
 }
 
 .blog__item-third {
@@ -4249,7 +4286,7 @@ div:focus {
   width: 1100%;
   height: 350px;
   position: absolute;
-  left: -15px;
+  left: -45px;
   bottom: 0;
   background-color: #e6ebf2;
   z-index: -1;
@@ -4272,8 +4309,8 @@ div:focus {
 
 @media (min-width: 1200px) {
   .blog__item-third {
-    -webkit-transform: translateY(-70px);
-            transform: translateY(-70px);
+    -webkit-transform: translate(30px, -70px);
+            transform: translate(30px, -70px);
   }
   .blog__item-third:after {
     display: block;
@@ -6158,16 +6195,18 @@ div:focus {
 
 .cart__coupon .promo__name {
   position: absolute;
-  right: 220px;
+  right: 230px;
   top: 30px;
   color: black;
   font-family: "FuturaNewMedium-Reg";
   font-size: 18px;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 768px) {
   .cart__coupon .promo__name {
-    display: none;
+    right: auto;
+    left: 0px;
+    top: 20px;
   }
 }
 
@@ -6179,6 +6218,12 @@ div:focus {
   text-align: right;
 }
 
+@media (min-width: 768px) {
+  .cart__coupon p {
+    margin-top: 0px;
+  }
+}
+
 @media (min-width: 992px) {
   .cart__coupon p {
     margin-top: 0px;
@@ -6187,19 +6232,25 @@ div:focus {
 }
 
 .cart__coupon label {
-  border: 1px dashed #a5a5b1;
+  border: 1px solid black;
   position: relative;
   display: block;
-  width: 180px;
+  width: 200px;
   margin-left: auto;
   height: 30px;
   margin-top: 30px;
 }
 
+@media (min-width: 768px) {
+  .cart__coupon label {
+    margin-left: 100px;
+  }
+}
+
 @media (min-width: 992px) {
   .cart__coupon label {
-    margin-left: 0px;
-    width: 260px;
+    margin-left: 100px;
+    width: 230px;
   }
 }
 
@@ -6213,18 +6264,18 @@ div:focus {
 }
 
 .cart__coupon label .coupon i {
-  color: #a5a5b1;
+  color: black;
 }
 
 .cart__coupon label input {
   border: none;
   width: 150px;
-  padding-left: 40px;
+  padding-left: 10px;
 }
 
 @media (min-width: 992px) {
   .cart__coupon label input {
-    padding-left: 50px;
+    padding-left: 10px;
     width: auto;
   }
 }
@@ -6266,43 +6317,42 @@ div:focus {
 
 @media (min-width: 992px) {
   .cart__coupon label input::-webkit-input-placeholder {
-    opacity: 1;
+    opacity: 0;
     line-height: 25px;
   }
   .cart__coupon label input::-moz-placeholder {
-    opacity: 1;
+    opacity: 0;
     line-height: 25px;
   }
   .cart__coupon label input:-ms-input-placeholder {
-    opacity: 1;
+    opacity: 0;
     line-height: 25px;
   }
   .cart__coupon label input::-ms-input-placeholder {
-    opacity: 1;
+    opacity: 0;
     line-height: 25px;
   }
   .cart__coupon label input::placeholder {
-    opacity: 1;
+    opacity: 0;
     line-height: 25px;
   }
 }
 
 .cart__coupon label .arrow {
   right: 10px;
-  top: 2px;
+  top: 0px;
+  width: 20px;
+  height: 15px;
 }
 
-.cart__coupon label .arrow i {
-  color: #a5a5b1;
+.cart__coupon label .arrow img {
+  width: 100%;
+  height: 100%;
 }
 
 @media (min-width: 576px) {
   .cart__coupon {
-    display: none;
-  }
-  .cart__coupon p {
-    -webkit-transform: translateY(30px);
-            transform: translateY(30px);
+    display: block;
   }
 }
 
@@ -6350,8 +6400,8 @@ div:focus {
     margin: 30px auto;
   }
   .cart__coupon p {
-    -webkit-transform: translateY(16px);
-            transform: translateY(16px);
+    -webkit-transform: translateY(18px);
+            transform: translateY(18px);
   }
 }
 
@@ -7595,7 +7645,7 @@ div:focus {
   top: -50px;
   width: 40%;
   background-color: #e6ebf2;
-  height: 400px;
+  height: 600px;
   z-index: -1;
   display: none;
 }
@@ -7772,6 +7822,16 @@ div:focus {
 @media (min-width: 992px) {
   .map {
     display: block;
+  }
+}
+
+@media (min-width: 1200px) {
+  .map {
+    -webkit-transform: translateX(30px);
+            transform: translateX(30px);
+  }
+  .map .container {
+    max-width: 1200px;
   }
 }
 
