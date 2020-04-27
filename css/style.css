@@ -606,7 +606,7 @@ div:focus {
 }
 
 .header__mobile__logo {
-  width: 100px;
+  width: 120px;
   height: 50px;
 }
 
@@ -3900,7 +3900,7 @@ div:focus {
 .blog__content .text p {
   color: #2d2d2d;
   text-align: center;
-  font-family: "FuturaNewBook-Obl";
+  font-family: "FuturaNewLight-Obl";
   font-size: 18px;
   margin-top: 20px;
   display: none;
@@ -4177,7 +4177,7 @@ div:focus {
 }
 
 .blog__item p {
-  font-family: "FuturaNewBook-Obl";
+  font-family: "FuturaNewLight-Obl";
   font-size: 14px;
   text-align: center;
   margin-top: 10px;
@@ -7322,7 +7322,7 @@ div:focus {
   text-align: center;
   color: #2d2d2d;
   text-align: center;
-  font-family: "FuturaNewBook-Obl";
+  font-family: "FuturaNewLight-Obl";
   font-size: 18px;
   margin-top: 15px;
 }
@@ -7343,7 +7343,7 @@ div:focus {
   text-align: center;
   font-size: 18px;
   color: #2d2d2d;
-  font-family: "FuturaNewBook-Obl";
+  font-family: "FuturaNewLight-Obl";
 }
 
 @media (min-width: 768px) {
@@ -7415,7 +7415,7 @@ div:focus {
 .blog-pashmina .text p {
   font-size: 18px;
   color: black;
-  font-family: "FuturaNewBook-Obl";
+  font-family: "FuturaNewLight-Obl";
   text-align: center;
 }
 
@@ -7543,7 +7543,7 @@ div:focus {
 .blog-differnce .text p {
   font-size: 18px;
   color: black;
-  font-family: "FuturaNewBook-Obl";
+  font-family: "FuturaNewLight-Obl";
   text-align: center;
 }
 
@@ -7562,7 +7562,7 @@ div:focus {
 .blog-info .content p {
   font-size: 18px;
   color: black;
-  font-family: "FuturaNewBook-Obl";
+  font-family: "FuturaNewLight-Obl";
 }
 
 @media (min-width: 992px) {
@@ -7699,7 +7699,7 @@ div:focus {
 .contact__content .item ul li {
   font-size: 18px;
   color: black;
-  font-family: "FuturaNewBook-Obl";
+  font-family: "FuturaNewLight-Obl";
 }
 
 .contact__content .item ul li a {
@@ -7741,13 +7741,13 @@ div:focus {
 
 .contact__content .item span {
   font-size: 18px;
-  font-family: "FuturaNewBook-Obl";
+  font-family: "FuturaNewLight-Obl";
   color: black;
 }
 
 .contact__content .item span a {
   font-size: 18px;
-  font-family: "FuturaNewBook-Obl";
+  font-family: "FuturaNewLight-Obl";
   color: black;
 }
 
@@ -7775,7 +7775,7 @@ div:focus {
 
 .contact__content .item p {
   font-size: 16px;
-  font-family: "FuturaNewBook-Obl";
+  font-family: "FuturaNewLight-Obl";
   color: black;
 }
 
