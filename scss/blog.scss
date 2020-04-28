@@ -204,13 +204,17 @@
   @media (min-width: 1200px) {
     & .img {
       width: 600px;
-      height: 400px;
+      height: 450px;
     }
     & .text {
       margin-left: 100px;
       position: relative;
       width: 400px;
+      & p {
+        font-size: 20px;
+      }
       & h3 {
+        font-size: 30px;
         &:after {
           content: "";
           width: 560px;
@@ -331,6 +335,7 @@
       width: auto;
       display: block;
       text-align: left;
+      font-size: 20px;
     }
   }
 }
@@ -376,7 +381,7 @@
   &:after {
     content: "";
     width: 1100%;
-    height: 350px;
+    height: 400px;
     position: absolute;
     left: -45px;
     bottom: 0;
@@ -394,6 +399,7 @@
     transform: translate(30px, -70px);
     &:after {
       display: block;
+      bottom: -20px;
     }
   }
 }

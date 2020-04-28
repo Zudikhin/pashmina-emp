@@ -250,6 +250,7 @@
       }
       & h3 {
         text-align: left;
+        font-size: 30px;
       }
       & p {
         text-align: left;
@@ -373,7 +374,7 @@
       padding: 50px 50px 80px 50px;
     }
     &__title {
-      font-size: 26px;
+      font-size: 30px;
     }
     &__item {
       & p {
@@ -479,6 +480,9 @@
   }
   @media (min-width: 992px) {
     margin-top: 180px;
+    &__title {
+      font-size: 30px;
+    }
     &__block {
       position: relative;
       & h3 {
@@ -928,6 +932,9 @@
     }
   }
   @media (min-width: 1200px) {
+    &__title {
+      font-size: 30px;
+    }
     &__item {
       & .img {
         width: auto;

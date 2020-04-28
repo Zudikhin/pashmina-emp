@@ -4,6 +4,9 @@
       color: black;
       font-size: 18px;
       font-family: "FuturaNewBook-Reg";
+      @media (min-width: 1200px) {
+        font-size: 20px;
+      }
     }
   }
   &__content {
@@ -23,6 +26,9 @@
         font-family: "FuturaNewBook-Reg";
         text-align: center;
         text-transform: uppercase;
+        @media (min-width: 1200px) {
+          font-size: 30px;
+        }
       }
     }
     & .personal {
@@ -36,6 +42,9 @@
         font-family: "FuturaNewBook-Reg";
         text-align: center;
         text-transform: uppercase;
+        @media (min-width: 1200px) {
+          font-size: 30px;
+        }
       }
       & form {
         margin: 0 auto;
@@ -75,6 +84,9 @@
         font-family: "FuturaNewBook-Reg";
         text-align: left;
         text-transform: uppercase;
+        @media (min-width: 1200px) {
+          font-size: 30px;
+        }
       }
       & .item {
         position: relative;
@@ -167,6 +179,9 @@
         font-family: "FuturaNewBook-Reg";
         text-align: center;
         text-transform: uppercase;
+        @media (min-width: 1200px) {
+          font-size: 30px;
+        }
       }
       & .table {
         display: flex;
@@ -257,6 +272,9 @@
         font-family: "FuturaNewBook-Reg";
         text-align: center;
         text-transform: uppercase;
+        @media (min-width: 1200px) {
+          font-size: 30px;
+        }
       }
       & ul {
         margin-top: 10px;

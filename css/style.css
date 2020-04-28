@@ -3560,10 +3560,10 @@ div:focus {
     margin-top: 30px;
   }
   .return__main p {
-    font-size: 24px;
+    font-size: 20px;
   }
   .return__main p a {
-    font-size: 24px;
+    font-size: 20px;
   }
   .return__main p a i {
     display: inline-block;
@@ -3575,7 +3575,7 @@ div:focus {
     height: 100%;
   }
   .return__main ul li {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -4143,12 +4143,18 @@ div:focus {
 @media (min-width: 1200px) {
   .blog__content .img {
     width: 600px;
-    height: 400px;
+    height: 450px;
   }
   .blog__content .text {
     margin-left: 100px;
     position: relative;
     width: 400px;
+  }
+  .blog__content .text p {
+    font-size: 20px;
+  }
+  .blog__content .text h3 {
+    font-size: 30px;
   }
   .blog__content .text h3:after {
     content: "";
@@ -4300,6 +4306,7 @@ div:focus {
     width: auto;
     display: block;
     text-align: left;
+    font-size: 20px;
   }
 }
 
@@ -4358,7 +4365,7 @@ div:focus {
 .blog__item-third:after {
   content: "";
   width: 1100%;
-  height: 350px;
+  height: 400px;
   position: absolute;
   left: -45px;
   bottom: 0;
@@ -4388,6 +4395,7 @@ div:focus {
   }
   .blog__item-third:after {
     display: block;
+    bottom: -20px;
   }
 }
 
@@ -4805,6 +4813,7 @@ div:focus {
   }
   .about__text h3 {
     text-align: left;
+    font-size: 30px;
   }
   .about__text p {
     text-align: left;
@@ -4952,7 +4961,7 @@ div:focus {
     padding: 50px 50px 80px 50px;
   }
   .advantage__title {
-    font-size: 26px;
+    font-size: 30px;
   }
   .advantage__item p {
     font-size: 16px;
@@ -5077,6 +5086,9 @@ div:focus {
 @media (min-width: 992px) {
   .availability {
     margin-top: 180px;
+  }
+  .availability__title {
+    font-size: 30px;
   }
   .availability__block {
     position: relative;
@@ -5595,6 +5607,9 @@ div:focus {
 }
 
 @media (min-width: 1200px) {
+  .sertificate__title {
+    font-size: 30px;
+  }
   .sertificate__item .img {
     width: auto;
   }
@@ -7346,7 +7361,7 @@ div:focus {
 
 @media (min-width: 1200px) {
   .blog-page__first .content .text:after {
-    top: 31%;
+    top: 37%;
     width: 150%;
     left: -50%;
   }
@@ -7359,6 +7374,7 @@ div:focus {
             align-items: flex-start;
     margin-left: 100px;
     margin-top: 0px;
+    width: 428px;
   }
 }
 
@@ -7389,6 +7405,7 @@ div:focus {
 @media (min-width: 992px) {
   .blog-page__first .content .text h3 {
     text-align: left;
+    font-size: 30px;
   }
 }
 
@@ -7410,6 +7427,7 @@ div:focus {
 @media (min-width: 992px) {
   .blog-page__first .content .text p {
     text-align: left;
+    font-size: 20px;
   }
 }
 
@@ -7428,7 +7446,7 @@ div:focus {
 
 @media (min-width: 992px) {
   .blog-page__first .answer p {
-    font-size: 18px;
+    font-size: 20px;
     text-align: left;
     margin-top: 50px;
   }
@@ -7483,6 +7501,7 @@ div:focus {
   .blog-pashmina .text h3 {
     text-align: left;
     margin-left: 50px;
+    font-size: 30px;
   }
 }
 
@@ -7496,6 +7515,7 @@ div:focus {
 @media (min-width: 992px) {
   .blog-pashmina .text p {
     text-align: left;
+    font-size: 20px;
   }
 }
 
@@ -7611,6 +7631,7 @@ div:focus {
 @media (min-width: 992px) {
   .blog-differnce .text h3 {
     text-align: center;
+    font-size: 30px;
   }
 }
 
@@ -7624,6 +7645,7 @@ div:focus {
 @media (min-width: 992px) {
   .blog-differnce .text p {
     text-align: left;
+    font-size: 20px;
   }
 }
 
@@ -7649,6 +7671,9 @@ div:focus {
 @media (min-width: 1200px) {
   .blog-info {
     margin-top: 150px;
+  }
+  .blog-info .content p {
+    font-size: 20px;
   }
 }
 
@@ -7719,7 +7744,7 @@ div:focus {
   top: -50px;
   width: 40%;
   background-color: #e6ebf2;
-  height: 600px;
+  height: 550px;
   z-index: -1;
   display: none;
 }
@@ -7788,7 +7813,7 @@ div:focus {
 
 @media (min-width: 1200px) {
   .contact__content .item ul li {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -7840,10 +7865,10 @@ div:focus {
 
 @media (min-width: 1200px) {
   .contact__content .item span {
-    font-size: 24px;
+    font-size: 20px;
   }
   .contact__content .item span a {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -7861,7 +7886,7 @@ div:focus {
 
 @media (min-width: 1200px) {
   .contact__content .item p {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -7883,7 +7908,7 @@ div:focus {
 
 @media (min-width: 1200px) {
   .contact__img img {
-    height: 100%;
+    height: 96%;
     width: 110%;
   }
 }
@@ -8755,6 +8780,12 @@ div:focus {
   font-family: "FuturaNewBook-Reg";
 }
 
+@media (min-width: 1200px) {
+  .account .links a {
+    font-size: 20px;
+  }
+}
+
 .account__content {
   margin-top: 40px;
   position: relative;
@@ -8786,6 +8817,12 @@ div:focus {
   text-transform: uppercase;
 }
 
+@media (min-width: 1200px) {
+  .account__content .links h3 {
+    font-size: 30px;
+  }
+}
+
 .account__content .personal {
   display: block;
 }
@@ -8800,6 +8837,12 @@ div:focus {
   font-family: "FuturaNewBook-Reg";
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+  .account__content .personal h3 {
+    font-size: 30px;
+  }
 }
 
 .account__content .personal form {
@@ -8855,6 +8898,12 @@ div:focus {
   font-family: "FuturaNewBook-Reg";
   text-align: left;
   text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+  .account__content .order h3 {
+    font-size: 30px;
+  }
 }
 
 .account__content .order .item {
@@ -8976,6 +9025,12 @@ div:focus {
   text-transform: uppercase;
 }
 
+@media (min-width: 1200px) {
+  .account__content .address h3 {
+    font-size: 30px;
+  }
+}
+
 .account__content .address .table {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -9088,6 +9143,12 @@ div:focus {
   font-family: "FuturaNewBook-Reg";
   text-align: center;
   text-transform: uppercase;
+}
+
+@media (min-width: 1200px) {
+  .account__content .discounts h3 {
+    font-size: 30px;
+  }
 }
 
 .account__content .discounts ul {
