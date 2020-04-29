@@ -4786,7 +4786,7 @@ div:focus {
 
 .about__text p {
   font-size: 16px;
-  font-family: "FuturaNewBook-Reg";
+  font-family: "FuturaNewLight-Obl";
   color: #2d2d2d;
   text-align: center;
   margin-top: 30px;
@@ -5037,7 +5037,7 @@ div:focus {
 .availability__block p {
   font-size: 12px;
   color: #4c3d33;
-  font-family: "FuturaNewBook-Reg";
+  font-family: "FuturaNewLight-Obl";
   text-align: center;
   line-height: 12px;
 }
@@ -8916,14 +8916,14 @@ div:focus {
   display: block;
   text-align: right;
   color: black;
-  font-family: "FuturaNewBook-Reg";
+  font-family: "FuturaNewLight-Obl";
   font-size: 16px;
   text-transform: uppercase;
 }
 
 .account__content .order .item .info span {
   color: black;
-  font-family: "FuturaNewBook-Reg";
+  font-family: "FuturaNewLight-Obl";
   font-size: 18px;
 }
 
@@ -8971,14 +8971,14 @@ div:focus {
   font-size: 16px;
   text-transform: uppercase;
   color: black;
-  font-family: "FuturaNewBook-Reg";
+  font-family: "FuturaNewLight-Obl";
   margin-bottom: 0px;
 }
 
 .account__content .order .item .order__product .description .article {
   font-size: 16px;
   color: black;
-  font-family: "FuturaNewBook-Reg";
+  font-family: "FuturaNewLight-Obl";
   margin-bottom: 0px;
   font-size: 18px;
 }
@@ -8987,7 +8987,7 @@ div:focus {
   font-size: 16px;
   text-transform: uppercase;
   color: black;
-  font-family: "FuturaNewBook-Reg";
+  font-family: "FuturaNewLight-Obl";
   margin-bottom: 0px;
 }
 
@@ -9012,7 +9012,7 @@ div:focus {
 }
 
 .account__content .address .add__address {
-  font-family: "FuturaNewBook-Reg";
+  font-family: "FuturaNewLight-Obl";
   font-size: 18px;
   color: black;
 }
@@ -9066,6 +9066,8 @@ div:focus {
 .account__content .address .table .td p {
   margin-bottom: 0px;
   margin-left: 10px;
+  font-family: "FuturaNewLight-Obl";
+  font-size: 18px;
 }
 
 .account__content .address .table .td input {
@@ -9081,7 +9083,7 @@ div:focus {
   color: black;
   font-size: 14px;
   position: relative;
-  font-family: "FuturaNewBook-Reg";
+  font-family: "FuturaNewLight-Obl";
 }
 
 .account__content .address .table .td-delete a:after {
@@ -9132,7 +9134,7 @@ div:focus {
   display: none;
   font-size: 20px;
   color: black;
-  font-family: "FuturaNewBook-Reg";
+  font-family: "FuturaNewLight-Obl";
   width: 500px;
   margin: 0 auto;
 }
