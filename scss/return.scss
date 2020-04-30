@@ -275,8 +275,8 @@
         padding-left: 25px;
         &:after {
           content: "";
-          width: 15px;
-          height: 2px;
+          width: 10px;
+          height: 1px;
           background-color: black;
           position: absolute;
           left: 0;
@@ -284,7 +284,7 @@
         }
         @media (min-width: 992px) {
           &:after {
-            top: 19px;
+            top: 17px;
           }
         }
       }

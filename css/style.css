@@ -553,7 +553,7 @@ div:focus {
 .header__mobile__btn {
   height: 14px;
   width: 18px;
-  top: 10px;
+  top: 7px;
   left: 0px;
   background-color: inherit;
   border: none;
@@ -2993,21 +2993,60 @@ div:focus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 576px) {
+  .show__mob_filter .filter__main {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
 }
 
 .show__mob_filter .filter__main .item {
   border: 1px solid black;
   width: auto;
-  padding: 10px 0px 10px 10px;
+  padding: 6px 0px 10px 10px;
   cursor: pointer;
-  margin-right: 20px;
+  width: 200px;
+  height: 40px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 576px) {
+  .show__mob_filter .filter__main .item {
+    margin-right: 20px;
+  }
+}
+
+.show__mob_filter .filter__main .item span {
+  display: block;
 }
 
 .show__mob_filter .filter__main .item button {
-  width: 25px;
+  width: 30px;
   height: 15px;
   border: none;
   background-color: transparent;
+  -webkit-transform: translateY(-2px);
+          transform: translateY(-2px);
 }
 
 .show__mob_filter .filter__main .item button img {
@@ -3021,6 +3060,7 @@ div:focus {
   color: black;
   margin-top: 20px;
   display: block;
+  text-align: center;
 }
 
 .shop__filters .content h4 {
@@ -3793,8 +3833,8 @@ div:focus {
 
 .return-warranty .return__main ul li:after {
   content: "";
-  width: 15px;
-  height: 2px;
+  width: 10px;
+  height: 1px;
   background-color: black;
   position: absolute;
   left: 0;
@@ -3803,7 +3843,7 @@ div:focus {
 
 @media (min-width: 992px) {
   .return-warranty .return__main ul li:after {
-    top: 19px;
+    top: 17px;
   }
 }
 
@@ -4725,26 +4765,6 @@ div:focus {
   position: relative;
 }
 
-.about__fake-block:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  bottom: 0;
-  z-index: -1;
-  opacity: 0.3;
-  display: block;
-  background: url(../img/banner/about.png);
-}
-
-@media (min-width: 992px) {
-  .about__fake-block:before {
-    display: none;
-  }
-}
-
 .about__text {
   position: relative;
 }
@@ -4798,7 +4818,7 @@ div:focus {
   font-family: "FuturaNewLight-Obl";
   color: #2d2d2d;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 @media (min-width: 768px) {
@@ -5154,12 +5174,19 @@ div:focus {
 
 .sale {
   background: url("../img/banner/background.jpg") no-repeat scroll center center/cover;
-  height: 470px;
+  height: 500px;
   margin-top: 50px;
+}
+
+@media (min-width: 400px) {
+  .sale {
+    height: 400px;
+  }
 }
 
 .sale__block {
   margin-top: 10px;
+  margin-left: 5px;
 }
 
 .sale__block .text {
@@ -5224,10 +5251,16 @@ div:focus {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-top: 5px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media (min-width: 400px) {
+  .sale__block .link {
+    margin-top: 10px;
+  }
 }
 
 .sale__block .link a {
@@ -5247,6 +5280,7 @@ div:focus {
   font-size: 6px;
   font-family: "FuturaNewBook-Reg";
   color: black;
+  margin-top: 6px;
 }
 
 .sale__block .link a .img {
@@ -7471,12 +7505,33 @@ div:focus {
   }
 }
 
+.blog-pashmina .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 @media (min-width: 992px) {
   .blog-pashmina .content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
+}
+
+.blog-pashmina .text {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-top: 50px;
 }
 
 @media (min-width: 768px) {
@@ -7488,6 +7543,9 @@ div:focus {
 @media (min-width: 992px) {
   .blog-pashmina .text {
     width: 50%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
   }
 }
 
@@ -7530,13 +7588,25 @@ div:focus {
 
 .blog-pashmina .img {
   width: 100%;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   margin: 0 auto;
-  margin-top: 50px;
+  margin-top: 0px;
 }
 
 @media (min-width: 768px) {
   .blog-pashmina .img {
     width: 400px;
+  }
+}
+
+@media (min-width: 992px) {
+  .blog-pashmina .img {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-top: 50px;
   }
 }
 
@@ -7580,11 +7650,11 @@ div:focus {
 }
 
 .blog-differnce .img {
-  -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 0px;
 }
 
 @media (min-width: 992px) {
@@ -7613,9 +7683,10 @@ div:focus {
 }
 
 .blog-differnce .text {
-  -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-top: 50px;
 }
 
 @media (min-width: 992px) {
@@ -7625,6 +7696,7 @@ div:focus {
             order: 2;
     width: 80%;
     margin-left: 50px;
+    margin-top: 0px;
   }
 }
 
@@ -8801,20 +8873,33 @@ div:focus {
 }
 
 .account__content .links {
-  position: absolute;
+  position: relative;
   left: 0;
-  display: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 30px;
 }
 
-@media (min-width: 1200px) {
+@media (min-width: 992px) {
   .account__content .links {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    position: absolute;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
 }
 
@@ -8892,9 +8977,15 @@ div:focus {
 }
 
 .account__content .order {
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
   display: none;
+}
+
+@media (min-width: 768px) {
+  .account__content .order {
+    width: 500px;
+  }
 }
 
 .account__content .order.active {
@@ -8907,6 +8998,7 @@ div:focus {
   font-family: "FuturaNewBook-Reg";
   text-align: left;
   text-transform: uppercase;
+  text-align: center;
 }
 
 @media (min-width: 1200px) {
@@ -8926,14 +9018,26 @@ div:focus {
   text-align: right;
   color: black;
   font-family: "FuturaNewLight-Obl";
-  font-size: 16px;
+  font-size: 14px;
   text-transform: uppercase;
+}
+
+@media (min-width: 576px) {
+  .account__content .order .item .total__cost {
+    font-size: 16px;
+  }
 }
 
 .account__content .order .item .info span {
   color: black;
   font-family: "FuturaNewLight-Obl";
-  font-size: 18px;
+  font-size: 14px;
+}
+
+@media (min-width: 576px) {
+  .account__content .order .item .info span {
+    font-size: 18px;
+  }
 }
 
 .account__content .order .item::before {
@@ -8941,9 +9045,15 @@ div:focus {
   position: absolute;
   bottom: -5px;
   width: 100%;
-  height: 2px;
+  height: 1px;
   background-color: black;
   left: 0;
+}
+
+@media (min-width: 576px) {
+  .account__content .order .item::before {
+    height: 2px;
+  }
 }
 
 .account__content .order .item .info {
@@ -8977,32 +9087,56 @@ div:focus {
 }
 
 .account__content .order .item .order__product .description .title {
-  font-size: 16px;
+  font-size: 13px;
   text-transform: uppercase;
   color: black;
   font-family: "FuturaNewLight-Obl";
   margin-bottom: 0px;
+}
+
+@media (min-width: 576px) {
+  .account__content .order .item .order__product .description .title {
+    font-size: 16px;
+  }
 }
 
 .account__content .order .item .order__product .description .article {
-  font-size: 16px;
   color: black;
   font-family: "FuturaNewLight-Obl";
   margin-bottom: 0px;
-  font-size: 18px;
+  font-size: 14px;
+}
+
+@media (min-width: 576px) {
+  .account__content .order .item .order__product .description .article {
+    font-size: 18px;
+  }
 }
 
 .account__content .order .item .order__product .description .cost {
-  font-size: 16px;
+  font-size: 13px;
   text-transform: uppercase;
   color: black;
   font-family: "FuturaNewLight-Obl";
   margin-bottom: 0px;
 }
 
+@media (min-width: 576px) {
+  .account__content .order .item .order__product .description .cost {
+    font-size: 16px;
+  }
+}
+
 .account__content .order .item .order__product .img {
-  width: 140px;
-  height: 140px;
+  width: 130px;
+  height: 100px;
+}
+
+@media (min-width: 576px) {
+  .account__content .order .item .order__product .img {
+    width: 140px;
+    height: 140px;
+  }
 }
 
 .account__content .order .item .order__product .img img {
@@ -9011,9 +9145,15 @@ div:focus {
 }
 
 .account__content .address {
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
   display: none;
+}
+
+@media (min-width: 768px) {
+  .account__content .address {
+    width: 500px;
+  }
 }
 
 .account__content .address.active {
@@ -9076,7 +9216,17 @@ div:focus {
   margin-bottom: 0px;
   margin-left: 10px;
   font-family: "FuturaNewLight-Obl";
-  font-size: 18px;
+  font-size: 14px;
+  -webkit-transform: translateY(3px);
+          transform: translateY(3px);
+}
+
+@media (min-width: 576px) {
+  .account__content .address .table .td p {
+    font-size: 18px;
+    -webkit-transform: translateY(1px);
+            transform: translateY(1px);
+  }
 }
 
 .account__content .address .table .td input {
@@ -9141,11 +9291,23 @@ div:focus {
 
 .account__content .discounts {
   display: none;
-  font-size: 20px;
+  font-size: 16px;
   color: black;
   font-family: "FuturaNewLight-Obl";
-  width: 500px;
+  width: 100%;
   margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+  .account__content .discounts {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .account__content .discounts {
+    width: 500px;
+  }
 }
 
 .account__content .discounts h3 {
@@ -9154,6 +9316,7 @@ div:focus {
   font-family: "FuturaNewBook-Reg";
   text-align: center;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 1200px) {

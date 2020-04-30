@@ -13,12 +13,17 @@
     margin-top: 40px;
     position: relative;
     & .links {
-      position: absolute;
+      position: relative;
       left: 0;
-      display: none;
+      display: flex;
       flex-direction: column;
-      @media (min-width: 1200px) {
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 30px;
+      @media (min-width: 992px) {
         display: flex;
+        position: absolute;
+        align-items: flex-start;
       }
       & h3 {
         font-size: 20px;
@@ -72,9 +77,12 @@
       }
     }
     & .order {
-      width: 500px;
+      width: 100%;
       margin: 0 auto;
       display: none;
+      @media (min-width: 768px) {
+        width: 500px;
+      }
       &.active {
         display: block;
       }
@@ -84,6 +92,7 @@
         font-family: "FuturaNewBook-Reg";
         text-align: left;
         text-transform: uppercase;
+        text-align: center;
         @media (min-width: 1200px) {
           font-size: 30px;
         }
@@ -97,14 +106,20 @@
           text-align: right;
           color: black;
           font-family: "FuturaNewLight-Obl";
-          font-size: 16px;
+          font-size: 14px;
           text-transform: uppercase;
+          @media (min-width: 576px) {
+            font-size: 16px;
+          }
         }
         & .info {
           & span {
             color: black;
             font-family: "FuturaNewLight-Obl";
-            font-size: 18px;
+            font-size: 14px;
+            @media (min-width: 576px) {
+              font-size: 18px;
+            }
           }
         }
         &::before {
@@ -112,9 +127,12 @@
           position: absolute;
           bottom: -5px;
           width: 100%;
-          height: 2px;
+          height: 1px;
           background-color: black;
           left: 0;
+          @media (min-width: 576px) {
+            height: 2px;
+          }
         }
         & .info {
           display: flex;
@@ -129,30 +147,42 @@
             justify-content: space-around;
             margin-left: 50px;
             & .title {
-              font-size: 16px;
+              font-size: 13px;
               text-transform: uppercase;
               color: black;
               font-family: "FuturaNewLight-Obl";
               margin-bottom: 0px;
+              @media (min-width: 576px) {
+                font-size: 16px;
+              }
             }
             & .article {
-              font-size: 16px;
               color: black;
               font-family: "FuturaNewLight-Obl";
               margin-bottom: 0px;
-              font-size: 18px;
+              font-size: 14px;
+              @media (min-width: 576px) {
+                font-size: 18px;
+              }
             }
             & .cost {
-              font-size: 16px;
+              font-size: 13px;
               text-transform: uppercase;
               color: black;
               font-family: "FuturaNewLight-Obl";
               margin-bottom: 0px;
+              @media (min-width: 576px) {
+                font-size: 16px;
+              }
             }
           }
           & .img {
-            width: 140px;
-            height: 140px;
+            width: 130px;
+            height: 100px;
+            @media (min-width: 576px) {
+              width: 140px;
+              height: 140px;
+            }
             & img {
               width: 100%;
               height: 100%;
@@ -162,9 +192,12 @@
       }
     }
     & .address {
-      width: 500px;
+      width: 100%;
       margin: 0 auto;
       display: none;
+      @media (min-width: 768px) {
+        width: 500px;
+      }
       &.active {
         display: block;
       }
@@ -211,7 +244,12 @@
             margin-bottom: 0px;
             margin-left: 10px;
             font-family: "FuturaNewLight-Obl";
-            font-size: 18px;
+            font-size: 14px;
+            transform: translateY(3px);
+            @media (min-width: 576px) {
+              font-size: 18px;
+              transform: translateY(1px);
+            }
           }
           & input {
             transform: translateY(2px);
@@ -263,17 +301,24 @@
     }
     & .discounts {
       display: none;
-      font-size: 20px;
+      font-size: 16px;
       color: black;
       font-family: "FuturaNewLight-Obl";
-      width: 500px;
+      width: 100%;
       margin: 0 auto;
+      @media (min-width: 576px) {
+        font-size: 20px;
+      }
+      @media (min-width: 768px) {
+        width: 500px;
+      }
       & h3 {
         font-size: 20px;
         color: black;
         font-family: "FuturaNewBook-Reg";
         text-align: center;
         text-transform: uppercase;
+        margin-bottom: 20px;
         @media (min-width: 1200px) {
           font-size: 30px;
         }
