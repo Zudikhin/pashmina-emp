@@ -626,7 +626,7 @@ div:focus {
           transform: translatex(-1060px);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
-  padding: 80px 0px 30px 0px;
+  padding: 50px 0px 30px 0px;
 }
 
 .header__mobile__nav ul {
@@ -8880,6 +8880,16 @@ div:focus {
   opacity: 1;
 }
 
+.item__descriptiom-drop {
+  display: block;
+}
+
+@media (min-width: 576px) {
+  .item__descriptiom-drop {
+    display: none;
+  }
+}
+
 .account .links a {
   color: black;
   font-size: 18px;
@@ -9264,20 +9274,18 @@ div:focus {
 }
 
 .account__content .address .table .td-delete a {
+  display: block;
   color: black;
-  font-size: 14px;
   position: relative;
-  font-family: "FuturaNewLight-Obl";
+  width: 16px;
+  height: 16px;
+  -webkit-transform: translate(-6px, -2px);
+          transform: translate(-6px, -2px);
 }
 
-.account__content .address .table .td-delete a:after {
-  content: "";
+.account__content .address .table .td-delete a img {
   width: 100%;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  background-color: black;
-  height: 1px;
+  height: 100%;
 }
 
 .account__content .address .add__table {

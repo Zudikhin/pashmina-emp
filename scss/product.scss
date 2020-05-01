@@ -574,3 +574,9 @@
   color: #fff;
   opacity: 1;
 }
+.item__descriptiom-drop {
+  display: block;
+  @media (min-width: 576px) {
+    display: none;
+  }
+}
