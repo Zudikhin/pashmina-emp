@@ -626,6 +626,7 @@ div:focus {
           transform: translatex(-1060px);
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
+  padding: 80px 0px 30px 0px;
 }
 
 .header__mobile__nav ul {
@@ -639,8 +640,13 @@ div:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 80px;
-  margin-bottom: 50px;
+  margin-top: 30px;
+}
+
+.header__mobile__nav ul h3 {
+  text-transform: uppercase;
+  font-family: "FuturaNewMedium-Reg";
+  font-size: 22px;
 }
 
 .header__mobile__nav ul li {
@@ -1393,6 +1399,7 @@ div:focus {
 .catalog {
   margin-top: 25px;
   position: relative;
+  z-index: 1;
 }
 
 .catalog::after {
@@ -2964,12 +2971,19 @@ div:focus {
           align-items: center;
   color: black;
   font-family: "FuturaNewBook-Reg";
-  font-size: 20px;
+  font-size: 16px;
   background-color: transparent;
   border: 1px solid black;
   margin: 20px auto;
-  width: 200px;
+  width: 170px;
   height: 40px;
+}
+
+@media (min-width: 1200px) {
+  .shop__filters-mob #btnMobFilter {
+    width: 200px;
+    font-size: 20px;
+  }
 }
 
 .shop__filters-mob .modal .modal-content .close {
@@ -3016,7 +3030,7 @@ div:focus {
   width: auto;
   padding: 6px 0px 10px 10px;
   cursor: pointer;
-  width: 200px;
+  width: 170px;
   height: 40px;
   margin-top: 10px;
   display: -webkit-box;
@@ -3038,6 +3052,11 @@ div:focus {
 
 .show__mob_filter .filter__main .item span {
   display: block;
+  color: #2d2d2d;
+  font-size: 16px;
+  font-family: "FuturaNewBook-Reg";
+  -webkit-transform: translateY(2px);
+          transform: translateY(2px);
 }
 
 .show__mob_filter .filter__main .item button {
@@ -3056,11 +3075,17 @@ div:focus {
 
 .show__mob_filter .filter__clear {
   font-family: "FuturaNewBook-Reg";
-  font-size: 20px;
+  font-size: 16px;
   color: black;
   margin-top: 20px;
   display: block;
   text-align: center;
+}
+
+@media (min-width: 1200px) {
+  .show__mob_filter .filter__clear {
+    font-size: 20px;
+  }
 }
 
 .shop__filters .content h4 {
@@ -4272,7 +4297,7 @@ div:focus {
 
 .blog__item .img {
   position: relative;
-  width: 120%;
+  width: 125%;
 }
 
 .blog__item .img:after {
@@ -4294,7 +4319,7 @@ div:focus {
   font-size: 10px;
   text-transform: uppercase;
   margin-top: 10px;
-  width: 120%;
+  width: 125%;
 }
 
 .blog__item p {
@@ -4396,8 +4421,8 @@ div:focus {
 
 .blog__item-third {
   position: relative;
-  -webkit-transform: translateY(-25px);
-          transform: translateY(-25px);
+  -webkit-transform: translateY(-27px);
+          transform: translateY(-27px);
 }
 
 .blog__item-third h3 {
@@ -4817,7 +4842,7 @@ div:focus {
   font-size: 16px;
   font-family: "FuturaNewLight-Obl";
   color: #2d2d2d;
-  text-align: center;
+  text-align: left;
   margin-top: 20px;
 }
 
@@ -6100,7 +6125,7 @@ div:focus {
           justify-content: center;
   position: absolute;
   bottom: 12%;
-  left: 36%;
+  left: 37%;
 }
 
 @media (min-width: 576px) {
@@ -6142,9 +6167,9 @@ div:focus {
 
 .cart__item .price p {
   font-size: 14px;
-  margin-left: 0px;
-  -webkit-transform: translateY(3px);
-          transform: translateY(3px);
+  margin-left: 3px;
+  -webkit-transform: translateY(2.3px);
+          transform: translateY(2.3px);
 }
 
 @media (min-width: 576px) {

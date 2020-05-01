@@ -1,6 +1,7 @@
 .catalog {
   margin-top: 25px;
   position: relative;
+  z-index: 1;
   &::after {
     content: "";
     width: 100%;

@@ -91,7 +91,7 @@
       justify-content: center;
       position: absolute;
       bottom: 12%;
-      left: 36%;
+      left: 37%;
       @media (min-width: 576px) {
         left: 30%;
       }
@@ -117,8 +117,8 @@
       }
       & p {
         font-size: 14px;
-        margin-left: 0px;
-        transform: translateY(3px);
+        margin-left: 3px;
+        transform: translateY(2.3px);
         @media (min-width: 576px) {
           font-size: 16px;
           transform: translateY(1px);
